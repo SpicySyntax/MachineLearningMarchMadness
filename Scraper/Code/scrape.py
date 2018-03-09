@@ -221,7 +221,7 @@ class Scrape:
         outfile = open("./game_records.csv", "wb")
         writer = csv.writer(outfile)
         writer.writerow([
-            "year_string"
+            "year_string",
             "team_1_name", "team_1_score", "team_2_name",
             "team_2_score", "date_string"
             ])
