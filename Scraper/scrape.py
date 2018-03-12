@@ -131,7 +131,7 @@ class Scrape:
                 data_stat = td_item.get_attribute('data-stat')
                 # Assumes we receive column data in the following order
                 if(data_stat == 'school_name'):
-                    school_record.team_name = txt
+                    school_record.team_name = txt.replace("NCAA","")
                     link = td_item.find_element_by_tag_name('a').get_attribute('href')
                     school_record.team_link = link
                 elif(data_stat == 'win_loss_pct'):
@@ -221,7 +221,7 @@ class Scrape:
         outfile = open("./game_records.csv", "wb")
         writer = csv.writer(outfile)
         writer.writerow([
-            "year_string",
+            "year",
             "team_1_name", "team_1_score", "team_2_name",
             "team_2_score", "date_string"
             ])
