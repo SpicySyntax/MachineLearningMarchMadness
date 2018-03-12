@@ -1,4 +1,4 @@
-year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
+year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2010,Arkansas-Pine Bluff,61.0,Winthrop,44.0,Mar16
 2010,Arkansas-Pine Bluff,44.0,Duke,73.0,Mar19
 2010,Baylor,68.0,Sam Houston State,59.0,Mar18
@@ -41413,6 +41413,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Alabama,52.0,Florida,73.0,Feb27
 2018,Alabama,66.0,Texas A&M,68.0,Mar3
 2018,Alabama,71.0,Texas A&M,70.0,Mar8
+2018,Alabama,81.0,Auburn,63.0,Mar9
 2018,Albany (NY),69.0,Iona,67.0,Nov10
 2018,Albany (NY),88.0,Boston University,74.0,Nov13
 2018,Albany (NY),80.0,Yale,72.0,Nov17
@@ -41534,6 +41535,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Appalachian State,69.0,Arkansas-Little Rock,67.0,Feb24
 2018,Appalachian State,76.0,Coastal Carolina,67.0,Mar3
 2018,Appalachian State,93.0,Arkansas-Little Rock,64.0,Mar7
+2018,Appalachian State,68.0,Texas-Arlington,84.0,Mar9
 2018,Arizona State,94.0,Idaho State,74.0,Nov10
 2018,Arizona State,90.0,San Diego State,68.0,Nov14
 2018,Arizona State,97.0,Northern Arizona,62.0,Nov17
@@ -41594,6 +41596,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Arizona,75.0,Stanford,67.0,Mar1
 2018,Arizona,66.0,University of California,54.0,Mar3
 2018,Arizona,83.0,Colorado,67.0,Mar8
+2018,Arizona,78.0,UCLA,67.0,Mar9
 2018,Arkansas-Little Rock,79.0,Ouachita,81.0,Nov11
 2018,Arkansas-Little Rock,62.0,Memphis,70.0,Nov14
 2018,Arkansas-Little Rock,51.0,Grand Canyon,76.0,Nov18
@@ -41649,6 +41652,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Arkansas-Pine Bluff,48.0,Jackson State,51.0,Feb26
 2018,Arkansas-Pine Bluff,94.0,Mississippi Valley State,57.0,Mar3
 2018,Arkansas-Pine Bluff,77.0,Mississippi Valley State,73.0,Mar6
+2018,Arkansas-Pine Bluff,71.0,Southern,65.0,Mar9
 2018,Arkansas State,63.0,Evansville,77.0,Nov10
 2018,Arkansas State,59.0,Eastern Michigan,76.0,Nov16
 2018,Arkansas State,92.0,Howard,78.0,Nov20
@@ -41707,6 +41711,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Arkansas,91.0,Auburn,82.0,Feb27
 2018,Arkansas,67.0,Missouri,77.0,Mar3
 2018,Arkansas,69.0,South Carolina,64.0,Mar8
+2018,Arkansas,80.0,Florida,72.0,Mar9
 2018,Army,74.0,Hofstra,77.0,Nov10
 2018,Army,92.0,John Jay,43.0,Nov14
 2018,Army,94.0,Marist,73.0,Nov18
@@ -42231,6 +42236,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Buffalo,81.0,Miami (OH),84.0,Feb20
 2018,Buffalo,108.0,Ohio,82.0,Feb24
 2018,Buffalo,89.0,Central Michigan,74.0,Mar8
+2018,Buffalo,78.0,Kent State,61.0,Mar9
 2018,Butler,82.0,Kennesaw State,64.0,Nov10
 2018,Butler,85.0,Princeton,75.0,Nov12
 2018,Butler,65.0,Maryland,79.0,Nov15
@@ -42263,6 +42269,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Butler,68.0,St. John's (NY),75.0,Feb28
 2018,Butler,70.0,Seton Hall,77.0,Mar3
 2018,Butler,75.0,Seton Hall,74.0,Mar8
+2018,Butler,68.0,Villanova,87.0,Mar9
 2018,Cal Poly,62.0,Stanford,78.0,Nov10
 2018,Cal Poly,82.0,University of California,85.0,Nov12
 2018,Cal Poly,76.0,Holy Names,47.0,Nov15
@@ -42348,6 +42355,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Cal State Fullerton,102.0,Cal State Northridge,76.0,Feb28
 2018,Cal State Fullerton,60.0,Hawaii,68.0,Mar3
 2018,Cal State Fullerton,76.0,Long Beach State,74.0,Mar8
+2018,Cal State Fullerton,55.0,UC-Davis,52.0,Mar9
 2018,Cal State Northridge,76.0,Life Pacific,50.0,Nov10
 2018,Cal State Northridge,73.0,Fresno State,89.0,Nov13
 2018,Cal State Northridge,73.0,George Mason,78.0,Nov18
@@ -42422,6 +42430,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,UC-Irvine,69.0,UC-Santa Barbara,49.0,Feb22
 2018,UC-Irvine,66.0,Hawaii,57.0,Feb24
 2018,UC-Irvine,68.0,Hawaii,67.0,Mar8
+2018,UC-Irvine,61.0,UC-Santa Barbara,58.0,Mar9
 2018,UC-Riverside,74.0,University of California,66.0,Nov10
 2018,UC-Riverside,64.0,Loyola Marymount,76.0,Nov15
 2018,UC-Riverside,82.0,Portland State,94.0,Nov18
@@ -42624,6 +42633,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Central Florida,71.0,Wichita State,75.0,Mar1
 2018,Central Florida,60.0,Tulane,51.0,Mar4
 2018,Central Florida,66.0,East Carolina,52.0,Mar8
+2018,Central Florida,56.0,Houston,84.0,Mar9
 2018,Central Michigan,108.0,Siena Heights,48.0,Nov10
 2018,Central Michigan,65.0,Michigan,72.0,Nov13
 2018,Central Michigan,103.0,Eureka,68.0,Nov18
@@ -42789,6 +42799,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Cincinnati,82.0,Tulsa,74.0,Feb25
 2018,Cincinnati,78.0,Tulane,49.0,Mar1
 2018,Cincinnati,62.0,Wichita State,61.0,Mar4
+2018,Cincinnati,61.0,Southern Methodist,51.0,Mar9
 2018,Citadel,109.0,Oglethorpe,73.0,Nov10
 2018,Citadel,93.0,Virginia Tech,132.0,Nov12
 2018,Citadel,73.0,North Carolina A&T,92.0,Nov15
@@ -42847,6 +42858,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Clemson,75.0,Georgia Tech,67.0,Feb24
 2018,Clemson,76.0,Florida State,63.0,Feb28
 2018,Clemson,52.0,Syracuse,55.0,Mar3
+2018,Clemson,58.0,Virginia,64.0,Mar9
 2018,Cleveland State,38.0,Rutgers,70.0,Nov14
 2018,Cleveland State,80.0,Coppin State,56.0,Nov17
 2018,Cleveland State,69.0,East Carolina,72.0,Nov20
@@ -43163,6 +43175,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Davidson,71.0,Duquesne,60.0,Feb24
 2018,Davidson,113.0,St. Bonaventure,117.0,Feb27
 2018,Davidson,63.0,Rhode Island,61.0,Mar2
+2018,Davidson,78.0,Saint Louis,60.0,Mar9
 2018,Dayton,69.0,Hofstra,72.0,Nov16
 2018,Dayton,79.0,Ohio,65.0,Nov17
 2018,Dayton,67.0,Old Dominion,75.0,Nov19
@@ -43409,6 +43422,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Duke,63.0,Virginia Tech,64.0,Feb26
 2018,Duke,74.0,North Carolina,64.0,Mar3
 2018,Duke,88.0,Notre Dame,70.0,Mar8
+2018,Duke,69.0,North Carolina,74.0,Mar9
 2018,Duquesne,80.0,St. Francis (NY),70.0,Nov11
 2018,Duquesne,77.0,Virginia Military Institute,61.0,Nov14
 2018,Duquesne,59.0,Robert Morris,66.0,Nov19
@@ -43555,6 +43569,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Eastern Michigan,82.0,Northern Illinois,53.0,Feb24
 2018,Eastern Michigan,74.0,Western Michigan,58.0,Feb27
 2018,Eastern Michigan,71.0,Toledo,69.0,Mar2
+2018,Eastern Michigan,63.0,Toledo,64.0,Mar9
 2018,Eastern Washington,82.0,Walla Walla,61.0,Nov10
 2018,Eastern Washington,69.0,Washington,79.0,Nov12
 2018,Eastern Washington,67.0,Stanford,61.0,Nov14
@@ -43585,6 +43600,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Eastern Washington,74.0,Southern Utah,51.0,Mar1
 2018,Eastern Washington,85.0,Northern Arizona,68.0,Mar3
 2018,Eastern Washington,78.0,Portland State,72.0,Mar8
+2018,Eastern Washington,82.0,Southern Utah,70.0,Mar9
 2018,Elon,96.0,Peace,53.0,Nov11
 2018,Elon,67.0,Furman,76.0,Nov14
 2018,Elon,95.0,Florida International,87.0,Nov17
@@ -43957,6 +43973,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,George Mason,81.0,Virginia Commonwealth,80.0,Feb28
 2018,George Mason,79.0,Richmond,93.0,Mar3
 2018,George Mason,80.0,Massachusetts,75.0,Mar8
+2018,George Mason,49.0,Saint Joseph's,68.0,Mar9
 2018,George Washington,84.0,Howard,75.0,Nov10
 2018,George Washington,65.0,Hampton,57.0,Nov18
 2018,George Washington,65.0,Rider,67.0,Nov20
@@ -44022,6 +44039,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Georgia Southern,81.0,Texas State,77.0,Feb24
 2018,Georgia Southern,81.0,South Alabama,74.0,Mar1
 2018,Georgia Southern,89.0,Troy,83.0,Mar3
+2018,Georgia Southern,63.0,Louisiana-Monroe,55.0,Mar9
 2018,Georgia State,90.0,Carver Bible,50.0,Nov10
 2018,Georgia State,75.0,Rice,54.0,Nov14
 2018,Georgia State,72.0,Mississippi,77.0,Nov17
@@ -44041,6 +44059,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Georgia State,81.0,Texas-Arlington,89.0,Feb24
 2018,Georgia State,70.0,Troy,83.0,Mar1
 2018,Georgia State,90.0,South Alabama,75.0,Mar3
+2018,Georgia State,73.0,Troy,51.0,Mar9
 2018,Georgia Tech,60.0,UCLA,63.0,Nov10
 2018,Georgia Tech,78.0,Texas-Rio Grande Valley,68.0,Nov22
 2018,Georgia Tech,63.0,North Texas,49.0,Nov24
@@ -44087,6 +44106,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Georgia,61.0,Tennessee,66.0,Mar3
 2018,Georgia,78.0,Vanderbilt,62.0,Mar7
 2018,Georgia,62.0,Missouri,60.0,Mar8
+2018,Georgia,49.0,Kentucky,62.0,Mar9
 2018,Gonzaga,97.0,Texas Southern,69.0,Nov10
 2018,Gonzaga,106.0,Howard,69.0,Nov14
 2018,Gonzaga,79.0,Utah State,66.0,Nov18
@@ -44158,6 +44178,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Grand Canyon,76.0,Seattle,64.0,Feb22
 2018,Grand Canyon,60.0,Utah Valley,59.0,Feb24
 2018,Grand Canyon,77.0,Missouri-Kansas City,74.0,Mar8
+2018,Grand Canyon,75.0,Utah Valley,60.0,Mar9
 2018,Green Bay,65.0,Northern Illinois,85.0,Nov14
 2018,Green Bay,98.0,Lakeland,27.0,Nov17
 2018,Green Bay,68.0,Mississippi State,77.0,Nov20
@@ -44204,6 +44225,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Hampton,114.0,Savannah State,102.0,Feb19
 2018,Hampton,57.0,Morgan State,38.0,Feb24
 2018,Hampton,74.0,Norfolk State,71.0,Mar1
+2018,Hampton,96.0,North Carolina A&T,86.0,Mar9
 2018,Hartford,80.0,Gordon,63.0,Nov12
 2018,Hartford,53.0,Rider,89.0,Nov15
 2018,Hartford,84.0,Long Island University,86.0,Nov18
@@ -44784,6 +44806,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Kansas State,77.0,Oklahoma,86.0,Feb24
 2018,Kansas State,59.0,Texas Christian,66.0,Feb27
 2018,Kansas State,66.0,Texas Christian,64.0,Mar8
+2018,Kansas State,67.0,Kansas,83.0,Mar9
 2018,Kansas,92.0,Tennessee State,56.0,Nov10
 2018,Kansas,65.0,Kentucky,61.0,Nov14
 2018,Kansas,98.0,South Dakota State,64.0,Nov17
@@ -45047,6 +45070,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Louisiana,100.0,Texas-Arlington,79.0,Feb17
 2018,Louisiana,81.0,Troy,76.0,Feb22
 2018,Louisiana,88.0,South Alabama,71.0,Feb24
+2018,Louisiana,80.0,Texas State,54.0,Mar9
 2018,Louisiana-Monroe,73.0,Texas Christian,83.0,Nov10
 2018,Louisiana-Monroe,65.0,Southern Methodist,83.0,Nov12
 2018,Louisiana-Monroe,86.0,Southeastern Louisiana,75.0,Nov16
@@ -45266,6 +45290,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Marshall,79.0,Old Dominion,84.0,Feb22
 2018,Marshall,76.0,Middle Tennessee,67.0,Mar3
 2018,Marshall,95.0,Texas-San Antonio,81.0,Mar8
+2018,Marshall,85.0,Southern Mississippi,75.0,Mar9
 2018,Maryland-Baltimore County,67.0,Southern Methodist,78.0,Nov10
 2018,Maryland-Baltimore County,93.0,Central Pennsylvania College,62.0,Nov16
 2018,Maryland-Baltimore County,89.0,Nicholls State,88.0,Nov24
@@ -45381,6 +45406,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Memphis,68.0,Tulane,63.0,Feb17
 2018,Memphis,51.0,South Florida,75.0,Mar1
 2018,Memphis,79.0,South Florida,77.0,Mar8
+2018,Memphis,67.0,Tulsa,64.0,Mar9
 2018,Mercer,110.0,Toccoa Falls,43.0,Nov12
 2018,Mercer,90.0,Hiwassee,53.0,Nov26
 2018,Mercer,60.0,Tennessee,84.0,Nov29
@@ -45531,6 +45557,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Mississippi State,93.0,Texas A&M,81.0,Feb20
 2018,Mississippi State,72.0,South Carolina,68.0,Feb24
 2018,Mississippi State,54.0,Tennessee,76.0,Feb27
+2018,Mississippi State,59.0,Tennessee,62.0,Mar9
 2018,Mississippi Valley State,51.0,Utah,91.0,Nov13
 2018,Mississippi Valley State,47.0,Utah State,83.0,Nov15
 2018,Mississippi Valley State,59.0,Southeastern Louisiana,73.0,Nov25
@@ -45664,6 +45691,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Montana,71.0,Sacramento State,69.0,Feb10
 2018,Montana,75.0,Weber State,57.0,Mar1
 2018,Montana,84.0,North Dakota,76.0,Mar8
+2018,Montana,91.0,Northern Colorado,89.0,Mar9
 2018,Morehead State,49.0,Xavier,101.0,Nov10
 2018,Morehead State,63.0,Virginia Tech,96.0,Nov25
 2018,Morehead State,103.0,Alice Lloyd,56.0,Nov30
@@ -45693,6 +45721,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Morgan State,65.0,Norfolk State,76.0,Feb3
 2018,Morgan State,94.0,Savannah State,97.0,Feb10
 2018,Morgan State,83.0,South Carolina State,80.0,Mar6
+2018,Morgan State,70.0,North Carolina Central,79.0,Mar9
 2018,Mount St. Mary's,62.0,Notre Dame,88.0,Nov13
 2018,Mount St. Mary's,84.0,North Florida,81.0,Nov18
 2018,Mount St. Mary's,91.0,York (PA),80.0,Nov21
@@ -45797,6 +45826,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Nevada,93.0,Utah State,87.0,Feb17
 2018,Nevada,80.0,San Jose State,67.0,Feb21
 2018,Nevada,74.0,San Diego State,79.0,Mar3
+2018,Nevada,73.0,San Diego State,90.0,Mar9
 2018,New Hampshire,95.0,Wheelock,39.0,Nov10
 2018,New Hampshire,60.0,Texas,78.0,Nov14
 2018,New Hampshire,63.0,Utah State,77.0,Nov25
@@ -45824,6 +45854,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,New Mexico State,79.0,Utah Valley,86.0,Feb15
 2018,New Mexico State,63.0,Seattle,73.0,Feb17
 2018,New Mexico State,86.0,Texas-Rio Grande Valley,71.0,Mar3
+2018,New Mexico State,84.0,Seattle,79.0,Mar9
 2018,New Mexico,147.0,Northern New Mexico,76.0,Nov11
 2018,New Mexico,96.0,Tennessee Tech,104.0,Nov21
 2018,New Mexico,67.0,Texas Christian,69.0,Nov24
@@ -45838,6 +45869,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,New Mexico,78.0,Utah State,63.0,Feb14
 2018,New Mexico,119.0,Wyoming,114.0,Feb20
 2018,New Mexico,85.0,Wyoming,75.0,Mar8
+2018,New Mexico,83.0,Utah State,68.0,Mar9
 2018,New Orleans,61.0,St. John's (NY),77.0,Nov10
 2018,New Orleans,68.0,Oakland,87.0,Nov13
 2018,New Orleans,74.0,Spring Hill,67.0,Nov24
@@ -45884,6 +45916,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Nicholls State,73.0,Sam Houston State,72.0,Feb14
 2018,Nicholls State,73.0,Northwestern State,70.0,Feb28
 2018,Nicholls State,57.0,Southeastern Louisiana,69.0,Mar3
+2018,Nicholls State,66.0,Stephen F. Austin,78.0,Mar9
 2018,NJIT,49.0,Wagner,60.0,Nov11
 2018,NJIT,53.0,Seton Hall,82.0,Nov18
 2018,NJIT,116.0,Kean,63.0,Nov22
@@ -46239,6 +46272,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Old Dominion,100.0,Texas-San Antonio,62.0,Feb15
 2018,Old Dominion,82.0,Texas-El Paso,33.0,Feb17
 2018,Old Dominion,66.0,Western Kentucky,88.0,Feb24
+2018,Old Dominion,49.0,Western Kentucky,57.0,Mar9
 2018,Oral Roberts,86.0,Avila,72.0,Nov10
 2018,Oral Roberts,71.0,Tulsa,90.0,Nov13
 2018,Oral Roberts,76.0,Pepperdine,80.0,Nov21
@@ -46285,6 +46319,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Oregon,72.0,Washington,64.0,Mar3
 2018,Oregon,64.0,Washington State,62.0,Mar7
 2018,Oregon,68.0,Utah,66.0,Mar8
+2018,Oregon,54.0,Southern California,74.0,Mar9
 2018,Pacific,80.0,Stanford,89.0,Nov12
 2018,Pacific,78.0,Texas State,85.0,Nov25
 2018,Pacific,105.0,Arkansas-Fort Smith,68.0,Dec3
@@ -46377,6 +46412,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Prairie View,94.0,Texas Southern,100.0,Jan6
 2018,Prairie View,96.0,Texas Southern,82.0,Feb3
 2018,Prairie View,77.0,Southern,69.0,Mar3
+2018,Prairie View,74.0,Texas Southern,88.0,Mar9
 2018,Presbyterian,53.0,Tennessee,88.0,Nov10
 2018,Presbyterian,107.0,Johnson University,87.0,Nov11
 2018,Presbyterian,58.0,Virginia Military Institute,78.0,Nov18
@@ -46407,6 +46443,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Providence,77.0,Seton Hall,89.0,Feb21
 2018,Providence,74.0,Xavier,84.0,Feb28
 2018,Providence,61.0,St. John's (NY),57.0,Mar3
+2018,Providence,75.0,Xavier,72.0,Mar9
 2018,Purdue,105.0,Southern Illinois-Edwardsville,74.0,Nov10
 2018,Purdue,75.0,Tennessee,78.0,Nov22
 2018,Purdue,73.0,Western Kentucky,77.0,Nov23
@@ -46443,6 +46480,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Rhode Island,85.0,Richmond,67.0,Feb13
 2018,Rhode Island,74.0,St. Bonaventure,77.0,Feb16
 2018,Rhode Island,48.0,Saint Joseph's,78.0,Feb27
+2018,Rhode Island,76.0,Virginia Commonwealth,67.0,Mar9
 2018,Rice,70.0,St. Thomas (TX),59.0,Nov25
 2018,Rice,49.0,Texas-Arlington,69.0,Nov29
 2018,Rice,67.0,Texas-Rio Grande Valley,69.0,Dec2
@@ -46464,6 +46502,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Richmond,88.0,St. Bonaventure,97.0,Feb10
 2018,Richmond,66.0,Saint Louis,72.0,Feb17
 2018,Richmond,70.0,Saint Joseph's,72.0,Feb24
+2018,Richmond,77.0,St. Bonaventure,83.0,Mar9
 2018,Rider,75.0,Xavier,101.0,Nov13
 2018,Rider,75.0,Robert Morris,78.0,Dec6
 2018,Rider,90.0,Wagner,84.0,Dec16
@@ -46556,6 +46595,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Sam Houston State,66.0,Stephen F. Austin,82.0,Jan27
 2018,Sam Houston State,66.0,Texas A&M-Corpus Christi,64.0,Feb7
 2018,Sam Houston State,53.0,Stephen F. Austin,65.0,Mar3
+2018,Sam Houston State,79.0,Southeastern Louisiana,89.0,Mar9
 2018,Samford,67.0,Valparaiso,88.0,Nov21
 2018,Samford,71.0,Southeastern Louisiana,77.0,Nov24
 2018,Samford,98.0,Thomas University,51.0,Dec15
@@ -46820,6 +46860,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Temple,86.0,Wichita State,93.0,Feb15
 2018,Temple,58.0,Tulsa,76.0,Mar4
 2018,Temple,82.0,Tulane,77.0,Mar8
+2018,Temple,81.0,Wichita State,89.0,Mar9
 2018,Tennessee-Martin,127.0,Cincinnati-Clermont,92.0,Dec10
 2018,Tennessee-Martin,84.0,Blue Mountain College,76.0,Dec20
 2018,Tennessee-Martin,63.0,Tennessee State,60.0,Dec28
@@ -46893,6 +46934,7 @@ year_stringteam_1_name,team_1_score,team_2_name,team_2_score,date_string
 2018,Texas Tech,73.0,Texas,71.0,Jan31
 2018,Texas Tech,74.0,West Virginia,84.0,Feb26
 2018,Texas Tech,73.0,Texas,69.0,Mar8
+2018,Texas Tech,63.0,West Virginia,66.0,Mar9
 2018,Texas,71.0,Virginia Commonwealth,67.0,Dec5
 2018,Texas,51.0,West Virginia,86.0,Jan20
 2018,Texas,87.0,West Virginia,79.0,Mar3
