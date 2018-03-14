@@ -5,6 +5,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys  
 from selenium.webdriver.chrome.options import Options
 import re
+import random
+from selenium.webdriver.support.ui import WebDriverWait
 class TeamYearRecord:
     def __init__(self):
         # record info
@@ -42,6 +44,8 @@ class GameRecord:
         self.team_2_name = ''
         self.team_2_score = 0
         self.date_string = ''
+        self.team_1_seed = 0
+        self.team_2_seed = 0
     def team_1_won(self):
         if(self.team_1_score > self.team_2_score):
             return True
@@ -93,12 +97,15 @@ def is_number(s):
 class Scrape:
     def __init__(self):
         pass
-    def scrapeYearOfData(self, year):
-        url = 'https://www.sports-reference.com/cbb/seasons/' + year + '-school-stats.html'
+    def get_browser(self):
         chrome_options = Options()  
         chrome_options.binary_location = 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
         chrome_driver_exe_path = os.path.dirname(os.path.realpath(__file__)) + '\chromedriver.exe'
         browser = webdriver.Chrome(executable_path=chrome_driver_exe_path,   chrome_options=chrome_options)
+        return browser
+    def scrapeYearOfData(self, year):
+        url = 'https://www.sports-reference.com/cbb/seasons/' + year + '-school-stats.html'
+        browser = self.get_browser()
         browser.maximize_window()
         browser.get(url) #navigate to page 
         headers = browser.find_elements_by_xpath("//thead//tr//th[contains(@class, 'poptip')]")
@@ -118,8 +125,6 @@ class Scrape:
                     continue
                 row_num = row.get_attribute("data-row")
                 # If Here then it is a true data row
-                #print row_num
-                #print 'th: ' + th_rk_val
             td_items = row.find_elements_by_tag_name("td")
             school_record = TeamYearRecord()
             school_record.year = self.getNum(year)
@@ -131,7 +136,7 @@ class Scrape:
                 data_stat = td_item.get_attribute('data-stat')
                 # Assumes we receive column data in the following order
                 if(data_stat == 'school_name'):
-                    school_record.team_name = txt.replace("NCAA","")
+                    school_record.team_name = txt.replace("NCAA","").strip()
                     link = td_item.find_element_by_tag_name('a').get_attribute('href')
                     school_record.team_link = link
                 elif(data_stat == 'win_loss_pct'):
@@ -195,6 +200,129 @@ class Scrape:
                     game_records.append(gr)
         browser.close()
         return school_records, game_records
+    def get_games_from_region(self, browser, region_div, region_rounds, year):
+        browser.execute_script("arguments[0].setAttribute('class','current')",region_div)
+        return self.parse_games_from_rounds(region_rounds, year)
+    def scrape_year_of_postseason_data(self, year):
+        all_postseason_games = []
+        url = 'https://www.sports-reference.com/cbb/postseason/' + year + '-ncaa.html'
+        browser = self.get_browser()
+        browser.maximize_window()
+        browser.get(url) #navigate to page 
+        southeast_rounds = []
+        southwest_rounds = []
+        midwest_rounds = []
+        south_rounds = []
+        southeast = object
+        southwest = {}
+        midwest = {}
+        south = {}
+        #switcher = browser.find_element_by_xpath("//div[contains(@class, 'switcher')]")
+        #links = switcher.find_elements_by_xpath(".//div//a")
+        #links[1].click()
+        #WebDriverWait(browser, 5)
+        bracket = browser.find_element_by_xpath("//div[@id='brackets']")
+        southeast_games = []
+        southwest_games = []
+        midwest_games = []
+        south_games = []
+        if(float(year) < 2012):
+            southeast = browser.find_element_by_xpath("//div[@id='southeast']")
+            southwest = browser.find_element_by_xpath("//div[@id='southwest']")
+            southeast_rounds = southeast.find_elements_by_class_name("round")[:-1]
+            southwest_rounds = southwest.find_elements_by_class_name("round")[:-1]
+            southeast_games = self.get_games_from_region(browser, southeast, southeast_rounds, year)
+            southwest_games = self.get_games_from_region(browser, southwest, southwest_rounds, year)
+        else:
+            midwest = browser.find_element_by_xpath("//div[@id='midwest']")
+            south = browser.find_element_by_xpath("//div[@id='south']")
+            south_rounds = south.find_elements_by_class_name("round")[:-1]
+            midwest_rounds = midwest.find_elements_by_class_name("round")[:-1]
+            midwest_games = self.get_games_from_region(browser, midwest, midwest_rounds, year)
+            south_games = self.get_games_from_region(browser, south, south_rounds, year)
+        west = browser.find_element_by_xpath("//div[@id='west']")
+        east = browser.find_element_by_xpath("//div[@id='east']")
+        national = browser.find_element_by_xpath("//div[@id='national']")
+        # Last round is just the winner for subbracket div -> ignore
+        east_rounds = east.find_elements_by_class_name("round")[:-1]
+        west_rounds = west.find_elements_by_class_name("round")[:-1]
+        national_rounds = national.find_elements_by_class_name("round")[:-1]
+        west_games = self.get_games_from_region(browser, west, west_rounds, year)
+        east_games = self.get_games_from_region(browser, east, east_rounds, year)
+        national_games = self.get_games_from_region(browser, national, national_rounds, year)
+        print len(east_games), len(west_games), len(southeast_games),len(southwest_games), len(midwest_games), len(south_games), len(national_games)
+        all_postseason_games = [east_games, west_games, southeast_games, southwest_games, midwest_games, south_games, national_games]
+        all_postseason_games = sum(all_postseason_games, [])
+        browser.close()
+        return all_postseason_games
+
+    def parse_games_from_rounds(self, rounds, year):
+        games = []
+        if(len(rounds) < 1):
+            print ' rounds were empty...'
+            return []
+        
+        for rd in rounds:
+            # all children divs will be picked up
+            winners = rd.find_elements_by_xpath(".//div//div[@class='winner']")
+            losers = rd.find_elements_by_xpath(".//div//div[not(@class)]")
+            print len(winners), len(losers)
+            if(len(winners) != len(losers)):
+                print 'Error num losers != num winners for a round'
+                return []
+            i = 0
+            for winner in winners:
+
+                #t1_seed, t1_name, t1_score = 0, '', 0
+                #t2_seed, t2_name, t2_score = -1, '', 0
+                if(bool(random.getrandbits(1))):
+                    t1_seed, t1_name, t1_score = self.parse_team_data_from_team_div(winner)
+                    t2_seed, t2_name, t2_score = self.parse_team_data_from_team_div(losers[i]) 
+                else:
+                    t1_seed, t1_name, t1_score = self.parse_team_data_from_team_div(losers[i])
+                    t2_seed, t2_name, t2_score = self.parse_team_data_from_team_div(winner) 
+                if(t1_seed < 0 or t2_seed < 0):
+                    print ' Negative seed...'
+                    continue
+                gr = GameRecord(str(year))
+                gr.team_1_name = t1_name
+                gr.team_1_score = t1_score    
+                gr.team_1_seed = t1_seed
+                gr.team_2_name = t2_name
+                gr.team_2_score = t2_score
+                gr.team_2_seed = t2_seed 
+
+                games.append(gr)  
+                i = i + 1
+                # TODO : add location fetching for v2
+                
+        return games
+    def parse_team_data_from_team_div(self, team_div):
+        seed_str = team_div.find_element_by_xpath(".//span").text   
+        team_and_score = team_div.find_elements_by_tag_name("a")
+        if(len(team_and_score) != 2):
+            print "Error parsing team for post season games"
+            return False, False, False
+        team_name = team_and_score[0].text
+        team_score = self.getNum(team_and_score[1].text)
+        seed = self.getNum(seed_str)
+        return seed, team_name, team_score
+    def write_post_season_game_records_csv(self, game_records):
+        if(len(game_records) == 0):
+            return
+        outfile = open("./post_season_game_records.csv", "wb")
+        writer = csv.writer(outfile)
+        writer.writerow([
+            "year",
+            "team_1_name", "team_1_score","team_1_seed",
+            "team_2_name","team_2_score", "team_2_seed"
+            ])
+        for game_record in game_records:
+            writer.writerow([
+                game_record.year_string,
+                game_record.team_1_name, str(game_record.team_1_score),str(game_record.team_1_seed),
+                game_record.team_2_name, str(game_record.team_2_score),str(game_record.team_2_seed)
+            ])
     def write_school_records_csv(self, school_records):
         if(len(school_records) == 0):
             return
@@ -238,17 +366,20 @@ class Scrape:
         except:
             return -1
     def run(self):
-        year = 2010
+        year = 2011
         total_school_records = []
         total_game_records = []
-        while(year < 2019):
-            school_records, game_records = self.scrapeYearOfData(str(year))
+        total_post_season_game_records = []
+        while(year < 2018):
+            #school_records, game_records = self.scrapeYearOfData(str(year))
+            post_season_gr = self.scrape_year_of_postseason_data(str(year))
+            total_post_season_game_records = total_post_season_game_records + post_season_gr
             year = year + 1
-            total_school_records = total_school_records + school_records
-            total_game_records = total_game_records + game_records
-        self.write_school_records_csv(total_school_records)
-        self.write_game_records_csv(total_game_records)
-
+            #total_school_records = total_school_records + school_records
+            #total_game_records = total_game_records + game_records
+        #self.write_school_records_csv(total_school_records)
+        #self.write_game_records_csv(total_game_records)
+        self.write_post_season_game_records_csv(total_post_season_game_records)
 if __name__ == "__main__":
     scrape = Scrape()
     scrape.run()
