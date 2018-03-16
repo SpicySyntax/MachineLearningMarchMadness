@@ -16,40 +16,40 @@ Components:
       -manipulate which model you want to use to generate bracker by changing the model used in "evaluate_winner" function to one of the previous models used in the notebook.
       - If your python kernels keep dying increase the Memory allowed for docker containers in Docker > Settings
   - Results (Using regular season team statistics, matchup data from 2011-2017 post season games and Linear Regression):
-    Villanova 1  vs.  Virginia Tech 8 (team 1 won= True )
-    West Virginia 5  vs.  Wichita State 4 (team 1 won= True )
-    Florida 6  vs.  Texas Tech 3 (team 1 won= False )
-    Arkansas 7  vs.  Purdue 2 (team 1 won= False )
-    --- East  round  3 ---
-    Villanova 1  vs.  West Virginia 5 (team 1 won= True )
-    Texas Tech 3  vs.  Purdue 2 (team 1 won= False )
-    --- East  round  4 ---
-    Villanova 1  vs.  Purdue 2 (team 1 won= True )
-    Winner of  East : ('Villanova', 1)
-    --- MidWest  round  1 ---
-    Kansas 1  vs.  Pennsylvania 16 (team 1 won= True )
-    Seton Hall 8  vs.  North Carolina State 9 (team 1 won= True )
-    Clemson 5  vs.  New Mexico State 12 (team 1 won= True )
-    Auburn 4  vs.  College of Charleston 13 (team 1 won= True )
-    Texas Christian 6  vs.  Arizona State 11 (team 1 won= False )
-    Michigan State 3  vs.  Bucknell 14 (team 1 won= True )
-    Rhode Island 7  vs.  Oklahoma 10 (team 1 won= False )
-    Duke 2  vs.  Iona 15 (team 1 won= True )
-    --- MidWest  round  2 ---
-    Kansas 1  vs.  Seton Hall 8 (team 1 won= True )
-    Clemson 5  vs.  Auburn 4 (team 1 won= True )
-    Arizona State 11  vs.  Michigan State 3 (team 1 won= False )
-    Oklahoma 10  vs.  Duke 2 (team 1 won= False )
-    --- MidWest  round  3 ---
-    Kansas 1  vs.  Clemson 5 (team 1 won= True )
-    Michigan State 3  vs.  Duke 2 (team 1 won= False )
-    --- MidWest  round  4 ---
-    Kansas 1  vs.  Duke 2 (team 1 won= False )
-    Winner of  MidWest : ('Duke', 2)
-    --- FinalFour  round  1 ---
-    Virginia 1  vs.  North Carolina 2 (team 1 won= True )
-    Villanova 1  vs.  Duke 2 (team 1 won= True )
-    --- FinalFour  round  2 ---
-    Virginia 1  vs.  Villanova 1 (team 1 won= True )
-    Winner of  FinalFour : ('Virginia', 1)
+    - Villanova 1  vs.  Virginia Tech 8 (team 1 won= True)   
+    - West Virginia 5  vs.  Wichita State 4 (team 1 won= True)
+    - Florida 6  vs.  Texas Tech 3 (team 1 won= False)
+    - Arkansas 7  vs.  Purdue 2 (team 1 won= False)
+    - --- East  round  3 ---
+    - Villanova 1  vs.  West Virginia 5 (team 1 won= True )
+    - Texas Tech 3  vs.  Purdue 2 (team 1 won= False )
+    - --- East  round  4 ---
+    - Villanova 1  vs.  Purdue 2 (team 1 won= True )
+    - Winner of  East : ('Villanova', 1)
+    - --- MidWest  round  1 ---
+    - Kansas 1  vs.  Pennsylvania 16 (team 1 won= True )
+    - Seton Hall 8  vs.  North Carolina State 9 (team 1 won= True )
+    - Clemson 5  vs.  New Mexico State 12 (team 1 won= True )
+    - Auburn 4  vs.  College of Charleston 13 (team 1 won= True )
+    - Texas Christian 6  vs.  Arizona State 11 (team 1 won= False )
+    - Michigan State 3  vs.  Bucknell 14 (team 1 won= True )
+    - Rhode Island 7  vs.  Oklahoma 10 (team 1 won= False )
+    - Duke 2  vs.  Iona 15 (team 1 won= True )
+    - --- MidWest  round  2 ---
+    - Kansas 1  vs.  Seton Hall 8 (team 1 won= True )
+    - Clemson 5  vs.  Auburn 4 (team 1 won= True )
+    - Arizona State 11  vs.  Michigan State 3 (team 1 won= False )
+    - Oklahoma 10  vs.  Duke 2 (team 1 won= False )
+    - --- MidWest  round  3 ---
+    - Kansas 1  vs.  Clemson 5 (team 1 won= True )
+    - Michigan State 3  vs.  Duke 2 (team 1 won= False )
+    - --- MidWest  round  4 ---
+    - Kansas 1  vs.  Duke 2 (team 1 won= False )
+    - Winner of  MidWest : ('Duke', 2)
+    - --- FinalFour  round  1 ---
+    - Virginia 1  vs.  North Carolina 2 (team 1 won= True )
+    - Villanova 1  vs.  Duke 2 (team 1 won= True )
+    - --- FinalFour  round  2 ---
+    - Virginia 1  vs.  Villanova 1 (team 1 won= True )
+    - Winner of  FinalFour : ('Virginia', 1)
 
