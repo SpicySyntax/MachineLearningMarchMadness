@@ -52,4 +52,17 @@ Components:
     - --- FinalFour  round  2 ---
     - Virginia 1  vs.  Villanova 1 (team 1 won= True )
     - Winner of  FinalFour : ('Virginia', 1)
-
+V2 Goals:
+  - Improve the data
+    - Further clean the data, remove correlated variables
+    - Add some artificial features?
+    - Take in game locations and team locations to calculate travel distance as a feature for both teams
+    - Remove outliers, or incorrect values (- when supposed to be +)
+  - Look into using Tensor flow to have more 
+  - Improve method for prediction
+    - Use Evolutionary method to optimize hyper-parameters (learning rate batch size)
+    - Predict both team scores instead of outcome?
+    - Boost low seed stats if they beat a high seed, reduce high seed stats if they have close game with lower seed
+    - 
+  
+    
