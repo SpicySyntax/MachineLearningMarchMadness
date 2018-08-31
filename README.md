@@ -3,7 +3,7 @@ Predictive solution for March Madness bracket
 Description: 
   - Try to predict the NCAA tournament bracket. Scrape data from the web and used ML to predict the outcomes of games
 
-Components:
+## Components
   - Web Scraper:
     - uses Python 2.7.14,
     - use 'pip' to install csv and selenium for the web scraper,
@@ -15,7 +15,8 @@ Components:
       - If you upload through the interface, Copy files out of container using "docker cp <containerId>:/file/path/within/container       /host/path/target". If you mount a volume into the container then you are okay.
       -manipulate which model you want to use to generate bracker by changing the model used in "evaluate_winner" function to one of the previous models used in the notebook.
       - If your python kernels keep dying increase the Memory allowed for docker containers in Docker > Settings
-  - Results (Using regular season team statistics, matchup data from 2011-2017 post season games and Logistic Regression):
+  ## Results 
+  (Using regular season team statistics, matchup data from 2011-2017 post season games and Logistic Regression):
     - Villanova 1  vs.  Virginia Tech 8 (team 1 won= True)   
     - West Virginia 5  vs.  Wichita State 4 (team 1 won= True)
     - Florida 6  vs.  Texas Tech 3 (team 1 won= False)
@@ -52,7 +53,7 @@ Components:
     - --- FinalFour  round  2 ---
     - Virginia 1  vs.  Villanova 1 (team 1 won= True )
     - Winner of  FinalFour : ('Virginia', 1)
-V2 Goals:
+## V2 Goals:
   - Improve the data
     - Further clean the data, remove correlated variables (see https://developers.google.com/machine-learning/crash-course/representation/cleaning-data)
     - Add some artificial features?
