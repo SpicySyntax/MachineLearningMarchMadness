@@ -12,7 +12,8 @@ Description:
   - Notebook:
     - Ises jupyter-notebooks via docker containers (see : https://hub.docker.com/r/jupyter/datascience-notebook/ for details)
       - If you don't have docker installed, install it (I used docker for windows)
-      - To run use: `docker run -d -p 8888:8888 jupyter/datascience-notebook start-notebook.sh --NotebookApp.token=''`
+      - Get Docker image for data-science notebook `docker pull jupyter/datascience-notebook`
+      - To run use: `docker run -p 8888:8888 jupyter/datascience-notebook`
       - Connect to the notebook service at 'http://localhost:8888'
       - Upload the '.ipynb' and the CSV data from the scraper directory into the workspace using Jupyter's notebook interface, or by mounting a volume with the correct files.
       - If you upload through the interface, Copy files out of container using `docker cp <containerId>:/file/path/within/container       /host/path/target`. If you mount a volume into the container then you are okay.
