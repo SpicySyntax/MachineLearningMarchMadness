@@ -6,9 +6,11 @@ Description:
 ## Components
   - Web Scraper:
     - uses Python 2.7.14,
-    - use 'pip' to install `csv` and `selenium` for the web scraper,
+    - use 'pip' to install `csv` and `selenium` for the web scraper.
+    - to gather the data from `https://www.sports-reference.com/cbb` run `python scraper.py`
+      - (The scraped data is provided in the source)
   - Notebook:
-    - uses jupyter-notebooks via docker containers (see : https://hub.docker.com/r/jupyter/datascience-notebook/ for details) 
+    - Ises jupyter-notebooks via docker containers (see : https://hub.docker.com/r/jupyter/datascience-notebook/ for details)
       - If you don't have docker installed, install it (I used docker for windows)
       - To run use: `docker run -d -p 8888:8888 jupyter/datascience-notebook start-notebook.sh --NotebookApp.token=''`
       - Connect to the notebook service at 'http://localhost:8888'
