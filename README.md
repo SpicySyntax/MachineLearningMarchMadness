@@ -10,7 +10,8 @@ Description:
     - to gather the data from `https://www.sports-reference.com/cbb` run `python scraper.py`
       - (The scraped data is provided in the source)
   - Notebook:
-    - Ises jupyter-notebooks via docker containers (see : https://hub.docker.com/r/jupyter/datascience-notebook/ for details)
+    - Download Jupyter notebooks through conda or pip (see https://test-jupyter.readthedocs.io/en/rtd-theme/install.html).
+    - OR You can jupyter-notebooks via docker containers (see : https://hub.docker.com/r/jupyter/datascience-notebook/ for details)
       - If you don't have docker installed, install it (I used docker for windows)
       - Get Docker image for data-science notebook `docker pull jupyter/datascience-notebook`
       - To run use: `docker run -p 8888:8888 jupyter/datascience-notebook`
