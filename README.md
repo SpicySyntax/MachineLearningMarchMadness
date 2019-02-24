@@ -133,6 +133,7 @@ Description:
     - Take in game locations and team locations to calculate travel distance as a feature for both teams
     - Remove outliers, or incorrect values (- when supposed to be +)
   - Look into using Tensor flow or Pytorch for using Neural networks 
+    - Normalize feature vectors
     - Start with basic MLP with dropout and normalized inputs
     - Look into LSTM implementation if time permits
   - Improve method for prediction
