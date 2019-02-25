@@ -136,6 +136,7 @@ Description:
     - Normalize feature vectors
     - Start with basic MLP with dropout and normalized inputs
     - Look into LSTM implementation if time permits
+    - Batch Normalization?
   - Improve method for prediction
     - Use Evolutionary method to optimize hyper-parameters (learning rate batch size)
     - Predict both team scores instead of outcome?
