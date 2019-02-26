@@ -3,7 +3,6 @@
 '''
 import csv
 import os
-import requests
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys  
 from selenium.webdriver.chrome.options import Options
@@ -100,7 +99,7 @@ def is_number(s):
     Scraper Class : A class to scrape team and game data from sports-reference.com and write it to csv
     TODO: Add more team statistics, add more player statistics, add post-season game location into training data
 '''
-class Scrape:
+class Scraper:
     def __init__(self):
         # Do nothing for now
         pass
@@ -130,7 +129,7 @@ class Scrape:
         game_records_t1 = {}
         game_records_t2 = {}
         game_records = []
-        print '---Data Rows for ' + year + '---'
+        print('---Data Rows for ' + year + '---')
         for row in data_rows:    
             th_item = row.find_element_by_tag_name("th")
             if(th_item):
@@ -281,16 +280,16 @@ class Scrape:
         # Get the individual game records from each round of a bracket/sub-bracket
         games = []
         if(len(rounds) < 1):
-            print ' rounds were empty...'
+            print(' rounds were empty...')
             return []
         
         for rd in rounds:
             # all children divs will be picked up
             winners = rd.find_elements_by_xpath(".//div//div[@class='winner']")
             losers = rd.find_elements_by_xpath(".//div//div[not(@class)]")
-            print len(winners), len(losers)
+            print(len(winners), len(losers))
             if(len(winners) != len(losers)):
-                print 'Error num losers != num winners for a round'
+                print('Error num losers != num winners for a round')
                 return []
             i = 0
             for winner in winners:
@@ -301,7 +300,7 @@ class Scrape:
                     t1_seed, t1_name, t1_score = self.parse_team_data_from_team_div(losers[i])
                     t2_seed, t2_name, t2_score = self.parse_team_data_from_team_div(winner) 
                 if(t1_seed < 0 or t2_seed < 0):
-                    print ' Negative seed...'
+                    print(' Negative seed...')
                     continue
                 gr = GameRecord(str(year))
                 gr.team_1_name = t1_name
@@ -320,7 +319,7 @@ class Scrape:
         seed_str = team_div.find_element_by_xpath(".//span").text   
         team_and_score = team_div.find_elements_by_tag_name("a")
         if(len(team_and_score) != 2):
-            print "Error parsing team for post season games"
+            print("Error parsing team for post season games")
             return False, False, False
         team_name = team_and_score[0].text
         team_score = self.getNum(team_and_score[1].text)
@@ -405,7 +404,7 @@ class Scrape:
         self.write_game_records_csv(total_game_records)
         self.write_post_season_game_records_csv(total_post_season_game_records)
 if __name__ == "__main__":
-    scrape = Scrape()
+    scrape = Scraper()
     scrape.run(2011, 2018)
         
 
