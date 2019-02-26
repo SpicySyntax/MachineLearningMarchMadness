@@ -5,11 +5,11 @@ Description:
 
 ## Components
   - Web Scraper:
-    - uses Python 2.7.14,
-    - use 'pip' to install `csv` and `selenium` for the web scraper.
+    - uses Python 3.7.0,
+    - use 'pip3' to install `csv` and `selenium` for the web scraper.
     - to gather the data from `https://www.sports-reference.com/cbb` run `python scraper.py`
       - (The scraped data is provided in the source)
-  - Notebook:
+  - Notebook (Python 3):
     - Download Jupyter notebooks through conda or pip (see https://test-jupyter.readthedocs.io/en/rtd-theme/install.html).
     - OR You can jupyter-notebooks via docker containers (see : https://hub.docker.com/r/jupyter/datascience-notebook/ for details)
       - If you don't have docker installed, install it (I used docker for windows)
