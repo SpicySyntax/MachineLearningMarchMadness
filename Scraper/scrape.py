@@ -405,7 +405,7 @@ class Scraper:
         self.write_post_season_game_records_csv(total_post_season_game_records)
 if __name__ == "__main__":
     scrape = Scraper()
-    scrape.run(2011, 2018)
+    scrape.run(2011, 2019)
         
 
 
