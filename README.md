@@ -133,14 +133,15 @@ Description:
     - Take in game locations and team locations to calculate travel distance as a feature for both teams
     - Remove outliers, or incorrect values (- when supposed to be +)
   - Look into using Tensor flow or Pytorch for using Neural networks 
-    - Normalize feature vectors
-    - Start with basic MLP with dropout and normalized inputs
+    - Normalize feature vectors (done)
+    - Start with basic MLP with dropout and normalized inputsn (done)
+    - Introduce Dropout
+    - Add validation splits and only save model when validation fails
+    - Augment the data set with regular season games + stats (create artificial rank using team statistics => train a model for this)
     - Look into LSTM implementation if time permits
     - Batch Normalization?
   - Improve method for prediction
     - Use Evolutionary method to optimize hyper-parameters (learning rate batch size)
     - Predict both team scores instead of outcome?
     - Boost low seed stats if they beat a high seed, reduce high seed stats if they have close game with lower seed
-    
   
-    
