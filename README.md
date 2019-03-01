@@ -16,6 +16,7 @@ Description:
         -	`Yearly`: SRS (Simple Rating System), SOS (Strength of Schedule)
         -Plan, gather team stats above for each team. Each of these will be used as the data points to decide wins for each round. The training will occur based off of game outcomes.
       - (The scraped data is provided in the source `./Scraper`)
+      - Note: Currently both solutions only train using post season game records
 
   - `Notebook (Python 3)`:
     - Download Jupyter notebooks through conda or pip (see https://test-jupyter.readthedocs.io/en/rtd-theme/install.html).
