@@ -4,12 +4,20 @@ Description:
   - Try to predict the NCAA tournament bracket. Scrape data from the web and used ML to predict the outcomes of games
 
 ## Components
-  - Web Scraper:
+  - `Web Scraper`:
     - uses Python 3.7.0,
     - use 'pip3' to install `csv` and `selenium` for the web scraper.
-    - to gather the data from `https://www.sports-reference.com/cbb` run `python scraper.py`
-      - (The scraped data is provided in the source)
-  - Notebook (Python 3):
+    - to gather the data from https://www.sports-reference.com/cbb run `python scraper.py`
+      - The scraper gathers regular season and post season game data and aggregate team statistics for the year range provided in scrape.py
+      - Team Stats gathered (Team and Opponent)
+        -	`Per Game`: FG (Field Goal), 2P (Two Point), 3P (Three Point), ORB (Offensive Rebounds), DRB (Defensive Rebounds), AST (Assists),
+            STL (Steals), BLK (Blocks), TOV (Turn Overs), PF (Personal Fouls), PTS (Points)
+        -	`Percentages`: FG (Field Goal), 2P (Two Point), 3P (Three Point), FT (Free-Throw), W/L (Win/Loss)
+        -	`Yearly`: SRS (Simple Rating System), SOS (Strength of Schedule)
+        -Plan, gather team stats above for each team. Each of these will be used as the data points to decide wins for each round. The training will occur based off of game outcomes.
+      - (The scraped data is provided in the source `./Scraper`)
+
+  - `Notebook (Python 3)`:
     - Download Jupyter notebooks through conda or pip (see https://test-jupyter.readthedocs.io/en/rtd-theme/install.html).
     - OR You can jupyter-notebooks via docker containers (see : https://hub.docker.com/r/jupyter/datascience-notebook/ for details)
       - If you don't have docker installed, install it (I used docker for windows)
@@ -21,7 +29,7 @@ Description:
       -manipulate which model you want to use to generate bracker by changing the model used in "evaluate_winner" function to one of the previous models used in the notebook.
       - If your python kernels keep dying increase the Memory allowed for docker containers in Docker > Settings
   
-  ## Results 
+  ## Results (Version 1 calculated using Linear Regression in March 2018)
   (Using regular season team statistics, matchup data from 2011-2017 post season games and Logistic Regression):
   - --- South  round  1 ---
   - Virginia 1  vs.  Maryland-Baltimore County 16 (team 1 won= True )
@@ -130,7 +138,7 @@ Description:
   - Improve the data
     - Further clean the data, remove correlated variables (see https://developers.google.com/machine-learning/crash-course/representation/cleaning-data)
     - Add some artificial features?
-    - Take in game locations and team locations to calculate travel distance as a feature for both teams
+    - Take in game locations and team locations to calculate travel distance as a feature for both teams (Consider adding home, away, and neutral to model)
     - Remove outliers, or incorrect values (- when supposed to be +)
     - Use Pytorch to train a Neural network (done)
     - Normalize feature vectors (done)
