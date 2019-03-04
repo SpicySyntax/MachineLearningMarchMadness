@@ -1,7 +1,7 @@
 # MachineLearningMarchMadness
 Predictive solution for March Madness bracket
 Description: 
-  - Try to predict the NCAA tournament bracket. Scrape data from the web and used ML to predict the outcomes of games
+  - Predict the NCAA tournament bracket using data scraped from the Web and Machine Learning algorithms.
 
 ## Components
   - `Web Scraper`:
