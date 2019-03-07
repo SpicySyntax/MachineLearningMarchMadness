@@ -30,7 +30,7 @@ Description:
       -manipulate which model you want to use to generate bracker by changing the model used in "evaluate_winner" function to one of the previous models used in the notebook.
       - If your python kernels keep dying increase the Memory allowed for docker containers in Docker > Settings
   
-  ## Results (Version 1 calculated using Linear Regression in March 2018)
+  ## Results (Version 1 calculated using Logistic Regression in March 2018)
   (Using regular season team statistics, matchup data from 2011-2017 post season games and Logistic Regression):
   - --- South  round  1 ---
   - Virginia 1  vs.  Maryland-Baltimore County 16 (team 1 won= True )
