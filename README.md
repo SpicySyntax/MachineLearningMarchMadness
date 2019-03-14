@@ -148,6 +148,7 @@ Description:
     - Add validation splits and only save model when validation fails (done)
     - Augment the data set with regular season games + stats (create artificial rank using team statistics => train a model for this)
     - Look into LSTM implementation if time permits
+    - Use last 5 game before tournament win/loss ratio as additional feature
   - Improve method for prediction
     - Use Evolutionary method to optimize hyper-parameters (learning rate batch size)
     - Predict both team scores instead of outcome?
