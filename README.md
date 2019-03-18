@@ -1,7 +1,7 @@
 # MachineLearningMarchMadness
 Predictive solution for March Madness bracket
 Description: 
-  - Try to predict the NCAA tournament bracket. Scrape data from the web and used ML to predict the outcomes of games
+  - Predict the NCAA tournament bracket using data scraped from the Web and Machine Learning algorithms.
 
 ## Components
   - `Web Scraper`:
@@ -30,7 +30,7 @@ Description:
       -manipulate which model you want to use to generate bracker by changing the model used in "evaluate_winner" function to one of the previous models used in the notebook.
       - If your python kernels keep dying increase the Memory allowed for docker containers in Docker > Settings
   
-  ## Results (Version 1 calculated using Linear Regression in March 2018)
+  ## Results (Version 1 calculated using Logistic Regression in March 2018)
   (Using regular season team statistics, matchup data from 2011-2017 post season games and Logistic Regression):
   - --- South  round  1 ---
   - Virginia 1  vs.  Maryland-Baltimore County 16 (team 1 won= True )
@@ -148,6 +148,7 @@ Description:
     - Add validation splits and only save model when validation fails (done)
     - Augment the data set with regular season games + stats (create artificial rank using team statistics => train a model for this)
     - Look into LSTM implementation if time permits
+    - Use last 5 game before tournament win/loss ratio as additional feature
   - Improve method for prediction
     - Use Evolutionary method to optimize hyper-parameters (learning rate batch size)
     - Predict both team scores instead of outcome?
