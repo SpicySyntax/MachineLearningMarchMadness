@@ -114,7 +114,7 @@ class Scraper:
         '''
             Scrapes a years worth of regular season data from sports-reference.com
         '''
-        # TODO: refactor to make cleaner
+        # TODO: clean up this code
         url = 'https://www.sports-reference.com/cbb/seasons/' + year + '-school-stats.html'
         browser = self.get_browser()
         browser.maximize_window() # Make sure all data is displayed for dynamic web page by maximizing
@@ -329,7 +329,7 @@ class Scraper:
         # Writes all of the given game records to csv (post season include seeds)
         if(len(game_records) == 0):
             return
-        outfile = open("./post_season_game_records.csv", "wb")
+        outfile = open("./post_season_game_records.csv", "w", newline='')
         writer = csv.writer(outfile)
         writer.writerow([
             "year",
@@ -346,7 +346,7 @@ class Scraper:
         # Writes all school records to csv
         if(len(school_records) == 0):
             return
-        outfile = open("./school_records.csv", "wb")
+        outfile = open("./school_records.csv", "w", newline='')
         writer = csv.writer(outfile)
         writer.writerow([
             "year", "team_name","fg_pg","ft_pg","three_pt_pg",
@@ -367,7 +367,7 @@ class Scraper:
         # Writes all regular season game records to csv
         if(len(game_records) == 0):
             return
-        outfile = open("./game_records.csv", "wb")
+        outfile = open("./game_records.csv", "w", newline='')
         writer = csv.writer(outfile)
         writer.writerow([
             "year",

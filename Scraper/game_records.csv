@@ -47065,6 +47065,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Abilene Christian,68,Incarnate Word,48,16-Feb
 2019,Abilene Christian,66,Southeastern Louisiana,75,23-Feb
 2019,Abilene Christian,73,Texas A&M-Corpus Christi,64,27-Feb
+2019,Abilene Christian,67,Central Arkansas,55,2-Mar
+2019,Abilene Christian,72,Stephen F. Austin,58,5-Mar
+2019,Abilene Christian,81,Incarnate Word,52,9-Mar
+2019,Abilene Christian,69,Southeastern Louisiana,66,15-Mar
+2019,Abilene Christian,77,New Orleans,60,16-Mar
 2019,Air Force,90,Johnson & Wales,65,6-Nov
 2019,Air Force,57,Texas State,67,9-Nov
 2019,Air Force,72,Maryland-Baltimore County,77,16-Nov
@@ -47092,6 +47097,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Air Force,62,Utah State,76,16-Feb
 2019,Air Force,64,Fresno State,61,20-Feb
 2019,Air Force,82,San Jose State,68,23-Feb
+2019,Air Force,80,Wyoming,72,2-Mar
+2019,Air Force,79,Nevada,90,5-Mar
+2019,Air Force,52,Boise State,80,9-Mar
+2019,Air Force,87,San Jose State,56,13-Mar
+2019,Air Force,50,Fresno State,76,14-Mar
 2019,Akron,70,Cedarville,50,6-Nov
 2019,Akron,98,Youngstown State,69,10-Nov
 2019,Akron,87,Chicago State,46,16-Nov
@@ -47120,6 +47130,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Akron,69,Bowling Green State,73,19-Feb
 2019,Akron,70,Miami (OH),58,23-Feb
 2019,Akron,64,Buffalo,77,26-Feb
+2019,Akron,49,Ohio,73,2-Mar
+2019,Akron,91,Bowling Green State,67,5-Mar
+2019,Akron,65,Kent State,68,8-Mar
+2019,Akron,80,Miami (OH),51,11-Mar
+2019,Akron,46,Buffalo,82,14-Mar
 2019,Alabama A&M,63,South Florida,80,6-Nov
 2019,Alabama A&M,54,Houston,101,10-Nov
 2019,Alabama A&M,59,Rice,73,12-Nov
@@ -47148,6 +47163,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Alabama A&M,62,Alabama State,68,16-Feb
 2019,Alabama A&M,49,Southern,59,23-Feb
 2019,Alabama A&M,55,Alcorn State,61,25-Feb
+2019,Alabama A&M,65,Prairie View,72,2-Mar
+2019,Alabama A&M,61,Texas Southern,66,4-Mar
+2019,Alabama A&M,47,Jackson State,66,7-Mar
+2019,Alabama A&M,58,Grambling,66,9-Mar
 2019,Alabama-Birmingham,75,Mercer,67,6-Nov
 2019,Alabama-Birmingham,75,New Orleans,68,14-Nov
 2019,Alabama-Birmingham,77,West Alabama,47,18-Nov
@@ -47175,6 +47194,12 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Alabama-Birmingham,77,Marshall,68,14-Feb
 2019,Alabama-Birmingham,68,Western Kentucky,60,16-Feb
 2019,Alabama-Birmingham,76,Southern Mississippi,72,23-Feb
+2019,Alabama-Birmingham,67,Western Kentucky,73,28-Feb
+2019,Alabama-Birmingham,70,Texas-San Antonio,76,3-Mar
+2019,Alabama-Birmingham,64,Old Dominion,50,9-Mar
+2019,Alabama-Birmingham,70,Middle Tennessee,61,13-Mar
+2019,Alabama-Birmingham,85,Texas-San Antonio,76,14-Mar
+2019,Alabama-Birmingham,59,Old Dominion,61,15-Mar
 2019,Alabama State,53,Iowa State,79,6-Nov
 2019,Alabama State,61,South Dakota State,78,8-Nov
 2019,Alabama State,97,LaGrange,63,11-Nov
@@ -47197,6 +47222,12 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Alabama State,82,Mississippi Valley State,59,11-Feb
 2019,Alabama State,69,Alcorn State,74,23-Feb
 2019,Alabama State,60,Southern,57,25-Feb
+2019,Alabama State,68,Texas Southern,78,2-Mar
+2019,Alabama State,69,Prairie View,96,4-Mar
+2019,Alabama State,66,Grambling,93,7-Mar
+2019,Alabama State,70,Jackson State,82,9-Mar
+2019,Alabama State,58,Jackson State,49,12-Mar
+2019,Alabama State,66,Texas Southern,80,15-Mar
 2019,Alabama,82,Southern,62,6-Nov
 2019,Alabama,81,Appalachian State,73,11-Nov
 2019,Alabama,52,Northeastern,68,15-Nov
@@ -47225,6 +47256,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Alabama,56,Texas A&M,65,19-Feb
 2019,Alabama,68,Vanderbilt,61,23-Feb
 2019,Alabama,68,South Carolina,62,26-Feb
+2019,Alabama,69,Louisiana State,74,2-Mar
+2019,Alabama,60,Auburn,66,5-Mar
+2019,Alabama,70,Arkansas,82,9-Mar
+2019,Alabama,62,Mississippi,57,14-Mar
+2019,Alabama,55,Kentucky,73,15-Mar
 2019,Albany (NY),68,Iona,72,9-Nov
 2019,Albany (NY),61,Boston University,71,14-Nov
 2019,Albany (NY),75,Canisius,66,17-Nov
@@ -47254,6 +47290,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Albany (NY),74,Stony Brook,70,21-Feb
 2019,Albany (NY),84,Maryland-Baltimore County,75,23-Feb
 2019,Albany (NY),58,New Hampshire,62,27-Feb
+2019,Albany (NY),80,Hartford,82,2-Mar
+2019,Albany (NY),73,Binghamton,58,5-Mar
+2019,Albany (NY),54,Maryland-Baltimore County,62,9-Mar
 2019,Alcorn State,56,Tulsa,73,6-Nov
 2019,Alcorn State,79,Blue Mountain College,55,9-Nov
 2019,Alcorn State,54,Vanderbilt,79,16-Nov
@@ -47276,6 +47315,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Alcorn State,53,Grambling,65,11-Feb
 2019,Alcorn State,68,Mississippi Valley State,76,16-Feb
 2019,Alcorn State,62,Arkansas-Pine Bluff,73,18-Feb
+2019,Alcorn State,46,Southern,61,2-Mar
+2019,Alcorn State,72,Texas Southern,99,7-Mar
+2019,Alcorn State,64,Prairie View,98,9-Mar
+2019,Alcorn State,66,Prairie View,86,12-Mar
 2019,American,78,George Mason,75,9-Nov
 2019,American,51,Northwestern,63,12-Nov
 2019,American,68,New Hampshire,44,16-Nov
@@ -47304,6 +47347,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,American,68,Lafayette,70,20-Feb
 2019,American,77,Army,66,24-Feb
 2019,American,66,Lehigh,80,27-Feb
+2019,American,86,Holy Cross,66,2-Mar
+2019,American,56,Navy,60,7-Mar
 2019,Appalachian State,125,Mars Hill,62,6-Nov
 2019,Appalachian State,70,Purdue,92,15-Nov
 2019,Appalachian State,76,Wichita State,82,16-Nov
@@ -47330,6 +47375,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Appalachian State,88,Coastal Carolina,79,16-Feb
 2019,Appalachian State,75,Georgia State,80,21-Feb
 2019,Appalachian State,69,Georgia Southern,92,23-Feb
+2019,Appalachian State,75,Louisiana-Monroe,81,28-Feb
+2019,Appalachian State,90,Louisiana,80,3-Mar
+2019,Appalachian State,72,Troy,64,7-Mar
+2019,Appalachian State,71,South Alabama,78,9-Mar
+2019,Appalachian State,80,Louisiana-Monroe,89,12-Mar
 2019,Arizona State,102,Cal State Fullerton,94,6-Nov
 2019,Arizona State,80,McNeese State,52,9-Nov
 2019,Arizona State,90,Long Beach State,58,12-Nov
@@ -47357,6 +47407,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Arizona State,98,Utah,87,16-Feb
 2019,Arizona State,80,Stanford,62,20-Feb
 2019,Arizona State,69,University of California,59,24-Feb
+2019,Arizona State,51,Oregon,79,28-Feb
+2019,Arizona State,74,Oregon State,71,3-Mar
+2019,Arizona State,72,Arizona,64,9-Mar
+2019,Arizona State,83,UCLA,72,14-Mar
+2019,Arizona State,75,Oregon,79,15-Mar
 2019,Arizona,90,Houston Baptist,60,7-Nov
 2019,Arizona,82,Cal Poly,61,11-Nov
 2019,Arizona,79,Texas-El Paso,46,14-Nov
@@ -47383,6 +47438,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Arizona,60,Colorado,67,17-Feb
 2019,Arizona,76,University of California,51,21-Feb
 2019,Arizona,70,Stanford,54,24-Feb
+2019,Arizona,74,Oregon State,72,28-Feb
+2019,Arizona,47,Oregon,73,2-Mar
+2019,Arizona,65,Southern California,78,13-Mar
 2019,Little Rock,101,Southeastern Oklahoma State,92,8-Nov
 2019,Little Rock,83,Tennessee State,67,13-Nov
 2019,Little Rock,59,Nevada,87,16-Nov
@@ -47409,6 +47467,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Little Rock,56,Texas-Arlington,52,14-Feb
 2019,Little Rock,60,Texas State,67,16-Feb
 2019,Little Rock,65,Arkansas State,72,23-Feb
+2019,Little Rock,66,Georgia Southern,81,28-Feb
+2019,Little Rock,70,Georgia State,83,2-Mar
+2019,Little Rock,72,Louisiana,77,7-Mar
+2019,Little Rock,62,Louisiana-Monroe,79,9-Mar
 2019,Arkansas-Pine Bluff,60,San Diego State,76,6-Nov
 2019,Arkansas-Pine Bluff,67,Colorado State,92,10-Nov
 2019,Arkansas-Pine Bluff,48,Southern Illinois,78,17-Nov
@@ -47430,6 +47492,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Arkansas-Pine Bluff,61,Southern,45,16-Feb
 2019,Arkansas-Pine Bluff,74,Texas Southern,94,23-Feb
 2019,Arkansas-Pine Bluff,44,Prairie View,48,25-Feb
+2019,Arkansas-Pine Bluff,70,Grambling,66,2-Mar
+2019,Arkansas-Pine Bluff,56,Jackson State,57,4-Mar
+2019,Arkansas-Pine Bluff,91,Mississippi Valley State,57,9-Mar
+2019,Arkansas-Pine Bluff,52,Grambling,59,12-Mar
 2019,Arkansas State,89,Missouri Baptist University,54,12-Nov
 2019,Arkansas State,72,Grand Canyon,96,16-Nov
 2019,Arkansas State,64,North Carolina-Wilmington,78,23-Nov
@@ -47453,6 +47519,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Arkansas State,79,Troy,84,9-Feb
 2019,Arkansas State,74,Texas State,84,14-Feb
 2019,Arkansas State,83,Texas-Arlington,79,16-Feb
+2019,Arkansas State,60,Georgia State,76,28-Feb
+2019,Arkansas State,70,Georgia Southern,81,2-Mar
+2019,Arkansas State,73,Louisiana-Monroe,72,7-Mar
+2019,Arkansas State,87,Louisiana,90,9-Mar
+2019,Arkansas State,67,South Alabama,75,12-Mar
 2019,Arkansas,71,Texas,73,9-Nov
 2019,Arkansas,81,UC-Davis,58,12-Nov
 2019,Arkansas,73,Indiana,72,18-Nov
@@ -47481,6 +47552,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Arkansas,56,Auburn,79,20-Feb
 2019,Arkansas,80,Texas A&M,87,23-Feb
 2019,Arkansas,66,Kentucky,70,26-Feb
+2019,Arkansas,74,Mississippi,73,2-Mar
+2019,Arkansas,84,Vanderbilt,48,6-Mar
+2019,Arkansas,50,Florida,66,14-Mar
 2019,Army,73,Marist,69,6-Nov
 2019,Army,72,Duke,94,11-Nov
 2019,Army,78,Sacred Heart,79,16-Nov
@@ -47508,6 +47582,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Army,68,Navy,79,16-Feb
 2019,Army,81,Lehigh,91,20-Feb
 2019,Army,79,Loyola (MD),69,27-Feb
+2019,Army,61,Bucknell,62,2-Mar
+2019,Army,70,Lehigh,75,7-Mar
 2019,Auburn,101,South Alabama,58,6-Nov
 2019,Auburn,88,Washington,66,9-Nov
 2019,Auburn,103,Mississippi College,52,14-Nov
@@ -47532,6 +47608,12 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Auburn,64,Vanderbilt,53,16-Feb
 2019,Auburn,53,Kentucky,80,23-Feb
 2019,Auburn,78,Georgia,75,27-Feb
+2019,Auburn,80,Mississippi State,75,2-Mar
+2019,Auburn,84,Tennessee,80,9-Mar
+2019,Auburn,81,Missouri,71,14-Mar
+2019,Auburn,73,South Carolina,64,15-Mar
+2019,Auburn,65,Florida,62,16-Mar
+2019,Auburn,84,Tennessee,64,17-Mar
 2019,Austin Peay,114,Oakland City,53,6-Nov
 2019,Austin Peay,67,Mississippi State,95,9-Nov
 2019,Austin Peay,70,South Florida,74,12-Nov
@@ -47559,6 +47641,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Austin Peay,73,Morehead State,70,16-Feb
 2019,Austin Peay,83,Southeast Missouri State,70,21-Feb
 2019,Austin Peay,92,Tennessee-Martin,78,23-Feb
+2019,Austin Peay,80,Eastern Kentucky,82,28-Feb
+2019,Austin Peay,83,Murray State,94,2-Mar
+2019,Austin Peay,95,Morehead State,81,7-Mar
+2019,Austin Peay,67,Belmont,83,8-Mar
 2019,Ball State,86,Indiana State,69,6-Nov
 2019,Ball State,75,Purdue,84,10-Nov
 2019,Ball State,64,Virginia Tech,73,15-Nov
@@ -47584,6 +47670,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Ball State,66,Miami (OH),69,19-Feb
 2019,Ball State,57,Central Michigan,64,23-Feb
 2019,Ball State,72,Toledo,80,26-Feb
+2019,Ball State,60,Western Michigan,58,2-Mar
+2019,Ball State,61,Eastern Michigan,68,5-Mar
+2019,Ball State,57,Northern Illinois,64,8-Mar
+2019,Ball State,61,Eastern Michigan,43,11-Mar
+2019,Ball State,86,Bowling Green State,99,14-Mar
 2019,Baylor,69,Texas Southern,72,6-Nov
 2019,Baylor,80,Southern,53,10-Nov
 2019,Baylor,91,Prairie View,80,12-Nov
@@ -47610,6 +47701,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Baylor,73,Iowa State,69,19-Feb
 2019,Baylor,82,West Virginia,75,23-Feb
 2019,Baylor,84,Texas,83,27-Feb
+2019,Baylor,60,Kansas State,66,2-Mar
+2019,Baylor,64,Oklahoma State,67,6-Mar
+2019,Baylor,70,Kansas,78,9-Mar
+2019,Baylor,66,Iowa State,83,14-Mar
 2019,Belmont,100,Illinois State,89,10-Nov
 2019,Belmont,92,Middle Tennessee,73,12-Nov
 2019,Belmont,87,Lipscomb,83,15-Nov
@@ -47636,6 +47731,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Belmont,93,Tennessee Tech,65,16-Feb
 2019,Belmont,99,Eastern Illinois,58,21-Feb
 2019,Belmont,97,Southern Illinois-Edwardsville,75,23-Feb
+2019,Belmont,112,Tennessee-Martin,67,28-Feb
+2019,Belmont,84,Southeast Missouri State,66,2-Mar
+2019,Belmont,65,Murray State,77,9-Mar
 2019,Bethune-Cookman,58,DePaul,80,7-Nov
 2019,Bethune-Cookman,59,Marquette,92,10-Nov
 2019,Bethune-Cookman,104,Trinity Baptist,44,13-Nov
@@ -47664,6 +47762,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Bethune-Cookman,98,South Carolina State,73,16-Feb
 2019,Bethune-Cookman,70,Savannah State,79,18-Feb
 2019,Bethune-Cookman,67,Florida A&M,54,23-Feb
+2019,Bethune-Cookman,98,South Carolina State,95,2-Mar
+2019,Bethune-Cookman,56,Florida A&M,64,7-Mar
+2019,Bethune-Cookman,71,Howard,80,14-Mar
 2019,Binghamton,75,Cornell,86,6-Nov
 2019,Binghamton,57,NJIT,74,9-Nov
 2019,Binghamton,107,Misericordia,64,12-Nov
@@ -47691,6 +47792,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Binghamton,81,Massachusetts-Lowell,66,21-Feb
 2019,Binghamton,63,Vermont,69,23-Feb
 2019,Binghamton,76,Hartford,96,27-Feb
+2019,Binghamton,83,Maine,60,2-Mar
+2019,Binghamton,78,Stony Brook,72,9-Mar
+2019,Binghamton,51,Vermont,84,12-Mar
 2019,Boise State,70,Idaho State,72,10-Nov
 2019,Boise State,70,Jackson State,53,16-Nov
 2019,Boise State,82,Creighton,94,19-Nov
@@ -47717,6 +47821,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Boise State,65,San Diego State,71,16-Feb
 2019,Boise State,71,Utah State,78,23-Feb
 2019,Boise State,62,Colorado State,76,27-Feb
+2019,Boise State,81,Nevada-Las Vegas,85,2-Mar
+2019,Boise State,72,New Mexico,73,6-Mar
+2019,Boise State,66,Colorado State,57,13-Mar
+2019,Boise State,69,Nevada,77,14-Mar
 2019,Boston College,73,Milwaukee,53,6-Nov
 2019,Boston College,74,St. Francis (NY),69,11-Nov
 2019,Boston College,69,IUPUI,76,14-Nov
@@ -47744,6 +47852,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Boston College,80,North Carolina State,89,20-Feb
 2019,Boston College,66,Clemson,76,23-Feb
 2019,Boston College,66,Louisville,59,27-Feb
+2019,Boston College,78,Georgia Tech,81,3-Mar
+2019,Boston College,66,North Carolina,79,5-Mar
+2019,Boston College,47,North Carolina State,73,9-Mar
+2019,Boston College,70,Pittsburgh,80,12-Mar
 2019,Boston University,77,Northeastern,74,6-Nov
 2019,Boston University,72,Vermont,78,9-Nov
 2019,Boston University,94,Emerson,57,11-Nov
@@ -47768,6 +47880,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Boston University,70,Holy Cross,60,18-Feb
 2019,Boston University,72,Loyola (MD),65,23-Feb
 2019,Boston University,84,Lafayette,82,27-Feb
+2019,Boston University,74,Navy,79,2-Mar
+2019,Boston University,71,Loyola (MD),63,5-Mar
+2019,Boston University,69,Colgate,81,7-Mar
 2019,Bowling Green State,91,Tiffin,52,6-Nov
 2019,Bowling Green State,80,St. John's (NY),84,9-Nov
 2019,Bowling Green State,61,Virginia Commonwealth,72,12-Nov
@@ -47794,6 +47909,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Bowling Green State,87,Northern Illinois,67,16-Feb
 2019,Bowling Green State,87,Ohio,92,22-Feb
 2019,Bowling Green State,69,Miami (OH),82,26-Feb
+2019,Bowling Green State,77,Kent State,72,1-Mar
+2019,Bowling Green State,73,Buffalo,84,8-Mar
+2019,Bowling Green State,71,Northern Illinois,67,15-Mar
+2019,Bowling Green State,73,Buffalo,87,16-Mar
 2019,Bradley,74,Wisconsin-Parkside,58,7-Nov
 2019,Bradley,68,Southeast Missouri State,57,10-Nov
 2019,Bradley,74,Jacksonville State,65,14-Nov
@@ -47823,6 +47942,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Bradley,68,Drake,77,19-Feb
 2019,Bradley,63,Evansville,61,23-Feb
 2019,Bradley,67,Valparaiso,42,27-Feb
+2019,Bradley,68,Loyola (IL),81,2-Mar
+2019,Bradley,61,Missouri State,58,8-Mar
+2019,Bradley,53,Loyola (IL),51,9-Mar
+2019,Bradley,57,Northern Iowa,54,10-Mar
 2019,Brigham Young,70,Nevada,86,6-Nov
 2019,Brigham Young,75,Utah Valley,65,9-Nov
 2019,Brigham Young,82,Northwestern State,57,13-Nov
@@ -47852,6 +47975,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Brigham Young,70,Loyola Marymount,62,16-Feb
 2019,Brigham Young,71,San Francisco,77,21-Feb
 2019,Brigham Young,68,Gonzaga,102,23-Feb
+2019,Brigham Young,87,San Diego,73,2-Mar
+2019,Brigham Young,57,San Diego,80,9-Mar
 2019,Brown,81,Long Island University,83,9-Nov
 2019,Brown,60,NJIT,63,11-Nov
 2019,Brown,82,Massachusetts-Lowell,74,16-Nov
@@ -47877,6 +48002,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Brown,65,Columbia,63,16-Feb
 2019,Brown,88,Harvard,79,22-Feb
 2019,Brown,68,Dartmouth,65,23-Feb
+2019,Brown,77,Columbia,80,1-Mar
+2019,Brown,75,Cornell,51,2-Mar
+2019,Brown,67,Princeton,63,8-Mar
+2019,Brown,51,Pennsylvania,58,9-Mar
 2019,Bryant,63,Rhode Island,97,6-Nov
 2019,Bryant,59,Seattle,82,11-Nov
 2019,Bryant,71,Saint Peter's,63,14-Nov
@@ -47903,6 +48032,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Bryant,84,Fairleigh Dickinson,97,16-Feb
 2019,Bryant,67,Wagner,65,21-Feb
 2019,Bryant,81,Mount St. Mary's,58,23-Feb
+2019,Bryant,66,St. Francis (NY),74,28-Feb
+2019,Bryant,65,Long Island University,81,2-Mar
+2019,Bryant,63,Saint Francis (PA),67,6-Mar
 2019,Bucknell,88,St. Bonaventure,85,7-Nov
 2019,Bucknell,58,Fairfield,60,10-Nov
 2019,Bucknell,73,Canisius,82,13-Nov
@@ -47927,6 +48059,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Bucknell,64,Colgate,75,19-Feb
 2019,Bucknell,118,Lafayette,76,24-Feb
 2019,Bucknell,53,Navy,64,27-Feb
+2019,Bucknell,77,Holy Cross,65,7-Mar
+2019,Bucknell,97,Lehigh,75,10-Mar
+2019,Bucknell,80,Colgate,94,13-Mar
 2019,Buffalo,82,Saint Francis (PA),67,6-Nov
 2019,Buffalo,99,West Virginia,94,9-Nov
 2019,Buffalo,62,Southern Illinois,53,12-Nov
@@ -47951,6 +48086,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Buffalo,88,Toledo,82,15-Feb
 2019,Buffalo,114,Ohio,67,19-Feb
 2019,Buffalo,80,Kent State,57,22-Feb
+2019,Buffalo,77,Miami (OH),69,1-Mar
+2019,Buffalo,82,Ohio,79,5-Mar
+2019,Buffalo,85,Central Michigan,81,15-Mar
 2019,Butler,90,Miami (OH),68,10-Nov
 2019,Butler,84,Detroit Mercy,63,12-Nov
 2019,Butler,83,Mississippi,76,16-Nov
@@ -47978,6 +48116,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Butler,91,DePaul,78,16-Feb
 2019,Butler,69,Marquette,79,20-Feb
 2019,Butler,67,Providence,73,26-Feb
+2019,Butler,54,Villanova,75,2-Mar
+2019,Butler,71,Xavier,66,5-Mar
+2019,Butler,70,Providence,83,9-Mar
+2019,Butler,57,Providence,80,13-Mar
 2019,Cal Poly,82,Menlo,75,7-Nov
 2019,Cal Poly,70,Washington State,84,19-Nov
 2019,Cal Poly,42,Texas State,54,21-Nov
@@ -48001,6 +48143,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Cal Poly,54,Hawaii,75,14-Feb
 2019,Cal Poly,47,UC-Irvine,74,21-Feb
 2019,Cal Poly,88,Hawaii,80,23-Feb
+2019,Cal Poly,75,Cal State Fullerton,86,28-Feb
+2019,Cal Poly,85,Long Beach State,94,2-Mar
+2019,Cal Poly,72,UC-Irvine,110,7-Mar
+2019,Cal Poly,82,UC-Santa Barbara,92,9-Mar
 2019,Cal State Bakersfield,61,Texas Christian,66,7-Nov
 2019,Cal State Bakersfield,111,Antelope Valley,75,9-Nov
 2019,Cal State Bakersfield,55,Central Michigan,67,15-Nov
@@ -48027,6 +48173,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Cal State Bakersfield,75,Chicago State,62,14-Feb
 2019,Cal State Bakersfield,67,Missouri-Kansas City,75,16-Feb
 2019,Cal State Bakersfield,58,California Baptist,72,23-Feb
+2019,Cal State Bakersfield,69,Grand Canyon,73,2-Mar
+2019,Cal State Bakersfield,57,Seattle,63,7-Mar
+2019,Cal State Bakersfield,61,Utah Valley,76,9-Mar
+2019,Cal State Bakersfield,70,Texas-Rio Grande Valley,85,14-Mar
 2019,Cal State Fullerton,106,West Coast Baptist,53,10-Nov
 2019,Cal State Fullerton,52,Central Florida,68,15-Nov
 2019,Cal State Fullerton,59,Wake Forest,66,16-Nov
@@ -48052,6 +48202,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Cal State Fullerton,78,Cal State Northridge,71,16-Feb
 2019,Cal State Fullerton,62,UC-Davis,58,21-Feb
 2019,Cal State Fullerton,67,UC-Santa Barbara,82,23-Feb
+2019,Cal State Fullerton,59,UC-Davis,66,2-Mar
+2019,Cal State Fullerton,59,Hawaii,71,9-Mar
+2019,Cal State Fullerton,75,UC-Davis,71,14-Mar
+2019,Cal State Fullerton,64,UC-Santa Barbara,58,15-Mar
+2019,Cal State Fullerton,64,UC-Irvine,92,16-Mar
 2019,Cal State Northridge,84,New Mexico,87,6-Nov
 2019,Cal State Northridge,64,Loyola Marymount,79,13-Nov
 2019,Cal State Northridge,77,Portland,80,17-Nov
@@ -48077,6 +48232,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Cal State Northridge,78,Long Beach State,80,20-Feb
 2019,Cal State Northridge,81,UC-Davis,76,23-Feb
 2019,Cal State Northridge,70,UC-Riverside,68,27-Feb
+2019,Cal State Northridge,84,Hawaii,73,3-Mar
+2019,Cal State Northridge,74,UC-Santa Barbara,76,7-Mar
+2019,Cal State Northridge,74,UC-Irvine,86,9-Mar
+2019,Cal State Northridge,68,UC-Santa Barbara,71,14-Mar
 2019,California Baptist,87,San Diego Christian,71,9-Nov
 2019,California Baptist,70,Oral Roberts,69,13-Nov
 2019,California Baptist,79,Tulsa,82,16-Nov
@@ -48100,6 +48259,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,California Baptist,70,Missouri-Kansas City,60,9-Feb
 2019,California Baptist,115,Bethesda University (CA),65,12-Feb
 2019,California Baptist,58,Grand Canyon,91,21-Feb
+2019,California Baptist,65,Seattle,67,28-Feb
+2019,California Baptist,63,Utah Valley,64,2-Mar
+2019,California Baptist,82,Texas-Rio Grande Valley,79,7-Mar
+2019,California Baptist,63,New Mexico State,75,9-Mar
 2019,UC-Davis,42,San Francisco,76,6-Nov
 2019,UC-Davis,57,San Diego,76,9-Nov
 2019,UC-Davis,57,Texas A&M-Corpus Christi,54,17-Nov
@@ -48119,6 +48282,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,UC-Davis,84,UC-Riverside,71,2-Feb
 2019,UC-Davis,61,UC-Santa Barbara,57,9-Feb
 2019,UC-Davis,77,Long Beach State,73,16-Feb
+2019,UC-Davis,48,UC-Irvine,64,28-Feb
+2019,UC-Davis,69,Hawaii,76,7-Mar
+2019,UC-Davis,70,UC-Riverside,71,9-Mar
 2019,UC-Irvine,86,Idaho,68,6-Nov
 2019,UC-Irvine,74,Texas A&M,73,9-Nov
 2019,UC-Irvine,87,Life Pacific,53,12-Nov
@@ -48140,6 +48306,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,UC-Irvine,82,Long Beach State,80,2-Feb
 2019,UC-Irvine,67,Hawaii,56,9-Feb
 2019,UC-Irvine,83,UC-Santa Barbara,70,16-Feb
+2019,UC-Irvine,68,UC-Riverside,47,2-Mar
+2019,UC-Irvine,63,UC-Riverside,44,14-Mar
+2019,UC-Irvine,75,Long Beach State,67,15-Mar
 2019,UC-Riverside,59,Oregon State,72,6-Nov
 2019,UC-Riverside,64,Portland State,71,10-Nov
 2019,UC-Riverside,51,Nevada-Las Vegas,72,13-Nov
@@ -48158,6 +48327,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,UC-Riverside,71,UC-Santa Barbara,57,14-Feb
 2019,UC-Riverside,64,Hawaii,87,17-Feb
 2019,UC-Riverside,67,Long Beach State,71,23-Feb
+2019,UC-Riverside,57,Long Beach State,70,6-Mar
 2019,UC-Santa Barbara,76,Wyoming,66,6-Nov
 2019,UC-Santa Barbara,63,North Dakota State,82,11-Nov
 2019,UC-Santa Barbara,88,Cal Lutheran,32,13-Nov
@@ -48174,6 +48344,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,UC-Santa Barbara,82,Long Beach State,71,26-Jan
 2019,UC-Santa Barbara,75,Hawaii,54,2-Feb
 2019,UC-Santa Barbara,79,Hawaii,61,21-Feb
+2019,UC-Santa Barbara,64,Long Beach State,69,28-Feb
 2019,University of California,59,Yale,76,9-Nov
 2019,University of California,80,Hampton,66,13-Nov
 2019,University of California,79,St. John's (NY),82,19-Nov
@@ -48196,6 +48367,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,University of California,71,Oregon State,79,9-Feb
 2019,University of California,67,UCLA,75,13-Feb
 2019,University of California,66,Southern California,89,16-Feb
+2019,University of California,76,Washington,73,28-Feb
+2019,University of California,76,Washington State,69,2-Mar
+2019,University of California,64,Stanford,59,7-Mar
+2019,University of California,51,Colorado,56,13-Mar
 2019,Campbell,97,North Carolina-Wilmington,93,6-Nov
 2019,Campbell,75,Coastal Carolina,85,9-Nov
 2019,Campbell,73,Ohio,81,12-Nov
@@ -48221,6 +48396,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Campbell,61,High Point,48,21-Feb
 2019,Campbell,74,Longwood,72,23-Feb
 2019,Campbell,85,South Carolina Upstate,73,27-Feb
+2019,Campbell,64,Radford,62,2-Mar
+2019,Campbell,86,Hampton,77,7-Mar
+2019,Campbell,74,Gardner-Webb,79,8-Mar
 2019,Canisius,61,Florida State,93,19-Nov
 2019,Canisius,56,Villanova,83,22-Nov
 2019,Canisius,63,Memphis,71,23-Nov
@@ -48245,6 +48423,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Canisius,60,Monmouth,59,22-Feb
 2019,Canisius,80,Iona,87,24-Feb
 2019,Canisius,84,Niagara,86,27-Feb
+2019,Canisius,68,Siena,62,1-Mar
+2019,Canisius,69,Manhattan,65,8-Mar
+2019,Canisius,59,Monmouth,73,10-Mar
 2019,Central Arkansas,55,Missouri,68,6-Nov
 2019,Central Arkansas,99,Hendrix,73,8-Nov
 2019,Central Arkansas,93,University of the Ozarks,52,12-Nov
@@ -48270,6 +48451,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Central Arkansas,75,McNeese State,83,20-Feb
 2019,Central Arkansas,57,Nicholls State,100,23-Feb
 2019,Central Arkansas,92,Stephen F. Austin,74,27-Feb
+2019,Central Arkansas,91,Sam Houston State,87,6-Mar
+2019,Central Arkansas,70,Northwestern State,63,9-Mar
+2019,Central Arkansas,73,Texas A&M-Corpus Christi,53,13-Mar
+2019,Central Arkansas,65,Southeastern Louisiana,79,14-Mar
 2019,Central Connecticut State,75,Hartford,68,6-Nov
 2019,Central Connecticut State,78,Georgetown,85,10-Nov
 2019,Central Connecticut State,86,Massachusetts-Lowell,74,13-Nov
@@ -48296,6 +48481,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Central Connecticut State,79,St. Francis (NY),90,16-Feb
 2019,Central Connecticut State,66,Mount St. Mary's,79,21-Feb
 2019,Central Connecticut State,66,Sacred Heart,80,23-Feb
+2019,Central Connecticut State,55,Long Island University,84,28-Feb
+2019,Central Connecticut State,58,Fairleigh Dickinson,70,2-Mar
 2019,Central Florida,84,Rider,70,6-Nov
 2019,Central Florida,79,Florida Atlantic,80,11-Nov
 2019,Central Florida,77,Saint Joseph's,57,16-Nov
@@ -48321,6 +48508,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Central Florida,55,Cincinnati,60,21-Feb
 2019,Central Florida,95,Southern Methodist,48,24-Feb
 2019,Central Florida,75,South Florida,63,27-Feb
+2019,Central Florida,69,Houston,64,2-Mar
+2019,Central Florida,58,Cincinnati,55,7-Mar
+2019,Central Florida,62,Temple,67,9-Mar
+2019,Central Florida,55,Memphis,79,15-Mar
 2019,Central Michigan,98,Concordia (MI),67,6-Nov
 2019,Central Michigan,101,Chicago State,60,9-Nov
 2019,Central Michigan,76,Weber State,78,16-Nov
@@ -48341,6 +48532,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Central Michigan,87,Ohio,80,16-Feb
 2019,Central Michigan,84,Kent State,74,19-Feb
 2019,Central Michigan,77,Eastern Michigan,66,26-Feb
+2019,Central Michigan,68,Toledo,80,2-Mar
+2019,Central Michigan,86,Northern Illinois,89,5-Mar
+2019,Central Michigan,82,Western Michigan,75,8-Mar
+2019,Central Michigan,81,Western Michigan,67,11-Mar
+2019,Central Michigan,89,Kent State,81,14-Mar
 2019,Charleston Southern,100,Columbia International,68,6-Nov
 2019,Charleston Southern,46,Florida,76,9-Nov
 2019,Charleston Southern,89,South Carolina State,72,13-Nov
@@ -48368,6 +48564,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Charleston Southern,92,South Carolina Upstate,60,21-Feb
 2019,Charleston Southern,78,Winthrop,80,23-Feb
 2019,Charleston Southern,77,North Carolina-Asheville,48,27-Feb
+2019,Charleston Southern,72,Presbyterian,65,2-Mar
+2019,Charleston Southern,71,South Carolina Upstate,52,5-Mar
+2019,Charleston Southern,77,Winthrop,63,7-Mar
+2019,Charleston Southern,54,Radford,63,8-Mar
 2019,Charlotte,69,Chattanooga,80,6-Nov
 2019,Charlotte,66,Oklahoma State,64,10-Nov
 2019,Charlotte,59,James Madison,64,16-Nov
@@ -48393,6 +48593,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Charlotte,53,Middle Tennessee,71,7-Feb
 2019,Charlotte,60,Old Dominion,73,16-Feb
 2019,Charlotte,67,Middle Tennessee,86,23-Feb
+2019,Charlotte,68,Texas-El Paso,58,3-Mar
+2019,Charlotte,70,Rice,79,6-Mar
+2019,Charlotte,78,Rice,70,9-Mar
 2019,Chattanooga,78,Eastern Kentucky,81,10-Nov
 2019,Chattanooga,92,Cumberland,61,13-Nov
 2019,Chattanooga,54,South Alabama,73,16-Nov
@@ -48421,6 +48624,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Chattanooga,76,Samford,80,16-Feb
 2019,Chattanooga,68,Citadel,65,21-Feb
 2019,Chattanooga,69,Mercer,74,23-Feb
+2019,Chattanooga,54,Wofford,80,28-Feb
+2019,Chattanooga,50,Furman,71,2-Mar
+2019,Chattanooga,64,East Tennessee State,68,9-Mar
 2019,Chicago State,55,Indiana,104,6-Nov
 2019,Chicago State,62,Notre Dame,89,8-Nov
 2019,Chicago State,71,Illinois State,75,13-Nov
@@ -48442,6 +48648,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Chicago State,59,Grand Canyon,90,16-Feb
 2019,Chicago State,71,Utah Valley,103,21-Feb
 2019,Chicago State,57,Seattle,77,23-Feb
+2019,Chicago State,77,Texas-Rio Grande Valley,82,28-Feb
+2019,Chicago State,58,New Mexico State,92,2-Mar
+2019,Chicago State,61,Missouri-Kansas City,76,9-Mar
+2019,Chicago State,49,New Mexico State,86,14-Mar
 2019,Cincinnati,56,Ohio State,64,7-Nov
 2019,Cincinnati,73,North Carolina Central,51,13-Nov
 2019,Cincinnati,74,Milwaukee,63,16-Nov
@@ -48468,6 +48678,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Cincinnati,72,Wichita State,62,17-Feb
 2019,Cincinnati,64,Connecticut,60,24-Feb
 2019,Cincinnati,52,Southern Methodist,49,27-Feb
+2019,Cincinnati,71,Memphis,69,2-Mar
+2019,Cincinnati,69,Houston,85,10-Mar
+2019,Cincinnati,82,Southern Methodist,74,15-Mar
+2019,Cincinnati,66,Wichita State,63,16-Mar
+2019,Cincinnati,69,Houston,57,17-Mar
 2019,Citadel,80,Clemson,100,6-Nov
 2019,Citadel,148,Mid-Atlantic Christian,75,12-Nov
 2019,Citadel,137,Johnson University,60,14-Nov
@@ -48492,6 +48707,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Citadel,83,East Tennessee State,91,14-Feb
 2019,Citadel,82,Western Carolina,103,16-Feb
 2019,Citadel,87,Samford,83,23-Feb
+2019,Citadel,96,North Carolina-Greensboro,100,28-Feb
+2019,Citadel,78,Virginia Military Institute,81,2-Mar
+2019,Citadel,71,Samford,100,8-Mar
 2019,Clemson,71,North Carolina Central,51,9-Nov
 2019,Clemson,74,Sam Houston State,59,14-Nov
 2019,Clemson,64,Georgia,49,20-Nov
@@ -48516,6 +48734,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Clemson,55,Louisville,56,16-Feb
 2019,Clemson,64,Florida State,77,19-Feb
 2019,Clemson,62,Pittsburgh,48,27-Feb
+2019,Clemson,79,North Carolina,81,2-Mar
+2019,Clemson,64,Notre Dame,62,6-Mar
+2019,Clemson,67,Syracuse,55,9-Mar
+2019,Clemson,58,North Carolina State,59,13-Mar
 2019,Cleveland State,63,Davidson,83,6-Nov
 2019,Cleveland State,79,Kent State,83,10-Nov
 2019,Cleveland State,94,Urbana,65,13-Nov
@@ -48545,6 +48767,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Cleveland State,89,IUPUI,86,16-Feb
 2019,Cleveland State,61,Wright State,87,21-Feb
 2019,Cleveland State,83,Northern Kentucky,77,23-Feb
+2019,Cleveland State,89,Youngstown State,80,2-Mar
 2019,Coastal Carolina,91,Ferrum,47,6-Nov
 2019,Coastal Carolina,76,Tulane,81,13-Nov
 2019,Coastal Carolina,53,Manhattan,55,16-Nov
@@ -48566,6 +48789,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Coastal Carolina,57,Texas State,65,9-Feb
 2019,Coastal Carolina,74,Georgia Southern,79,21-Feb
 2019,Coastal Carolina,95,Georgia State,82,23-Feb
+2019,Coastal Carolina,70,Louisiana,83,28-Feb
+2019,Coastal Carolina,97,Louisiana-Monroe,91,2-Mar
+2019,Coastal Carolina,92,South Alabama,70,7-Mar
+2019,Coastal Carolina,67,Troy,74,9-Mar
+2019,Coastal Carolina,50,Louisiana-Monroe,80,14-Mar
 2019,Colgate,78,NJIT,81,6-Nov
 2019,Colgate,87,Monmouth,74,9-Nov
 2019,Colgate,73,Cornell,57,11-Nov
@@ -48587,6 +48815,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Colgate,74,Holy Cross,70,13-Feb
 2019,Colgate,93,Navy,71,23-Feb
 2019,Colgate,79,Holy Cross,59,27-Feb
+2019,Colgate,76,Lafayette,70,2-Mar
+2019,Colgate,80,Navy,70,10-Mar
 2019,College of Charleston,85,Presbyterian,73,6-Nov
 2019,College of Charleston,77,Western Carolina,74,10-Nov
 2019,College of Charleston,66,Rhode Island,55,13-Nov
@@ -48614,6 +48844,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,College of Charleston,88,Northeastern,79,16-Feb
 2019,College of Charleston,84,William & Mary,86,21-Feb
 2019,College of Charleston,84,Elon,74,23-Feb
+2019,College of Charleston,70,North Carolina-Wilmington,61,2-Mar
+2019,College of Charleston,73,Drexel,61,10-Mar
+2019,College of Charleston,67,Northeastern,70,11-Mar
 2019,Colorado State,100,Colorado Christian,66,7-Nov
 2019,Colorado State,81,Montana State,77,14-Nov
 2019,Colorado State,73,Louisiana,91,19-Nov
@@ -48636,6 +48869,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Colorado State,60,San Diego State,71,12-Feb
 2019,Colorado State,91,San Jose State,70,20-Feb
 2019,Colorado State,83,Wyoming,48,23-Feb
+2019,Colorado State,65,New Mexico,77,2-Mar
+2019,Colorado State,96,Utah State,100,5-Mar
+2019,Colorado State,60,Nevada-Las Vegas,65,9-Mar
 2019,Colorado,100,Drake,71,13-Nov
 2019,Colorado,79,Omaha,75,16-Nov
 2019,Colorado,64,San Diego,70,20-Nov
@@ -48655,6 +48891,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Colorado,69,Southern California,65,9-Feb
 2019,Colorado,74,Washington State,76,20-Feb
 2019,Colorado,55,Washington,64,23-Feb
+2019,Colorado,71,Utah,63,2-Mar
+2019,Colorado,93,UCLA,68,7-Mar
+2019,Colorado,78,Southern California,67,9-Mar
+2019,Colorado,73,Oregon State,58,14-Mar
+2019,Colorado,61,Washington,66,15-Mar
 2019,Columbia,76,Marist,82,10-Nov
 2019,Columbia,83,Youngstown State,94,16-Nov
 2019,Columbia,87,Florida International,98,17-Nov
@@ -48674,6 +48915,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Columbia,64,Yale,70,15-Feb
 2019,Columbia,79,Pennsylvania,77,22-Feb
 2019,Columbia,61,Princeton,79,23-Feb
+2019,Columbia,83,Yale,75,2-Mar
+2019,Columbia,70,Dartmouth,66,8-Mar
+2019,Columbia,81,Harvard,83,9-Mar
 2019,Connecticut,80,Morehead State,70,8-Nov
 2019,Connecticut,94,Missouri-Kansas City,66,11-Nov
 2019,Connecticut,83,Syracuse,76,15-Nov
@@ -48696,6 +48940,12 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Connecticut,71,Memphis,78,10-Feb
 2019,Connecticut,63,Houston,71,14-Feb
 2019,Connecticut,59,Southern Methodist,77,21-Feb
+2019,Connecticut,63,Wichita State,65,28-Feb
+2019,Connecticut,60,South Florida,58,3-Mar
+2019,Connecticut,71,Temple,78,7-Mar
+2019,Connecticut,82,East Carolina,73,10-Mar
+2019,Connecticut,80,South Florida,73,14-Mar
+2019,Connecticut,45,Houston,84,15-Mar
 2019,Coppin State,63,Wisconsin,85,6-Nov
 2019,Coppin State,46,Dayton,76,10-Nov
 2019,Coppin State,58,Navy,77,14-Nov
@@ -48723,6 +48973,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Coppin State,58,Maryland-Eastern Shore,55,16-Feb
 2019,Coppin State,73,Howard,74,23-Feb
 2019,Coppin State,60,Delaware State,70,25-Feb
+2019,Coppin State,38,Norfolk State,72,2-Mar
+2019,Coppin State,83,Morgan State,69,7-Mar
+2019,Coppin State,81,Morgan State,71,12-Mar
+2019,Coppin State,79,North Carolina A&T,82,13-Mar
 2019,Cornell,86,SUNY-Canton,44,8-Nov
 2019,Cornell,56,Delaware,73,15-Nov
 2019,Cornell,86,NJIT,73,17-Nov
@@ -48743,6 +48997,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Cornell,92,Yale,98,16-Feb
 2019,Cornell,59,Princeton,68,22-Feb
 2019,Cornell,50,Pennsylvania,68,23-Feb
+2019,Cornell,65,Yale,88,1-Mar
+2019,Cornell,72,Harvard,59,8-Mar
+2019,Cornell,66,Dartmouth,51,9-Mar
 2019,Creighton,78,Western Illinois,67,6-Nov
 2019,Creighton,75,East Tennessee State,69,11-Nov
 2019,Creighton,60,Ohio State,69,15-Nov
@@ -48767,6 +49024,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Creighton,75,Seton Hall,81,17-Feb
 2019,Creighton,79,DePaul,67,20-Feb
 2019,Creighton,82,Georgetown,69,23-Feb
+2019,Creighton,66,Marquette,60,3-Mar
+2019,Creighton,76,Providence,70,6-Mar
+2019,Creighton,91,DePaul,78,9-Mar
+2019,Creighton,61,Xavier,63,14-Mar
 2019,Dartmouth,114,Newbury,39,6-Nov
 2019,Dartmouth,76,Davidson,79,9-Nov
 2019,Dartmouth,82,Loyola (MD),80,11-Nov
@@ -48784,6 +49045,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Dartmouth,79,Pennsylvania,82,15-Feb
 2019,Dartmouth,68,Princeton,69,16-Feb
 2019,Dartmouth,59,Yale,77,22-Feb
+2019,Dartmouth,76,Princeton,77,1-Mar
+2019,Dartmouth,51,Pennsylvania,65,2-Mar
 2019,Davidson,57,Wichita State,53,15-Nov
 2019,Davidson,58,Purdue,79,16-Nov
 2019,Davidson,71,Northeastern,59,18-Nov
@@ -48809,6 +49072,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Davidson,73,Dayton,74,19-Feb
 2019,Davidson,75,Rhode Island,66,22-Feb
 2019,Davidson,69,La Salle,79,27-Feb
+2019,Davidson,77,Fordham,52,2-Mar
+2019,Davidson,64,St. Bonaventure,46,6-Mar
+2019,Davidson,73,Richmond,69,9-Mar
+2019,Davidson,70,Saint Joseph's,60,15-Mar
+2019,Davidson,44,Saint Louis,67,16-Mar
 2019,Dayton,78,North Florida,70,7-Nov
 2019,Dayton,91,Purdue-Fort Wayne,80,16-Nov
 2019,Dayton,59,Virginia,66,22-Nov
@@ -48833,6 +49101,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Dayton,68,Virginia Commonwealth,69,16-Feb
 2019,Dayton,70,Saint Louis,62,23-Feb
 2019,Dayton,72,Massachusetts,48,26-Feb
+2019,Dayton,70,Rhode Island,72,1-Mar
+2019,Dayton,70,La Salle,39,6-Mar
+2019,Dayton,78,Duquesne,67,9-Mar
+2019,Dayton,55,Saint Louis,64,15-Mar
 2019,Delaware State,56,East Carolina,81,6-Nov
 2019,Delaware State,47,Grand Canyon,89,10-Nov
 2019,Delaware State,62,Loyola (MD),91,13-Nov
@@ -48855,6 +49127,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Delaware State,52,North Carolina A&T,82,9-Feb
 2019,Delaware State,52,North Carolina Central,87,11-Feb
 2019,Delaware State,56,Maryland-Eastern Shore,62,23-Feb
+2019,Delaware State,58,Morgan State,76,2-Mar
+2019,Delaware State,66,Norfolk State,74,4-Mar
+2019,Delaware State,64,Maryland-Eastern Shore,70,7-Mar
+2019,Delaware State,71,Savannah State,67,11-Mar
+2019,Delaware State,57,North Carolina Central,75,14-Mar
 2019,Delaware,67,Maryland,73,6-Nov
 2019,Delaware,78,Saint Peter's,75,10-Nov
 2019,Delaware,100,Chestnut Hill,62,13-Nov
@@ -48879,6 +49156,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Delaware,78,Towson,71,14-Feb
 2019,Delaware,61,James Madison,68,16-Feb
 2019,Delaware,60,Drexel,68,23-Feb
+2019,Delaware,64,Northeastern,75,28-Feb
+2019,Delaware,70,Hofstra,92,2-Mar
+2019,Delaware,85,William & Mary,79,10-Mar
+2019,Delaware,74,Hofstra,78,11-Mar
 2019,Denver,63,Maine,50,6-Nov
 2019,Denver,56,Kansas State,64,12-Nov
 2019,Denver,63,Seattle,82,23-Nov
@@ -48904,6 +49185,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Denver,81,Purdue-Fort Wayne,94,14-Feb
 2019,Denver,45,South Dakota,72,20-Feb
 2019,Denver,63,North Dakota,81,23-Feb
+2019,Denver,74,Western Illinois,46,28-Feb
+2019,Denver,76,Omaha,86,2-Mar
 2019,DePaul,91,Morgan State,63,12-Nov
 2019,DePaul,72,Penn State,70,15-Nov
 2019,DePaul,70,Notre Dame,95,24-Nov
@@ -48923,6 +49206,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,DePaul,74,Xavier,62,9-Feb
 2019,DePaul,73,Marquette,92,12-Feb
 2019,DePaul,73,Georgetown,82,27-Feb
+2019,DePaul,92,St. John's (NY),83,3-Mar
+2019,DePaul,101,Georgetown,69,6-Mar
+2019,DePaul,74,St. John's (NY),82,13-Mar
 2019,Detroit Mercy,76,Western Michigan,89,6-Nov
 2019,Detroit Mercy,67,Temple,83,9-Nov
 2019,Detroit Mercy,91,Loyola (MD),63,19-Nov
@@ -48945,6 +49231,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Detroit Mercy,90,Milwaukee,84,14-Feb
 2019,Detroit Mercy,73,Green Bay,82,16-Feb
 2019,Detroit Mercy,75,Oakland,95,23-Feb
+2019,Detroit Mercy,87,IUPUI,85,28-Feb
+2019,Detroit Mercy,71,Illinois-Chicago,80,2-Mar
+2019,Detroit Mercy,88,Northern Kentucky,99,6-Mar
 2019,Drake,98,Buena Vista,52,8-Nov
 2019,Drake,75,Texas State,69,17-Nov
 2019,Drake,66,Missouri-Kansas City,63,21-Nov
@@ -48971,6 +49260,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Drake,84,Valparaiso,79,16-Feb
 2019,Drake,60,Illinois State,67,24-Feb
 2019,Drake,80,Indiana State,68,27-Feb
+2019,Drake,73,Missouri State,62,2-Mar
+2019,Drake,78,Illinois State,62,8-Mar
+2019,Drake,58,Northern Iowa,60,9-Mar
 2019,Drexel,62,Eastern Michigan,66,9-Nov
 2019,Drexel,66,Rutgers,95,11-Nov
 2019,Drexel,118,Bryn Athyn,41,14-Nov
@@ -48993,6 +49285,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Drexel,69,North Carolina-Wilmington,57,7-Feb
 2019,Drexel,69,James Madison,71,14-Feb
 2019,Drexel,77,Towson,92,16-Feb
+2019,Drexel,77,Hofstra,80,28-Feb
+2019,Drexel,66,Northeastern,90,2-Mar
 2019,Duke,118,Kentucky,84,6-Nov
 2019,Duke,84,Eastern Michigan,46,14-Nov
 2019,Duke,90,San Diego State,64,19-Nov
@@ -49017,6 +49311,12 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Duke,72,North Carolina,88,20-Feb
 2019,Duke,75,Syracuse,65,23-Feb
 2019,Duke,72,Virginia Tech,77,26-Feb
+2019,Duke,87,Miami (FL),57,2-Mar
+2019,Duke,71,Wake Forest,70,5-Mar
+2019,Duke,70,North Carolina,79,9-Mar
+2019,Duke,84,Syracuse,72,14-Mar
+2019,Duke,74,North Carolina,73,15-Mar
+2019,Duke,73,Florida State,63,16-Mar
 2019,Duquesne,84,William & Mary,70,10-Nov
 2019,Duquesne,89,Illinois-Chicago,88,12-Nov
 2019,Duquesne,69,Radford,64,17-Nov
@@ -49043,6 +49343,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Duquesne,85,George Washington,69,16-Feb
 2019,Duquesne,79,George Mason,78,23-Feb
 2019,Duquesne,47,St. Bonaventure,68,27-Feb
+2019,Duquesne,80,Massachusetts,73,2-Mar
+2019,Duquesne,75,Saint Louis,85,6-Mar
+2019,Duquesne,86,Saint Joseph's,92,14-Mar
 2019,East Carolina,72,James Madison,73,9-Nov
 2019,East Carolina,84,Lamar,78,11-Nov
 2019,East Carolina,54,Georgia Tech,79,16-Nov
@@ -49064,6 +49367,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,East Carolina,73,Tulsa,77,17-Feb
 2019,East Carolina,85,Tulane,81,23-Feb
 2019,East Carolina,65,Houston,99,27-Feb
+2019,East Carolina,78,Tulsa,91,3-Mar
+2019,East Carolina,55,Wichita State,72,5-Mar
+2019,East Carolina,57,Wichita State,73,14-Mar
 2019,East Tennessee State,68,Georgia State,74,6-Nov
 2019,East Tennessee State,109,Hiwassee,44,8-Nov
 2019,East Tennessee State,76,Winthrop,74,17-Nov
@@ -49088,6 +49394,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,East Tennessee State,88,Mercer,69,16-Feb
 2019,East Tennessee State,94,Virginia Military Institute,70,21-Feb
 2019,East Tennessee State,59,North Carolina-Greensboro,60,24-Feb
+2019,East Tennessee State,81,Western Carolina,74,2-Mar
+2019,East Tennessee State,72,Wofford,81,10-Mar
 2019,Eastern Illinois,59,Texas,71,6-Nov
 2019,Eastern Illinois,65,IUPUI,71,10-Nov
 2019,Eastern Illinois,68,Western Illinois,66,17-Nov
@@ -49111,6 +49419,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Eastern Illinois,79,Southern Illinois-Edwardsville,65,14-Feb
 2019,Eastern Illinois,79,Southeast Missouri State,88,16-Feb
 2019,Eastern Illinois,60,Tennessee State,75,23-Feb
+2019,Eastern Illinois,84,Jacksonville State,89,28-Feb
+2019,Eastern Illinois,57,Tennessee Tech,63,2-Mar
+2019,Eastern Illinois,71,Tennessee-Martin,78,6-Mar
 2019,Eastern Kentucky,77,Marshall,105,7-Nov
 2019,Eastern Kentucky,107,Midway,52,13-Nov
 2019,Eastern Kentucky,68,Kansas State,95,16-Nov
@@ -49134,6 +49445,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Eastern Kentucky,70,Murray State,102,16-Feb
 2019,Eastern Kentucky,67,Tennessee Tech,66,21-Feb
 2019,Eastern Kentucky,101,Jacksonville State,104,23-Feb
+2019,Eastern Kentucky,77,Morehead State,78,2-Mar
 2019,Eastern Michigan,77,Rochester (MI),67,6-Nov
 2019,Eastern Michigan,97,Goshen,74,11-Nov
 2019,Eastern Michigan,36,Rutgers,63,19-Nov
@@ -49150,6 +49462,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Eastern Michigan,58,Kent State,71,16-Feb
 2019,Eastern Michigan,76,Toledo,69,19-Feb
 2019,Eastern Michigan,77,Western Michigan,76,23-Feb
+2019,Eastern Michigan,75,Northern Illinois,69,2-Mar
+2019,Eastern Michigan,58,Toledo,64,8-Mar
 2019,Eastern Washington,34,Syracuse,66,6-Nov
 2019,Eastern Washington,47,Oregon,81,9-Nov
 2019,Eastern Washington,78,Green Bay,82,16-Nov
@@ -49177,6 +49491,13 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Eastern Washington,82,Idaho,57,18-Feb
 2019,Eastern Washington,62,Southern Utah,76,21-Feb
 2019,Eastern Washington,86,Northern Arizona,73,23-Feb
+2019,Eastern Washington,56,Sacramento State,59,28-Feb
+2019,Eastern Washington,68,Portland State,66,2-Mar
+2019,Eastern Washington,91,Idaho State,62,7-Mar
+2019,Eastern Washington,80,Weber State,77,9-Mar
+2019,Eastern Washington,90,Montana State,84,14-Mar
+2019,Eastern Washington,77,Southern Utah,61,15-Mar
+2019,Eastern Washington,62,Montana,68,16-Mar
 2019,Elon,62,Manhattan,56,6-Nov
 2019,Elon,67,North Carolina,116,9-Nov
 2019,Elon,98,Milligan,71,15-Nov
@@ -49196,6 +49517,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Elon,60,Northeastern,72,9-Feb
 2019,Elon,74,William & Mary,84,16-Feb
 2019,Elon,84,North Carolina-Wilmington,77,21-Feb
+2019,Elon,73,James Madison,58,28-Feb
+2019,Elon,86,Towson,66,2-Mar
+2019,Elon,86,North Carolina-Wilmington,93,9-Mar
 2019,Evansville,60,Illinois,99,8-Nov
 2019,Evansville,85,Xavier,91,10-Nov
 2019,Evansville,92,Kentucky Wesleyan,72,15-Nov
@@ -49219,6 +49543,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Evansville,58,Northern Iowa,73,17-Feb
 2019,Evansville,58,Loyola (IL),70,20-Feb
 2019,Evansville,91,Southern Illinois,98,27-Feb
+2019,Evansville,65,Valparaiso,63,2-Mar
+2019,Evansville,60,Illinois State,65,7-Mar
 2019,Fairfield,57,Purdue,90,6-Nov
 2019,Fairfield,87,Long Island University,89,13-Nov
 2019,Fairfield,73,Wagner,79,17-Nov
@@ -49241,6 +49567,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Fairfield,49,Monmouth,61,9-Feb
 2019,Fairfield,73,Niagara,78,17-Feb
 2019,Fairfield,72,Manhattan,59,24-Feb
+2019,Fairfield,59,Marist,44,1-Mar
+2019,Fairfield,52,Saint Peter's,62,3-Mar
+2019,Fairfield,53,Manhattan,57,7-Mar
 2019,Fairleigh Dickinson,55,Rutgers,90,9-Nov
 2019,Fairleigh Dickinson,87,Queens (NY),48,14-Nov
 2019,Fairleigh Dickinson,85,NYIT,57,16-Nov
@@ -49265,6 +49594,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Fairleigh Dickinson,62,Saint Francis (PA),87,14-Feb
 2019,Fairleigh Dickinson,81,Sacred Heart,63,21-Feb
 2019,Fairleigh Dickinson,74,Wagner,66,23-Feb
+2019,Fairleigh Dickinson,65,Mount St. Mary's,59,28-Feb
+2019,Fairleigh Dickinson,84,Wagner,46,6-Mar
+2019,Fairleigh Dickinson,66,Robert Morris,62,9-Mar
+2019,Fairleigh Dickinson,85,Saint Francis (PA),76,12-Mar
 2019,Florida A&M,65,Jacksonville,50,6-Nov
 2019,Florida A&M,62,Tuskegee,55,10-Nov
 2019,Florida A&M,59,South Florida,69,21-Nov
@@ -49288,6 +49621,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Florida A&M,54,Norfolk State,66,11-Feb
 2019,Florida A&M,78,Savannah State,74,16-Feb
 2019,Florida A&M,54,South Carolina State,57,18-Feb
+2019,Florida A&M,42,North Carolina A&T,63,2-Mar
 2019,Florida Atlantic,98,Florida Tech,52,7-Nov
 2019,Florida Atlantic,70,Georgia Southern,80,16-Nov
 2019,Florida Atlantic,85,Towson,71,17-Nov
@@ -49311,6 +49645,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Florida Atlantic,57,North Texas,47,14-Feb
 2019,Florida Atlantic,60,Rice,41,16-Feb
 2019,Florida Atlantic,76,Florida International,79,23-Feb
+2019,Florida Atlantic,60,North Texas,54,28-Feb
+2019,Florida Atlantic,69,Louisiana Tech,72,6-Mar
+2019,Florida Atlantic,61,Marshall,76,9-Mar
+2019,Florida Atlantic,56,Louisiana Tech,57,13-Mar
 2019,Florida Gulf Coast,66,Illinois State,74,6-Nov
 2019,Florida Gulf Coast,81,Southeastern,54,8-Nov
 2019,Florida Gulf Coast,82,Michigan State,106,11-Nov
@@ -49338,6 +49676,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Florida Gulf Coast,55,Stetson,67,16-Feb
 2019,Florida Gulf Coast,67,Lipscomb,61,20-Feb
 2019,Florida Gulf Coast,78,Kennesaw State,56,23-Feb
+2019,Florida Gulf Coast,77,Jacksonville,74,1-Mar
+2019,Florida Gulf Coast,78,NJIT,83,4-Mar
 2019,Florida International,110,Webber,84,7-Nov
 2019,Florida International,117,Johnson & Wales (FL),47,9-Nov
 2019,Florida International,86,Milwaukee,83,13-Nov
@@ -49358,6 +49698,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Florida International,75,Texas-El Paso,85,9-Feb
 2019,Florida International,86,Rice,65,14-Feb
 2019,Florida International,69,North Texas,59,16-Feb
+2019,Florida International,83,Louisiana Tech,76,3-Mar
+2019,Florida International,78,Marshall,94,6-Mar
+2019,Florida International,73,North Texas,58,9-Mar
+2019,Florida International,57,North Texas,71,13-Mar
 2019,Florida State,81,Florida,60,6-Nov
 2019,Florida State,80,Tulane,69,11-Nov
 2019,Florida State,79,Louisiana State,76,23-Nov
@@ -49379,6 +49723,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Florida State,69,Georgia Tech,47,16-Feb
 2019,Florida State,59,North Carolina,77,23-Feb
 2019,Florida State,68,Notre Dame,61,25-Feb
+2019,Florida State,78,North Carolina State,73,2-Mar
+2019,Florida State,73,Virginia Tech,64,5-Mar
+2019,Florida State,65,Wake Forest,57,9-Mar
+2019,Florida State,65,Virginia Tech,63,14-Mar
+2019,Florida State,69,Virginia,59,15-Mar
 2019,Florida,82,La Salle,69,14-Nov
 2019,Florida,60,Oklahoma,65,21-Nov
 2019,Florida,72,Stanford,49,22-Nov
@@ -49399,6 +49748,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Florida,82,Louisiana State,77,20-Feb
 2019,Florida,64,Missouri,60,23-Feb
 2019,Florida,71,Vanderbilt,55,27-Feb
+2019,Florida,55,Georgia,61,2-Mar
+2019,Florida,78,Louisiana State,79,6-Mar
+2019,Florida,57,Kentucky,66,9-Mar
+2019,Florida,76,Louisiana State,73,15-Mar
 2019,Fordham,106,City College of New York,58,6-Nov
 2019,Fordham,72,Houston Baptist,75,10-Nov
 2019,Fordham,67,Youngstown State,61,17-Nov
@@ -49420,6 +49773,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Fordham,69,Richmond,72,20-Feb
 2019,Fordham,53,St. Bonaventure,74,23-Feb
 2019,Fordham,52,Saint Joseph's,66,27-Feb
+2019,Fordham,67,George Washington,56,6-Mar
+2019,Fordham,57,La Salle,72,9-Mar
+2019,Fordham,50,Richmond,52,13-Mar
 2019,Fresno State,91,Alaska-Anchorage,63,6-Nov
 2019,Fresno State,69,Texas Christian,77,15-Nov
 2019,Fresno State,78,Northwestern,59,22-Nov
@@ -49441,6 +49797,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Fresno State,81,New Mexico,73,16-Feb
 2019,Fresno State,68,Nevada,74,23-Feb
 2019,Fresno State,71,Wyoming,60,27-Feb
+2019,Fresno State,76,San Diego State,74,6-Mar
+2019,Fresno State,121,San Jose State,81,9-Mar
+2019,Fresno State,60,Utah State,85,15-Mar
 2019,Furman,102,Bob Jones University,48,6-Nov
 2019,Furman,60,Loyola (IL),58,9-Nov
 2019,Furman,88,Gardner-Webb,86,13-Nov
@@ -49462,6 +49821,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Furman,67,North Carolina-Greensboro,57,14-Feb
 2019,Furman,96,Virginia Military Institute,62,16-Feb
 2019,Furman,64,Wofford,72,23-Feb
+2019,Furman,90,Samford,81,28-Feb
+2019,Furman,85,Mercer,74,9-Mar
+2019,Furman,62,North Carolina-Greensboro,66,10-Mar
 2019,Gardner-Webb,57,Virginia Commonwealth,69,6-Nov
 2019,Gardner-Webb,59,Virginia Tech,87,9-Nov
 2019,Gardner-Webb,97,Savannah State,77,16-Nov
@@ -49486,6 +49848,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Gardner-Webb,65,North Carolina-Asheville,55,21-Feb
 2019,Gardner-Webb,79,High Point,87,23-Feb
 2019,Gardner-Webb,78,Presbyterian,70,27-Feb
+2019,Gardner-Webb,66,Longwood,47,2-Mar
+2019,Gardner-Webb,75,High Point,69,7-Mar
+2019,Gardner-Webb,76,Radford,65,10-Mar
 2019,George Mason,71,Pennsylvania,72,6-Nov
 2019,George Mason,89,Georgia Southern,98,13-Nov
 2019,George Mason,69,Southern,65,17-Nov
@@ -49507,6 +49872,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,George Mason,80,Massachusetts,75,13-Feb
 2019,George Mason,56,St. Bonaventure,79,17-Feb
 2019,George Mason,77,Richmond,63,27-Feb
+2019,George Mason,71,Saint Louis,81,2-Mar
+2019,George Mason,36,Virginia Commonwealth,71,5-Mar
+2019,George Mason,81,George Washington,65,9-Mar
+2019,George Mason,61,George Washington,57,14-Mar
+2019,George Mason,57,St. Bonaventure,68,15-Mar
 2019,George Washington,74,Stony Brook,77,6-Nov
 2019,George Washington,61,Siena,69,8-Nov
 2019,George Washington,57,Virginia,76,11-Nov
@@ -49528,6 +49898,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,George Washington,79,Massachusetts,67,20-Feb
 2019,George Washington,57,Virginia Commonwealth,85,23-Feb
 2019,George Washington,53,Rhode Island,80,26-Feb
+2019,George Washington,58,St. Bonaventure,64,2-Mar
+2019,George Washington,68,Massachusetts,64,13-Mar
 2019,Georgetown,68,Maryland-Eastern Shore,53,6-Nov
 2019,Georgetown,88,Illinois,80,13-Nov
 2019,Georgetown,52,Loyola Marymount,65,16-Nov
@@ -49547,6 +49919,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Georgetown,76,Providence,67,6-Feb
 2019,Georgetown,75,Seton Hall,90,13-Feb
 2019,Georgetown,85,Villanova,73,20-Feb
+2019,Georgetown,77,Seton Hall,71,2-Mar
+2019,Georgetown,86,Marquette,84,9-Mar
+2019,Georgetown,57,Seton Hall,73,14-Mar
 2019,Georgia Southern,139,Carver Bible,51,7-Nov
 2019,Georgia Southern,88,Pepperdine,78,17-Nov
 2019,Georgia Southern,80,Montana,77,18-Nov
@@ -49566,6 +49941,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Georgia Southern,79,Louisiana-Monroe,88,8-Feb
 2019,Georgia Southern,75,South Alabama,65,13-Feb
 2019,Georgia Southern,76,Troy,51,15-Feb
+2019,Georgia Southern,85,Georgia State,90,9-Mar
+2019,Georgia Southern,81,Louisiana-Monroe,67,15-Mar
+2019,Georgia Southern,58,Texas-Arlington,67,16-Mar
 2019,Georgia State,74,Montana,81,9-Nov
 2019,Georgia State,62,Mercer,60,13-Nov
 2019,Georgia State,75,St. Bonaventure,65,19-Nov
@@ -49587,6 +49965,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Georgia State,72,Louisiana,76,8-Feb
 2019,Georgia State,77,Troy,63,13-Feb
 2019,Georgia State,90,South Alabama,81,15-Feb
+2019,Georgia State,59,Texas State,46,16-Mar
+2019,Georgia State,73,Texas-Arlington,64,17-Mar
 2019,Georgia Tech,88,Lamar,69,9-Nov
 2019,Georgia Tech,53,Tennessee,66,13-Nov
 2019,Georgia Tech,72,Texas-Rio Grande Valley,44,21-Nov
@@ -49607,6 +49987,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Georgia Tech,73,Pittsburgh,65,20-Feb
 2019,Georgia Tech,65,Miami (FL),80,23-Feb
 2019,Georgia Tech,51,Virginia,81,27-Feb
+2019,Georgia Tech,63,North Carolina State,61,6-Mar
+2019,Georgia Tech,71,Notre Dame,78,12-Mar
 2019,Georgia,110,Savannah State,76,9-Nov
 2019,Georgia,77,Temple,81,13-Nov
 2019,Georgia,75,Sam Houston State,64,16-Nov
@@ -49626,6 +50008,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Georgia,79,Louisiana State,83,16-Feb
 2019,Georgia,67,Mississippi State,68,20-Feb
 2019,Georgia,71,Mississippi,72,23-Feb
+2019,Georgia,39,Missouri,64,6-Mar
+2019,Georgia,46,South Carolina,66,9-Mar
+2019,Georgia,61,Missouri,71,13-Mar
 2019,Gonzaga,120,Idaho State,79,6-Nov
 2019,Gonzaga,104,Texas Southern,67,10-Nov
 2019,Gonzaga,94,Texas A&M,71,15-Nov
@@ -49648,6 +50033,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Gonzaga,73,Loyola Marymount,60,14-Feb
 2019,Gonzaga,79,San Diego,67,16-Feb
 2019,Gonzaga,92,Pepperdine,64,21-Feb
+2019,Gonzaga,86,Pacific,66,28-Feb
+2019,Gonzaga,69,Saint Mary's (CA),55,2-Mar
+2019,Gonzaga,100,Pepperdine,74,11-Mar
+2019,Gonzaga,47,Saint Mary's (CA),60,12-Mar
 2019,Grambling,105,Jarvis Christian,68,9-Nov
 2019,Grambling,78,Wyoming,86,14-Nov
 2019,Grambling,64,Loyola (IL),80,16-Nov
@@ -49669,6 +50058,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Grambling,85,Texas Southern,86,16-Feb
 2019,Grambling,87,Prairie View,92,18-Feb
 2019,Grambling,60,Jackson State,71,23-Feb
+2019,Grambling,77,Mississippi Valley State,75,4-Mar
+2019,Grambling,71,Prairie View,81,15-Mar
 2019,Grand Canyon,74,South Dakota State,79,6-Nov
 2019,Grand Canyon,76,Jacksonville,59,12-Nov
 2019,Grand Canyon,75,Seton Hall,82,22-Nov
@@ -49688,6 +50079,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Grand Canyon,64,New Mexico State,67,9-Feb
 2019,Grand Canyon,75,Missouri-Kansas City,87,14-Feb
 2019,Grand Canyon,95,Eastern New Mexico,64,27-Feb
+2019,Grand Canyon,70,Utah Valley,82,7-Mar
+2019,Grand Canyon,76,Seattle,83,9-Mar
+2019,Grand Canyon,84,Seattle,75,14-Mar
+2019,Grand Canyon,78,Utah Valley,74,15-Mar
+2019,Grand Canyon,57,New Mexico State,89,16-Mar
 2019,Green Bay,110,Wisconsin Lutheran,54,6-Nov
 2019,Green Bay,74,Indiana State,78,9-Nov
 2019,Green Bay,82,Iowa,93,11-Nov
@@ -49708,6 +50104,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Green Bay,66,Oakland,54,14-Feb
 2019,Green Bay,63,Illinois-Chicago,62,22-Feb
 2019,Green Bay,68,IUPUI,79,24-Feb
+2019,Green Bay,70,Wright State,67,28-Feb
+2019,Green Bay,82,Northern Kentucky,86,2-Mar
+2019,Green Bay,82,Illinois-Chicago,77,5-Mar
+2019,Green Bay,54,Wright State,66,11-Mar
 2019,Hampton,110,Mid-Atlantic Christian,58,6-Nov
 2019,Hampton,57,Virginia Commonwealth,69,9-Nov
 2019,Hampton,66,Loyola (MD),75,20-Nov
@@ -49728,6 +50128,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Hampton,81,High Point,86,16-Feb
 2019,Hampton,86,Longwood,66,21-Feb
 2019,Hampton,74,Radford,71,23-Feb
+2019,Hampton,90,Winthrop,75,28-Feb
+2019,Hampton,92,South Carolina Upstate,71,2-Mar
+2019,Hampton,77,Longwood,71,5-Mar
 2019,Hartford,73,Utah State,100,9-Nov
 2019,Hartford,59,Mississippi State,77,11-Nov
 2019,Hartford,68,Quinnipiac,54,15-Nov
@@ -49749,6 +50152,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Hartford,75,Vermont,77,16-Feb
 2019,Hartford,70,New Hampshire,50,21-Feb
 2019,Hartford,75,Massachusetts-Lowell,73,23-Feb
+2019,Hartford,63,Stony Brook,68,5-Mar
+2019,Hartford,78,Massachusetts-Lowell,70,9-Mar
+2019,Hartford,85,Maryland-Baltimore County,90,12-Mar
 2019,Harvard,78,Massachusetts Institute of Technology,66,6-Nov
 2019,Harvard,71,Northeastern,81,9-Nov
 2019,Harvard,74,Massachusetts,71,13-Nov
@@ -49765,6 +50171,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Harvard,78,Princeton,69,15-Feb
 2019,Harvard,75,Pennsylvania,68,16-Feb
 2019,Harvard,88,Yale,86,23-Feb
+2019,Harvard,59,Pennsylvania,53,1-Mar
+2019,Harvard,66,Princeton,58,2-Mar
+2019,Harvard,66,Pennsylvania,58,16-Mar
+2019,Harvard,85,Yale,97,17-Mar
 2019,Hawaii,82,Portland,64,9-Nov
 2019,Hawaii,90,Humboldt State,54,10-Nov
 2019,Hawaii,51,North Texas,68,11-Nov
@@ -49778,6 +50188,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Hawaii,68,Rhode Island,60,25-Dec
 2019,Hawaii,74,Long Beach State,57,31-Jan
 2019,Hawaii,77,Long Beach State,70,7-Feb
+2019,Hawaii,66,Long Beach State,68,14-Mar
 2019,High Point,69,William & Mary,79,7-Nov
 2019,High Point,60,Wofford,68,10-Nov
 2019,High Point,60,South Dakota,56,16-Nov
@@ -49796,6 +50207,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,High Point,66,Radford,69,9-Feb
 2019,High Point,59,Longwood,62,13-Feb
 2019,High Point,54,Radford,72,27-Feb
+2019,High Point,79,North Carolina-Asheville,74,2-Mar
 2019,Hofstra,79,Mount St. Mary's,61,9-Nov
 2019,Hofstra,72,Marshall,76,11-Nov
 2019,Hofstra,92,North Carolina A&T,72,14-Nov
@@ -49818,6 +50230,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Hofstra,79,North Carolina-Wilmington,87,16-Feb
 2019,Hofstra,91,Towson,82,21-Feb
 2019,Hofstra,99,James Madison,104,23-Feb
+2019,Hofstra,76,James Madison,67,10-Mar
+2019,Hofstra,74,Northeastern,82,12-Mar
 2019,Holy Cross,93,Sacred Heart,81,6-Nov
 2019,Holy Cross,37,Michigan,56,10-Nov
 2019,Holy Cross,61,Providence,70,13-Nov
@@ -49835,6 +50249,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Holy Cross,69,Navy,64,26-Jan
 2019,Holy Cross,67,Lafayette,69,10-Feb
 2019,Holy Cross,73,Lehigh,71,24-Feb
+2019,Holy Cross,79,Lafayette,74,5-Mar
 2019,Houston Baptist,59,Wisconsin,96,17-Nov
 2019,Houston Baptist,93,Wake Forest,91,23-Nov
 2019,Houston Baptist,82,Texas-San Antonio,86,26-Nov
@@ -49857,6 +50272,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Houston Baptist,92,Northwestern State,54,20-Feb
 2019,Houston Baptist,113,Sam Houston State,119,23-Feb
 2019,Houston Baptist,75,Lamar,110,27-Feb
+2019,Houston Baptist,86,McNeese State,65,2-Mar
+2019,Houston Baptist,118,Incarnate Word,111,6-Mar
+2019,Houston Baptist,69,Texas A&M-Corpus Christi,76,9-Mar
+2019,Houston Baptist,79,Lamar,81,13-Mar
 2019,Houston,79,Rice,68,14-Nov
 2019,Houston,82,Northwestern State,55,19-Nov
 2019,Houston,58,Texas-Rio Grande Valley,53,28-Nov
@@ -49877,6 +50296,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Houston,73,Temple,66,31-Jan
 2019,Houston,85,Tulane,50,17-Feb
 2019,Houston,71,South Florida,59,23-Feb
+2019,Houston,90,Southern Methodist,79,7-Mar
+2019,Houston,61,Memphis,58,16-Mar
 2019,Howard,115,Washington Adventist,91,7-Nov
 2019,Howard,99,Central Pennsylvania College,71,11-Nov
 2019,Howard,108,Regent,51,13-Nov
@@ -49890,6 +50311,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Howard,81,North Carolina A&T,85,16-Feb
 2019,Howard,90,North Carolina Central,98,18-Feb
 2019,Howard,75,Morgan State,69,25-Feb
+2019,Howard,81,Savannah State,76,2-Mar
+2019,Howard,98,Norfolk State,95,7-Mar
+2019,Howard,69,Norfolk State,75,15-Mar
 2019,Idaho State,76,Pacific,83,15-Nov
 2019,Idaho State,115,Bethesda University (CA),60,19-Nov
 2019,Idaho State,82,Pepperdine,97,26-Nov
@@ -49911,6 +50335,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Idaho State,76,Montana State,84,14-Feb
 2019,Idaho State,68,Montana,80,16-Feb
 2019,Idaho State,93,Portland State,99,21-Feb
+2019,Idaho State,62,Northern Colorado,71,2-Mar
+2019,Idaho State,78,Weber State,74,4-Mar
+2019,Idaho State,70,Idaho,68,9-Mar
+2019,Idaho State,80,Southern Utah,94,13-Mar
 2019,Idaho,80,Nicholls State,83,13-Nov
 2019,Idaho,87,Bethesda University (CA),59,18-Nov
 2019,Idaho,73,Northwest Nazarene,77,23-Nov
@@ -49932,6 +50360,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Idaho,47,Northern Colorado,75,14-Feb
 2019,Idaho,54,Northern Arizona,75,21-Feb
 2019,Idaho,76,Southern Utah,85,23-Feb
+2019,Idaho,65,Portland State,67,28-Feb
+2019,Idaho,94,Sacramento State,90,2-Mar
+2019,Idaho,59,Weber State,93,7-Mar
+2019,Idaho,71,Montana State,75,13-Mar
 2019,Illinois-Chicago,67,Notre Dame,84,6-Nov
 2019,Illinois-Chicago,78,Radford,88,9-Nov
 2019,Illinois-Chicago,100,William & Mary,95,15-Nov
@@ -49952,6 +50384,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Illinois-Chicago,76,IUPUI,75,9-Feb
 2019,Illinois-Chicago,73,Youngstown State,81,16-Feb
 2019,Illinois-Chicago,74,Milwaukee,59,24-Feb
+2019,Illinois-Chicago,72,Oakland,86,28-Feb
 2019,Illinois State,79,Lindenwood,62,24-Nov
 2019,Illinois State,65,San Diego State,75,1-Dec
 2019,Illinois State,74,Mississippi,81,8-Dec
@@ -49966,6 +50399,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Illinois State,64,Northern Iowa,77,13-Feb
 2019,Illinois State,50,Indiana State,73,20-Feb
 2019,Illinois State,65,Missouri State,57,27-Feb
+2019,Illinois State,63,Southern Illinois,72,2-Mar
 2019,Illinois,68,Iowa State,84,20-Nov
 2019,Illinois,74,Xavier,83,21-Nov
 2019,Illinois,86,Mississippi Valley State,67,25-Nov
@@ -49989,6 +50423,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Illinois,58,Wisconsin,64,18-Feb
 2019,Illinois,76,Penn State,83,23-Feb
 2019,Illinois,56,Purdue,73,27-Feb
+2019,Illinois,81,Northwestern,76,3-Mar
+2019,Illinois,74,Indiana,92,7-Mar
+2019,Illinois,56,Penn State,72,10-Mar
+2019,Illinois,74,Northwestern,69,13-Mar
+2019,Illinois,62,Iowa,83,14-Mar
 2019,Incarnate Word,37,Texas Tech,87,6-Nov
 2019,Incarnate Word,63,St. Francis (IL),49,9-Nov
 2019,Incarnate Word,66,Texas-Tyler,54,10-Nov
@@ -50011,6 +50450,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Incarnate Word,58,Lamar,76,20-Feb
 2019,Incarnate Word,54,Stephen F. Austin,81,23-Feb
 2019,Incarnate Word,60,Northwestern State,68,27-Feb
+2019,Incarnate Word,72,Texas A&M-Corpus Christi,74,2-Mar
 2019,Indiana State,80,McKendree,63,14-Nov
 2019,Indiana State,63,Western Kentucky,54,24-Nov
 2019,Indiana State,86,San Jose State,57,28-Nov
@@ -50029,6 +50469,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Indiana State,87,Valparaiso,82,13-Feb
 2019,Indiana State,57,Southern Illinois,79,16-Feb
 2019,Indiana State,61,Missouri State,67,23-Feb
+2019,Indiana State,71,Northern Iowa,54,2-Mar
+2019,Indiana State,55,Valparaiso,77,7-Mar
 2019,Indiana,80,Montana State,35,9-Nov
 2019,Indiana,96,Marquette,73,14-Nov
 2019,Indiana,78,Texas-Arlington,64,20-Nov
@@ -50050,6 +50492,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Indiana,46,Purdue,48,19-Feb
 2019,Indiana,70,Iowa,76,22-Feb
 2019,Indiana,75,Wisconsin,73,26-Feb
+2019,Indiana,63,Michigan State,62,2-Mar
+2019,Indiana,89,Rutgers,73,10-Mar
+2019,Indiana,75,Ohio State,79,14-Mar
 2019,Iona,83,New Mexico,90,13-Nov
 2019,Iona,85,Long Beach State,86,19-Nov
 2019,Iona,79,Providence,91,24-Nov
@@ -50070,6 +50515,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Iona,62,Saint Peter's,46,15-Feb
 2019,Iona,81,Quinnipiac,77,19-Feb
 2019,Iona,66,Manhattan,52,22-Feb
+2019,Iona,86,Rider,79,1-Mar
+2019,Iona,73,Saint Peter's,71,8-Mar
+2019,Iona,73,Siena,57,10-Mar
+2019,Iona,81,Monmouth,60,11-Mar
 2019,Iowa State,76,Missouri,59,9-Nov
 2019,Iowa State,85,Texas Southern,73,12-Nov
 2019,Iowa State,87,San Diego State,57,21-Nov
@@ -50091,6 +50540,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Iowa State,78,Kansas State,64,16-Feb
 2019,Iowa State,72,Texas Christian,75,23-Feb
 2019,Iowa State,78,Oklahoma,61,25-Feb
+2019,Iowa State,69,Texas,86,2-Mar
+2019,Iowa State,75,West Virginia,90,6-Mar
+2019,Iowa State,73,Texas Tech,80,9-Mar
+2019,Iowa State,63,Kansas State,59,15-Mar
+2019,Iowa State,78,Kansas,66,16-Mar
 2019,Iowa,77,Missouri-Kansas City,63,8-Nov
 2019,Iowa,77,Oregon,69,15-Nov
 2019,Iowa,69,Pittsburgh,68,27-Nov
@@ -50111,6 +50565,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Iowa,71,Rutgers,69,16-Feb
 2019,Iowa,65,Maryland,66,19-Feb
 2019,Iowa,70,Ohio State,90,26-Feb
+2019,Iowa,72,Rutgers,86,2-Mar
+2019,Iowa,45,Wisconsin,65,7-Mar
+2019,Iowa,91,Nebraska,93,10-Mar
+2019,Iowa,53,Michigan,74,15-Mar
 2019,Purdue-Fort Wayne,71,UCLA,96,6-Nov
 2019,Purdue-Fort Wayne,112,Earlham,51,8-Nov
 2019,Purdue-Fort Wayne,61,Ohio State,107,11-Nov
@@ -50133,6 +50591,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Purdue-Fort Wayne,79,Western Illinois,64,7-Feb
 2019,Purdue-Fort Wayne,71,Omaha,74,16-Feb
 2019,Purdue-Fort Wayne,83,South Dakota State,92,21-Feb
+2019,Purdue-Fort Wayne,82,North Dakota,88,28-Feb
+2019,Purdue-Fort Wayne,66,North Dakota State,69,2-Mar
+2019,Purdue-Fort Wayne,96,South Dakota,70,10-Mar
+2019,Purdue-Fort Wayne,60,Omaha,61,11-Mar
 2019,IUPUI,69,Xavier,82,6-Nov
 2019,IUPUI,70,Richmond,78,16-Nov
 2019,IUPUI,68,St. Francis (NY),48,23-Nov
@@ -50149,6 +50611,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,IUPUI,74,Wright State,79,3-Feb
 2019,IUPUI,73,Youngstown State,75,14-Feb
 2019,IUPUI,67,Milwaukee,60,22-Feb
+2019,IUPUI,63,Oakland,74,2-Mar
+2019,IUPUI,56,Wright State,71,5-Mar
 2019,Jackson State,66,Louisiana-Monroe,75,6-Nov
 2019,Jackson State,36,St. Bonaventure,67,10-Nov
 2019,Jackson State,60,Sam Houston State,75,19-Nov
@@ -50166,6 +50630,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Jackson State,67,Southern,76,11-Feb
 2019,Jackson State,66,Prairie View,79,16-Feb
 2019,Jackson State,65,Texas Southern,77,18-Feb
+2019,Jackson State,57,Mississippi Valley State,60,2-Mar
 2019,Jacksonville State,72,Samford,92,9-Nov
 2019,Jacksonville State,61,Penn State,76,12-Nov
 2019,Jacksonville State,84,Western Carolina,53,20-Nov
@@ -50186,6 +50651,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Jacksonville State,67,Tennessee Tech,57,14-Feb
 2019,Jacksonville State,84,Tennessee State,65,16-Feb
 2019,Jacksonville State,65,Morehead State,64,21-Feb
+2019,Jacksonville State,97,Southern Illinois-Edwardsville,72,2-Mar
+2019,Jacksonville State,88,Tennessee-Martin,81,7-Mar
+2019,Jacksonville State,74,Murray State,76,8-Mar
 2019,Jacksonville,82,Northern Arizona,97,10-Nov
 2019,Jacksonville,71,Southeast Missouri State,77,16-Nov
 2019,Jacksonville,71,South Alabama,48,17-Nov
@@ -50210,6 +50678,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Jacksonville,73,North Florida,80,20-Feb
 2019,Jacksonville,73,NJIT,77,23-Feb
 2019,Jacksonville,55,North Alabama,69,26-Feb
+2019,Jacksonville,58,Liberty,72,4-Mar
 2019,James Madison,86,East Mennonite,58,6-Nov
 2019,James Madison,82,Bridgewater (VA),59,12-Nov
 2019,James Madison,69,Oakland,77,23-Nov
@@ -50224,6 +50693,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,James Madison,104,North Carolina-Wilmington,95,2-Feb
 2019,James Madison,59,Towson,66,9-Feb
 2019,James Madison,60,Northeastern,76,21-Feb
+2019,James Madison,66,William & Mary,70,2-Mar
+2019,James Madison,74,Towson,73,9-Mar
 2019,Kansas State,56,Kennesaw State,41,9-Nov
 2019,Kansas State,64,Pennsylvania,48,18-Nov
 2019,Kansas State,82,Missouri,67,19-Nov
@@ -50245,6 +50716,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Kansas State,65,West Virginia,51,18-Feb
 2019,Kansas State,85,Oklahoma State,46,23-Feb
 2019,Kansas State,49,Kansas,64,25-Feb
+2019,Kansas State,64,Texas Christian,52,4-Mar
+2019,Kansas State,68,Oklahoma,53,9-Mar
+2019,Kansas State,70,Texas Christian,61,14-Mar
 2019,Kansas,92,Michigan State,87,6-Nov
 2019,Kansas,84,Vermont,68,12-Nov
 2019,Kansas,89,Louisiana,76,16-Nov
@@ -50266,6 +50740,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Kansas,82,Texas Christian,77,11-Feb
 2019,Kansas,78,West Virginia,53,16-Feb
 2019,Kansas,62,Texas Tech,91,23-Feb
+2019,Kansas,72,Oklahoma State,67,2-Mar
+2019,Kansas,68,Oklahoma,81,5-Mar
+2019,Kansas,65,Texas,57,14-Mar
+2019,Kansas,88,West Virginia,74,15-Mar
 2019,Kennesaw State,68,Oglethorpe,57,7-Nov
 2019,Kennesaw State,60,Samford,74,12-Nov
 2019,Kennesaw State,52,Missouri,55,16-Nov
@@ -50284,6 +50762,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Kennesaw State,67,Lipscomb,83,16-Feb
 2019,Kennesaw State,61,North Alabama,76,20-Feb
 2019,Kennesaw State,59,Liberty,76,26-Feb
+2019,Kennesaw State,83,Stetson,82,1-Mar
+2019,Kennesaw State,71,Lipscomb,86,4-Mar
 2019,Kent State,90,Shawnee State,69,13-Nov
 2019,Kent State,70,Liberty,77,16-Nov
 2019,Kent State,104,Savannah State,84,20-Nov
@@ -50300,6 +50780,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Kent State,70,Miami (OH),67,5-Feb
 2019,Kent State,82,Western Michigan,63,14-Feb
 2019,Kent State,78,Ohio,73,26-Feb
+2019,Kent State,75,Miami (OH),66,5-Mar
 2019,Kentucky,71,Southern Illinois,59,9-Nov
 2019,Kentucky,96,North Dakota,58,14-Nov
 2019,Kentucky,92,Virginia Military Institute,82,18-Nov
@@ -50320,6 +50801,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Kentucky,71,Louisiana State,73,12-Feb
 2019,Kentucky,86,Tennessee,69,16-Feb
 2019,Kentucky,66,Missouri,58,19-Feb
+2019,Kentucky,52,Tennessee,71,2-Mar
+2019,Kentucky,80,Mississippi,76,5-Mar
+2019,Kentucky,78,Tennessee,82,16-Mar
 2019,La Salle,67,Temple,75,6-Nov
 2019,La Salle,76,Lafayette,77,10-Nov
 2019,La Salle,49,Miami (FL),85,22-Nov
@@ -50337,6 +50821,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,La Salle,49,Saint Louis,62,16-Feb
 2019,La Salle,60,St. Bonaventure,62,20-Feb
 2019,La Salle,75,Richmond,84,23-Feb
+2019,La Salle,62,Saint Joseph's,72,2-Mar
+2019,La Salle,57,Rhode Island,76,14-Mar
 2019,Lafayette,86,Saint Peter's,93,7-Nov
 2019,Lafayette,61,Pennsylvania,91,13-Nov
 2019,Lafayette,72,St. Francis (NY),84,18-Nov
@@ -50369,6 +50855,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Lamar,75,Northwestern State,70,13-Feb
 2019,Lamar,75,Sam Houston State,72,16-Feb
 2019,Lamar,63,Texas A&M-Corpus Christi,58,23-Feb
+2019,Lamar,81,Stephen F. Austin,79,2-Mar
+2019,Lamar,83,McNeese State,58,9-Mar
+2019,Lamar,72,New Orleans,76,14-Mar
 2019,Lehigh,85,Monmouth,61,6-Nov
 2019,Lehigh,62,Miami (FL),83,9-Nov
 2019,Lehigh,78,Marist,72,13-Nov
@@ -50381,6 +50870,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Lehigh,89,Loyola (MD),72,6-Jan
 2019,Lehigh,85,Navy,74,23-Jan
 2019,Lehigh,83,Navy,57,9-Feb
+2019,Lehigh,73,Loyola (MD),92,2-Mar
 2019,Liberty,89,Maine-Fort Kent,40,8-Nov
 2019,Liberty,93,Trevecca Nazarene,40,13-Nov
 2019,Liberty,70,Vanderbilt,79,19-Nov
@@ -50398,6 +50888,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Liberty,74,Lipscomb,66,13-Feb
 2019,Liberty,80,North Alabama,70,16-Feb
 2019,Liberty,70,North Florida,75,23-Feb
+2019,Liberty,57,NJIT,51,1-Mar
+2019,Liberty,71,North Florida,63,7-Mar
+2019,Liberty,74,Lipscomb,68,10-Mar
 2019,Lipscomb,97,Sewanee,53,6-Nov
 2019,Lipscomb,86,Tennessee State,79,10-Nov
 2019,Lipscomb,79,Southern Methodist,73,17-Nov
@@ -50415,6 +50908,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Lipscomb,102,North Alabama,80,2-Feb
 2019,Lipscomb,92,North Florida,55,6-Feb
 2019,Lipscomb,81,NJIT,77,25-Feb
+2019,Lipscomb,87,North Alabama,75,1-Mar
+2019,Lipscomb,78,NJIT,55,7-Mar
 2019,Long Beach State,80,UCLA,91,9-Nov
 2019,Long Beach State,78,Menlo,57,10-Nov
 2019,Long Beach State,51,Mississippi State,79,16-Nov
@@ -50446,6 +50941,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Long Island University,92,Sacred Heart,84,16-Feb
 2019,Long Island University,49,Robert Morris,62,21-Feb
 2019,Long Island University,69,Saint Francis (PA),66,23-Feb
+2019,Long Island University,71,Sacred Heart,62,6-Mar
+2019,Long Island University,64,Saint Francis (PA),72,9-Mar
 2019,Longwood,84,Randolph,56,6-Nov
 2019,Longwood,63,Richmond,58,9-Nov
 2019,Longwood,66,Maryland-Eastern Shore,63,13-Nov
@@ -50478,6 +50975,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Louisiana,83,Louisiana-Monroe,76,16-Feb
 2019,Louisiana,76,Texas-Arlington,64,21-Feb
 2019,Louisiana,62,Texas State,64,23-Feb
+2019,Louisiana,69,South Alabama,70,14-Mar
 2019,Louisiana-Monroe,94,Millsaps,52,10-Nov
 2019,Louisiana-Monroe,55,Texas,65,12-Nov
 2019,Louisiana-Monroe,59,Michigan State,80,14-Nov
@@ -50504,6 +51002,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Louisiana State,92,Mississippi State,88,6-Feb
 2019,Louisiana State,82,Tennessee,80,23-Feb
 2019,Louisiana State,66,Texas A&M,55,26-Feb
+2019,Louisiana State,80,Vanderbilt,59,9-Mar
 2019,Louisiana Tech,71,Wichita State,58,6-Nov
 2019,Louisiana Tech,76,Sam Houston State,69,11-Nov
 2019,Louisiana Tech,89,Harding,58,13-Nov
@@ -50524,6 +51023,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Louisiana Tech,71,Texas-El Paso,57,14-Feb
 2019,Louisiana Tech,72,Texas-San Antonio,67,16-Feb
 2019,Louisiana Tech,66,North Texas,53,23-Feb
+2019,Louisiana Tech,79,Marshall,90,28-Feb
+2019,Louisiana Tech,56,Old Dominion,57,14-Mar
 2019,Louisville,85,Nicholls State,72,8-Nov
 2019,Louisville,104,Southern,54,13-Nov
 2019,Louisville,86,Vermont,78,16-Nov
@@ -50542,6 +51043,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Louisville,72,Virginia Tech,64,4-Feb
 2019,Louisville,49,Syracuse,69,20-Feb
 2019,Louisville,52,Virginia,64,23-Feb
+2019,Louisville,75,Notre Dame,61,3-Mar
+2019,Louisville,68,Virginia,73,9-Mar
+2019,Louisville,75,Notre Dame,53,13-Mar
+2019,Louisville,70,North Carolina,83,14-Mar
 2019,Loyola (IL),76,Missouri-Kansas City,45,6-Nov
 2019,Loyola (IL),75,Niagara,62,14-Nov
 2019,Loyola (IL),82,Richmond,66,19-Nov
@@ -50558,6 +51063,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Loyola (IL),61,Missouri State,65,17-Feb
 2019,Loyola (IL),53,Southern Illinois,63,24-Feb
 2019,Loyola (IL),56,Northern Iowa,55,27-Feb
+2019,Loyola (IL),67,Valparaiso,54,8-Mar
 2019,Loyola Marymount,75,Westcliff,43,6-Nov
 2019,Loyola Marymount,61,Nevada-Las Vegas,50,10-Nov
 2019,Loyola Marymount,65,Ohio,56,18-Nov
@@ -50574,6 +51080,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Loyola Marymount,63,San Diego,65,7-Feb
 2019,Loyola Marymount,72,Portland,55,9-Feb
 2019,Loyola Marymount,63,Pacific,56,23-Feb
+2019,Loyola Marymount,72,Santa Clara,70,28-Feb
+2019,Loyola Marymount,74,San Francisco,69,2-Mar
+2019,Loyola Marymount,65,Pepperdine,68,8-Mar
 2019,Loyola (MD),55,St. John's (NY),76,6-Nov
 2019,Loyola (MD),67,Temple,81,16-Nov
 2019,Loyola (MD),69,Towson,85,25-Nov
@@ -50601,6 +51110,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Maine,66,Maryland-Baltimore County,67,10-Feb
 2019,Maine,53,Stony Brook,81,23-Feb
 2019,Maine,61,Massachusetts-Lowell,70,27-Feb
+2019,Maine,53,New Hampshire,60,5-Mar
+2019,Maine,57,Vermont,73,9-Mar
 2019,Manhattan,52,Maryland-Baltimore County,75,12-Nov
 2019,Manhattan,53,Northern Kentucky,59,17-Nov
 2019,Manhattan,54,North Carolina-Asheville,38,18-Nov
@@ -50618,6 +51129,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Manhattan,73,Rider,66,5-Feb
 2019,Manhattan,49,Siena,51,8-Feb
 2019,Manhattan,64,Niagara,60,15-Feb
+2019,Manhattan,54,Monmouth,62,1-Mar
+2019,Manhattan,62,Quinnipiac,58,3-Mar
 2019,Marist,60,Stephen F. Austin,64,20-Nov
 2019,Marist,79,Stetson,75,8-Dec
 2019,Marist,58,New Hampshire,49,19-Dec
@@ -50630,6 +51143,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Marist,75,Monmouth,67,17-Feb
 2019,Marist,59,Saint Peter's,65,22-Feb
 2019,Marist,55,Siena,67,24-Feb
+2019,Marist,64,Rider,75,3-Mar
+2019,Marist,68,Saint Peter's,71,7-Mar
 2019,Marquette,67,Maryland-Baltimore County,42,6-Nov
 2019,Marquette,74,Presbyterian,55,17-Nov
 2019,Marquette,76,Texas-El Paso,69,4-Dec
@@ -50645,6 +51160,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Marquette,66,Villanova,65,9-Feb
 2019,Marquette,76,Providence,58,23-Feb
 2019,Marquette,61,Villanova,67,27-Feb
+2019,Marquette,64,Seton Hall,73,6-Mar
+2019,Marquette,86,St. John's (NY),54,14-Mar
+2019,Marquette,79,Seton Hall,81,15-Mar
 2019,Marshall,98,Mount St. Mary's,75,14-Nov
 2019,Marshall,95,North Carolina A&T,71,19-Nov
 2019,Marshall,67,Maryland,104,23-Nov
@@ -50663,6 +51181,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Marshall,51,North Texas,78,7-Feb
 2019,Marshall,69,Rice,74,9-Feb
 2019,Marshall,98,Middle Tennessee,93,16-Feb
+2019,Marshall,85,North Texas,82,3-Mar
+2019,Marshall,82,Rice,65,13-Mar
+2019,Marshall,73,Southern Mississippi,82,14-Mar
 2019,Maryland-Baltimore County,93,Shenandoah,45,10-Nov
 2019,Maryland-Baltimore County,52,South Dakota,58,19-Nov
 2019,Maryland-Baltimore County,60,Northern Kentucky,78,30-Nov
@@ -50677,6 +51198,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Maryland-Baltimore County,70,Massachusetts-Lowell,66,16-Feb
 2019,Maryland-Baltimore County,65,Vermont,56,21-Feb
 2019,Maryland-Baltimore County,63,Stony Brook,78,27-Feb
+2019,Maryland-Baltimore County,56,New Hampshire,53,2-Mar
+2019,Maryland-Baltimore County,49,Vermont,66,16-Mar
 2019,Maryland-Eastern Shore,49,North Carolina State,95,10-Nov
 2019,Maryland-Eastern Shore,34,North Texas,68,17-Nov
 2019,Maryland-Eastern Shore,42,Mercer,80,20-Nov
@@ -50694,6 +51217,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Maryland-Eastern Shore,63,Savannah State,68,4-Feb
 2019,Maryland-Eastern Shore,53,North Carolina Central,78,9-Feb
 2019,Maryland-Eastern Shore,61,North Carolina A&T,68,11-Feb
+2019,Maryland-Eastern Shore,78,Morgan State,73,4-Mar
+2019,Maryland-Eastern Shore,54,South Carolina State,63,12-Mar
 2019,Maryland,78,Navy,57,9-Nov
 2019,Maryland,82,North Carolina A&T,59,12-Nov
 2019,Maryland,92,Mount St. Mary's,77,18-Nov
@@ -50715,6 +51240,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Maryland,52,Michigan,65,16-Feb
 2019,Maryland,72,Ohio State,62,23-Feb
 2019,Maryland,61,Penn State,78,27-Feb
+2019,Maryland,62,Michigan,69,3-Mar
+2019,Maryland,69,Minnesota,60,8-Mar
+2019,Maryland,61,Nebraska,69,14-Mar
 2019,Massachusetts-Lowell,75,Massachusetts,83,6-Nov
 2019,Massachusetts-Lowell,88,Wagner,84,10-Nov
 2019,Massachusetts-Lowell,94,Sacred Heart,90,18-Nov
@@ -50728,6 +51256,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Massachusetts-Lowell,65,Vermont,74,2-Feb
 2019,Massachusetts-Lowell,72,New Hampshire,62,6-Feb
 2019,Massachusetts-Lowell,65,Stony Brook,76,9-Feb
+2019,Massachusetts-Lowell,57,Vermont,74,5-Mar
 2019,Massachusetts,104,New Hampshire,75,9-Nov
 2019,Massachusetts,84,Southern Illinois,62,22-Nov
 2019,Massachusetts,87,Nevada,110,23-Nov
@@ -50740,6 +51269,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Massachusetts,77,Rhode Island,70,27-Jan
 2019,Massachusetts,62,Saint Joseph's,64,2-Feb
 2019,Massachusetts,80,Saint Joseph's,79,23-Feb
+2019,Massachusetts,87,Richmond,79,6-Mar
+2019,Massachusetts,75,Rhode Island,94,9-Mar
 2019,McNeese State,65,Saint Mary's (CA),87,7-Nov
 2019,McNeese State,78,Loyola (LA),79,16-Nov
 2019,McNeese State,74,Mobile,60,20-Nov
@@ -50761,6 +51292,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,McNeese State,52,Southeastern Louisiana,88,16-Feb
 2019,McNeese State,51,New Orleans,60,23-Feb
 2019,McNeese State,84,Nicholls State,75,27-Feb
+2019,McNeese State,50,Texas A&M-Corpus Christi,59,6-Mar
 2019,Memphis,76,Tennessee Tech,61,6-Nov
 2019,Memphis,109,Yale,102,17-Nov
 2019,Memphis,64,Oklahoma State,84,22-Nov
@@ -50777,6 +51309,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Memphis,102,Tulane,76,20-Feb
 2019,Memphis,88,Wichita State,85,23-Feb
 2019,Memphis,81,Temple,73,26-Feb
+2019,Memphis,66,Tulsa,63,9-Mar
+2019,Memphis,83,Tulane,68,14-Mar
 2019,Mercer,105,Piedmont,52,9-Nov
 2019,Mercer,77,Tennessee-Martin,60,16-Nov
 2019,Mercer,74,North Carolina State,78,24-Nov
@@ -50790,6 +51324,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Mercer,67,Wofford,76,31-Jan
 2019,Mercer,74,Western Carolina,65,14-Feb
 2019,Mercer,65,Samford,62,21-Feb
+2019,Mercer,71,Virginia Military Institute,84,28-Feb
+2019,Mercer,47,North Carolina-Greensboro,74,2-Mar
 2019,Miami (FL),96,Stephen F. Austin,58,13-Nov
 2019,Miami (FL),81,Seton Hall,83,25-Nov
 2019,Miami (FL),54,Rutgers,57,28-Nov
@@ -50804,6 +51340,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Miami (FL),62,Notre Dame,47,6-Feb
 2019,Miami (FL),85,North Carolina,88,9-Feb
 2019,Miami (FL),75,Wake Forest,76,26-Feb
+2019,Miami (FL),76,Pittsburgh,63,5-Mar
+2019,Miami (FL),70,Virginia Tech,84,8-Mar
+2019,Miami (FL),79,Wake Forest,71,12-Mar
+2019,Miami (FL),56,Virginia Tech,71,13-Mar
 2019,Miami (OH),91,Midway,42,12-Nov
 2019,Miami (OH),89,North Dakota State,78,16-Nov
 2019,Miami (OH),71,Montana,73,17-Nov
@@ -50818,6 +51358,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Miami (OH),63,Toledo,66,29-Jan
 2019,Miami (OH),79,Ohio,59,9-Feb
 2019,Miami (OH),79,Western Michigan,84,16-Feb
+2019,Miami (OH),57,Ohio,66,8-Mar
 2019,Michigan State,101,Tennessee Tech,33,18-Nov
 2019,Michigan State,87,UCLA,67,22-Nov
 2019,Michigan State,78,Texas,68,23-Nov
@@ -50835,6 +51376,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Michigan State,62,Ohio State,44,17-Feb
 2019,Michigan State,71,Rutgers,60,20-Feb
 2019,Michigan State,77,Michigan,70,24-Feb
+2019,Michigan State,91,Nebraska,76,5-Mar
+2019,Michigan State,75,Michigan,63,9-Mar
+2019,Michigan State,77,Ohio State,70,15-Mar
+2019,Michigan State,67,Wisconsin,55,16-Mar
+2019,Michigan State,65,Michigan,60,17-Mar
 2019,Michigan,63,Norfolk State,44,6-Nov
 2019,Michigan,73,Villanova,46,14-Nov
 2019,Michigan,66,Providence,47,18-Nov
@@ -50852,6 +51398,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Michigan,61,Wisconsin,52,9-Feb
 2019,Michigan,69,Penn State,75,12-Feb
 2019,Michigan,69,Minnesota,60,21-Feb
+2019,Michigan,82,Nebraska,53,28-Feb
+2019,Michigan,76,Minnesota,49,16-Mar
 2019,Middle Tennessee,91,Lees-McRae,69,6-Nov
 2019,Middle Tennessee,102,Milligan,70,9-Nov
 2019,Middle Tennessee,52,Virginia,74,21-Nov
@@ -50868,6 +51416,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Middle Tennessee,53,North Texas,70,26-Jan
 2019,Middle Tennessee,50,Old Dominion,55,9-Feb
 2019,Middle Tennessee,63,Western Kentucky,71,14-Feb
+2019,Middle Tennessee,61,Rice,67,3-Mar
+2019,Middle Tennessee,69,Texas-El Paso,53,6-Mar
+2019,Middle Tennessee,48,Texas-El Paso,47,9-Mar
 2019,Milwaukee,60,North Dakota,63,10-Nov
 2019,Milwaukee,51,Stephen F. Austin,66,1-Dec
 2019,Milwaukee,72,North Dakota,83,9-Dec
@@ -50880,6 +51431,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Milwaukee,60,Northern Kentucky,73,26-Jan
 2019,Milwaukee,71,Youngstown State,72,7-Feb
 2019,Milwaukee,73,Oakland,89,16-Feb
+2019,Milwaukee,55,Northern Kentucky,65,28-Feb
+2019,Milwaukee,62,Wright State,65,2-Mar
 2019,Minnesota,104,Omaha,76,6-Nov
 2019,Minnesota,78,Utah,69,12-Nov
 2019,Minnesota,69,Texas A&M,64,18-Nov
@@ -50898,6 +51451,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Minnesota,51,Wisconsin,56,6-Feb
 2019,Minnesota,61,Nebraska,62,13-Feb
 2019,Minnesota,64,Rutgers,68,24-Feb
+2019,Minnesota,62,Northwestern,50,28-Feb
+2019,Minnesota,73,Purdue,69,5-Mar
+2019,Minnesota,77,Penn State,72,14-Mar
+2019,Minnesota,75,Purdue,73,15-Mar
 2019,Mississippi State,61,Saint Mary's (CA),57,21-Nov
 2019,Mississippi State,98,Wofford,87,19-Dec
 2019,Mississippi State,67,Wright State,63,22-Dec
@@ -50907,6 +51464,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Mississippi State,81,Mississippi,75,2-Feb
 2019,Mississippi State,76,South Carolina,61,23-Feb
 2019,Mississippi State,68,Missouri,49,26-Feb
+2019,Mississippi State,54,Tennessee,71,5-Mar
+2019,Mississippi State,92,Texas A&M,81,9-Mar
+2019,Mississippi State,80,Texas A&M,54,14-Mar
+2019,Mississippi State,76,Tennessee,83,15-Mar
 2019,Mississippi Valley State,37,Nebraska,106,6-Nov
 2019,Mississippi Valley State,52,Texas Tech,84,9-Nov
 2019,Mississippi Valley State,59,Utah State,94,13-Nov
@@ -50931,6 +51492,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Mississippi,75,Missouri,65,16-Feb
 2019,Mississippi,64,South Carolina,79,19-Feb
 2019,Mississippi,71,Tennessee,73,27-Feb
+2019,Mississippi,73,Missouri,68,9-Mar
 2019,Missouri-Kansas City,89,Morehead State,99,16-Nov
 2019,Missouri-Kansas City,94,Avila,58,24-Nov
 2019,Missouri-Kansas City,47,South Dakota State,75,28-Nov
@@ -50941,6 +51503,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Missouri-Kansas City,63,Texas-Rio Grande Valley,75,2-Feb
 2019,Missouri-Kansas City,64,Seattle,69,21-Feb
 2019,Missouri-Kansas City,67,Utah Valley,79,23-Feb
+2019,Missouri-Kansas City,55,New Mexico State,75,28-Feb
+2019,Missouri-Kansas City,70,Texas-Rio Grande Valley,75,2-Mar
+2019,Missouri-Kansas City,64,Utah Valley,71,14-Mar
 2019,Missouri State,84,Oral Roberts,50,6-Nov
 2019,Missouri State,74,Robert Morris,60,9-Nov
 2019,Missouri State,83,Stetson,70,11-Nov
@@ -50969,6 +51534,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Missouri,77,Vanderbilt,67,2-Feb
 2019,Missouri,60,Tennessee,72,5-Feb
 2019,Missouri,59,Texas A&M,68,9-Feb
+2019,Missouri,78,South Carolina,63,2-Mar
 2019,Monmouth,63,Saint Joseph's,78,12-Nov
 2019,Monmouth,53,West Virginia,71,15-Nov
 2019,Monmouth,53,Valparaiso,64,16-Nov
@@ -50984,6 +51550,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Monmouth,53,Saint Peter's,51,7-Feb
 2019,Monmouth,72,Rider,81,15-Feb
 2019,Monmouth,56,Quinnipiac,68,24-Feb
+2019,Monmouth,76,Niagara,72,7-Mar
+2019,Monmouth,98,Quinnipiac,92,9-Mar
 2019,Montana State,71,Utah State,101,6-Nov
 2019,Montana State,83,Presentation College,68,11-Nov
 2019,Montana State,65,Omaha,89,24-Nov
@@ -50999,6 +51567,10 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Montana State,69,Northern Colorado,66,4-Feb
 2019,Montana State,82,Weber State,94,16-Feb
 2019,Montana State,83,Montana,89,23-Feb
+2019,Montana State,84,Northern Arizona,73,2-Mar
+2019,Montana State,90,Southern Utah,83,4-Mar
+2019,Montana State,67,Sacramento State,70,7-Mar
+2019,Montana State,80,Portland State,84,9-Mar
 2019,Montana,79,Montana Tech,55,12-Nov
 2019,Montana,80,College of Idaho,52,3-Dec
 2019,Montana,60,North Dakota State,53,17-Dec
@@ -51011,6 +51583,12 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Montana,75,Weber State,68,26-Jan
 2019,Montana,83,Weber State,80,14-Feb
 2019,Montana,72,Northern Colorado,74,25-Feb
+2019,Montana,70,Southern Utah,54,2-Mar
+2019,Montana,66,Northern Arizona,64,4-Mar
+2019,Montana,69,Portland State,81,7-Mar
+2019,Montana,86,Sacramento State,68,9-Mar
+2019,Montana,79,Sacramento State,73,14-Mar
+2019,Montana,78,Weber State,49,15-Mar
 2019,Morehead State,102,Kentucky Christian,82,6-Nov
 2019,Morehead State,70,Syracuse,84,10-Nov
 2019,Morehead State,71,Northern Kentucky,93,27-Nov
@@ -51025,6 +51603,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Morehead State,76,Southern Illinois-Edwardsville,83,31-Jan
 2019,Morehead State,80,Tennessee State,81,7-Feb
 2019,Morehead State,66,Tennessee Tech,63,23-Feb
+2019,Morehead State,52,Murray State,71,28-Feb
+2019,Morehead State,72,Southern Illinois-Edwardsville,68,6-Mar
 2019,Morgan State,77,Villanova,100,6-Nov
 2019,Morgan State,60,Saint Francis (PA),80,9-Nov
 2019,Morgan State,75,Navy,51,20-Nov
@@ -51055,6 +51635,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Mount St. Mary's,76,Sacred Heart,73,9-Feb
 2019,Mount St. Mary's,76,Robert Morris,62,14-Feb
 2019,Mount St. Mary's,56,Wagner,58,16-Feb
+2019,Mount St. Mary's,73,St. Francis (NY),71,2-Mar
 2019,Murray State,73,Wright State,54,10-Nov
 2019,Murray State,106,Spalding,36,16-Nov
 2019,Murray State,83,Prairie View,67,1-Dec
@@ -51085,6 +51666,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Omaha,85,South Dakota State,84,14-Feb
 2019,Omaha,77,Western Illinois,63,20-Feb
 2019,Omaha,58,North Dakota State,50,23-Feb
+2019,Omaha,80,Oral Roberts,84,28-Feb
+2019,Omaha,81,North Dakota,76,9-Mar
+2019,Omaha,63,North Dakota State,73,12-Mar
 2019,Nebraska,87,Southeastern Louisiana,35,11-Nov
 2019,Nebraska,80,Seton Hall,57,14-Nov
 2019,Nebraska,52,Texas Tech,70,20-Nov
@@ -51099,6 +51683,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Nebraska,59,Northwestern,50,16-Feb
 2019,Nebraska,71,Penn State,95,19-Feb
 2019,Nebraska,72,Purdue,75,23-Feb
+2019,Nebraska,68,Rutgers,61,13-Mar
+2019,Nebraska,62,Wisconsin,66,15-Mar
 2019,Nevada-Las Vegas,74,Oakland,61,16-Nov
 2019,Nevada-Las Vegas,96,Pacific,70,20-Nov
 2019,Nevada-Las Vegas,76,Southern Utah,71,23-Nov
@@ -51114,6 +51700,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Nevada-Las Vegas,66,Wyoming,56,19-Feb
 2019,Nevada-Las Vegas,59,San Diego State,60,23-Feb
 2019,Nevada-Las Vegas,73,Nevada,89,27-Feb
+2019,Nevada-Las Vegas,55,San Diego State,63,14-Mar
 2019,Nevada,83,Pacific,61,9-Nov
 2019,Nevada,96,Tulsa,86,22-Nov
 2019,Nevada,73,Southern California,61,1-Dec
@@ -51125,6 +51712,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Nevada,91,New Mexico,62,9-Feb
 2019,Nevada,82,Wyoming,49,16-Feb
 2019,Nevada,57,San Diego State,65,20-Feb
+2019,Nevada,76,Utah State,81,2-Mar
+2019,Nevada,81,San Diego State,53,9-Mar
+2019,Nevada,56,San Diego State,65,15-Mar
 2019,New Hampshire,108,Rivier,54,6-Nov
 2019,New Hampshire,100,Mount Saint Vincent,61,12-Nov
 2019,New Hampshire,63,Quinnipiac,69,20-Nov
@@ -51151,6 +51741,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,New Mexico State,59,Seattle,53,16-Feb
 2019,New Mexico State,80,Texas A&M-International,42,19-Feb
 2019,New Mexico State,88,Texas-Rio Grande Valley,79,23-Feb
+2019,New Mexico State,79,Texas-Rio Grande Valley,72,15-Mar
 2019,New Mexico,84,Texas-El Paso,78,24-Nov
 2019,New Mexico,60,Saint Mary's (CA),85,7-Dec
 2019,New Mexico,65,North Texas,74,18-Dec
@@ -51163,6 +51754,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,New Mexico,92,San Jose State,60,13-Feb
 2019,New Mexico,55,Utah State,71,20-Feb
 2019,New Mexico,82,San Jose State,89,26-Feb
+2019,New Mexico,81,Wyoming,88,9-Mar
+2019,New Mexico,78,Wyoming,68,13-Mar
+2019,New Mexico,83,Utah State,91,14-Mar
 2019,New Orleans,95,Spring Hill,66,6-Nov
 2019,New Orleans,52,Northwestern,82,8-Nov
 2019,New Orleans,87,Pensacola Christian,59,12-Nov
@@ -51179,6 +51773,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,New Orleans,68,Texas A&M-Corpus Christi,58,16-Feb
 2019,New Orleans,89,Southeastern Louisiana,68,20-Feb
 2019,New Orleans,60,Sam Houston State,71,27-Feb
+2019,New Orleans,80,Nicholls State,70,2-Mar
+2019,New Orleans,67,Southeastern Louisiana,81,6-Mar
+2019,New Orleans,79,Sam Houston State,76,15-Mar
 2019,Niagara,80,St. Bonaventure,72,12-Nov
 2019,Niagara,72,Wyoming,67,16-Nov
 2019,Niagara,63,St. Francis (NY),75,24-Nov
@@ -51192,6 +51789,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Niagara,73,Quinnipiac,84,3-Feb
 2019,Niagara,81,Rider,97,22-Feb
 2019,Niagara,60,Saint Peter's,78,24-Feb
+2019,Niagara,65,Siena,72,3-Mar
 2019,Nicholls State,86,Mississippi College,58,6-Nov
 2019,Nicholls State,72,Washington State,89,11-Nov
 2019,Nicholls State,77,North Carolina Central,63,23-Nov
@@ -51204,6 +51802,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Nicholls State,73,Texas A&M-Corpus Christi,75,23-Jan
 2019,Nicholls State,70,Southeastern Louisiana,91,2-Feb
 2019,Nicholls State,74,Sam Houston State,84,20-Feb
+2019,Nicholls State,83,Northwestern State,60,6-Mar
+2019,Nicholls State,69,Southeastern Louisiana,63,9-Mar
 2019,NJIT,73,Kean,40,14-Nov
 2019,NJIT,71,Wagner,60,20-Nov
 2019,NJIT,82,St. Francis (NY),60,8-Dec
@@ -51226,6 +51826,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Norfolk State,74,South Carolina State,69,21-Jan
 2019,Norfolk State,75,North Carolina Central,71,16-Feb
 2019,Norfolk State,76,North Carolina A&T,58,18-Feb
+2019,Norfolk State,78,South Carolina State,73,13-Mar
+2019,Norfolk State,47,North Carolina Central,50,16-Mar
 2019,North Alabama,74,Samford,91,6-Nov
 2019,North Alabama,72,Blue Mountain College,59,10-Nov
 2019,North Alabama,58,Saint Louis,69,13-Nov
@@ -51240,6 +51842,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,North Alabama,63,Stetson,62,19-Jan
 2019,North Alabama,73,North Florida,82,9-Feb
 2019,North Alabama,60,Stetson,63,23-Feb
+2019,North Alabama,66,North Florida,76,4-Mar
 2019,North Carolina-Asheville,87,St. Andrews,47,8-Nov
 2019,North Carolina-Asheville,49,North Carolina State,100,13-Nov
 2019,North Carolina-Asheville,50,Northern Kentucky,77,16-Nov
@@ -51257,6 +51860,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,North Carolina-Asheville,44,Presbyterian,67,7-Feb
 2019,North Carolina-Asheville,57,South Carolina Upstate,53,13-Feb
 2019,North Carolina-Asheville,55,Presbyterian,71,23-Feb
+2019,North Carolina-Asheville,59,Presbyterian,106,5-Mar
 2019,North Carolina A&T,66,North Carolina-Greensboro,74,6-Nov
 2019,North Carolina A&T,78,Wake Forest,90,10-Nov
 2019,North Carolina A&T,70,Presbyterian,75,1-Dec
@@ -51268,6 +51872,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,North Carolina A&T,51,North Carolina Central,48,26-Jan
 2019,North Carolina A&T,63,South Carolina State,62,23-Feb
 2019,North Carolina A&T,63,Savannah State,58,25-Feb
+2019,North Carolina A&T,74,North Carolina Central,52,7-Mar
+2019,North Carolina A&T,63,North Carolina Central,65,15-Mar
 2019,North Carolina Central,123,Warren Wilson,57,18-Nov
 2019,North Carolina Central,83,Southern,71,24-Nov
 2019,North Carolina Central,110,Christendom,51,28-Nov
@@ -51289,6 +51895,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,North Carolina-Greensboro,75,Samford,67,7-Feb
 2019,North Carolina-Greensboro,50,Wofford,80,16-Feb
 2019,North Carolina-Greensboro,79,Western Carolina,76,21-Feb
+2019,North Carolina-Greensboro,77,Samford,70,9-Mar
+2019,North Carolina-Greensboro,58,Wofford,70,11-Mar
 2019,North Carolina State,85,Saint Peter's,57,20-Nov
 2019,North Carolina State,75,Wisconsin,79,27-Nov
 2019,North Carolina State,80,Vanderbilt,65,1-Dec
@@ -51305,6 +51913,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,North Carolina State,79,Pittsburgh,76,9-Feb
 2019,North Carolina State,73,Syracuse,58,13-Feb
 2019,North Carolina State,94,Wake Forest,74,24-Feb
+2019,North Carolina State,56,Virginia,76,14-Mar
 2019,North Carolina-Wilmington,59,Stanford,72,9-Nov
 2019,North Carolina-Wilmington,113,Allen,74,18-Nov
 2019,North Carolina-Wilmington,69,North Carolina,97,5-Dec
@@ -51314,6 +51923,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,North Carolina-Wilmington,76,Towson,77,31-Jan
 2019,North Carolina-Wilmington,77,Northeastern,81,14-Feb
 2019,North Carolina-Wilmington,63,William & Mary,71,23-Feb
+2019,North Carolina-Wilmington,59,Northeastern,80,10-Mar
 2019,North Carolina,78,Wofford,67,6-Nov
 2019,North Carolina,90,Stanford,72,12-Nov
 2019,North Carolina,108,Tennessee Tech,58,16-Nov
@@ -51338,6 +51948,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,North Dakota State,74,North Dakota,70,6-Feb
 2019,North Dakota State,85,Oral Roberts,73,14-Feb
 2019,North Dakota State,77,South Dakota State,78,16-Feb
+2019,North Dakota State,65,South Dakota,75,28-Feb
+2019,North Dakota State,86,Oral Roberts,73,10-Mar
+2019,North Dakota State,76,Western Illinois,73,11-Mar
 2019,North Dakota,104,Northland,48,6-Nov
 2019,North Dakota,112,Minnesota-Morris,58,17-Nov
 2019,North Dakota,89,Concordia (NE),56,20-Nov
@@ -51352,6 +51965,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,North Dakota,74,Western Illinois,73,1-Feb
 2019,North Dakota,55,South Dakota State,80,9-Feb
 2019,North Dakota,85,Oral Roberts,73,16-Feb
+2019,North Dakota,63,South Dakota,78,2-Mar
 2019,North Florida,72,Penn State,87,9-Nov
 2019,North Florida,95,Edward Waters,83,14-Nov
 2019,North Florida,72,Wright State,89,17-Nov
@@ -51373,6 +51987,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,North Texas,76,Rice,75,19-Jan
 2019,North Texas,61,Old Dominion,72,31-Jan
 2019,North Texas,59,Western Kentucky,62,9-Feb
+2019,North Texas,51,Western Kentucky,67,14-Mar
 2019,Northeastern,60,Virginia Tech,88,16-Nov
 2019,Northeastern,49,Syracuse,72,4-Dec
 2019,Northeastern,92,Oakland,83,8-Dec
@@ -51397,6 +52012,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Northern Arizona,71,Weber State,86,9-Feb
 2019,Northern Arizona,94,Portland State,103,14-Feb
 2019,Northern Arizona,78,Sacramento State,66,16-Feb
+2019,Northern Arizona,89,Northern Colorado,78,9-Mar
+2019,Northern Arizona,60,Sacramento State,72,13-Mar
 2019,Northern Colorado,126,Colorado College,56,9-Nov
 2019,Northern Colorado,88,Pepperdine,80,13-Nov
 2019,Northern Colorado,62,Texas Tech,93,24-Nov
@@ -51411,6 +52028,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Northern Colorado,79,Southern Utah,68,24-Jan
 2019,Northern Colorado,80,Portland State,62,7-Feb
 2019,Northern Colorado,65,Sacramento State,59,9-Feb
+2019,Northern Colorado,85,Weber State,61,28-Feb
+2019,Northern Colorado,70,Southern Utah,53,7-Mar
+2019,Northern Colorado,64,Southern Utah,83,14-Mar
 2019,Northern Illinois,93,Rockford,54,6-Nov
 2019,Northern Illinois,85,Northern Kentucky,88,9-Nov
 2019,Northern Illinois,73,Illinois Tech,66,17-Nov
@@ -51424,6 +52044,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Northern Illinois,74,Western Michigan,76,12-Feb
 2019,Northern Illinois,54,Toledo,57,23-Feb
 2019,Northern Illinois,70,Western Michigan,65,26-Feb
+2019,Northern Illinois,80,Ohio,61,11-Mar
+2019,Northern Illinois,80,Toledo,76,14-Mar
 2019,Northern Iowa,97,Bemidji State,51,6-Nov
 2019,Northern Iowa,65,Texas-Arlington,74,10-Nov
 2019,Northern Iowa,71,Pennsylvania,78,16-Nov
@@ -51437,6 +52059,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Northern Iowa,66,Valparaiso,75,19-Jan
 2019,Northern Iowa,62,Southern Illinois,70,23-Jan
 2019,Northern Iowa,64,Valparaiso,53,23-Feb
+2019,Northern Iowa,61,Southern Illinois,58,8-Mar
 2019,Northern Kentucky,102,Wilmington (OH),38,6-Nov
 2019,Northern Kentucky,99,Wabash,59,11-Nov
 2019,Northern Kentucky,74,Oakland,76,3-Jan
@@ -51445,6 +52068,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Northern Kentucky,79,Oakland,64,9-Feb
 2019,Northern Kentucky,77,Wright State,81,15-Feb
 2019,Northern Kentucky,76,Youngstown State,69,21-Feb
+2019,Northern Kentucky,64,Oakland,63,11-Mar
+2019,Northern Kentucky,77,Wright State,66,12-Mar
 2019,Northwestern State,102,Centenary (LA),62,6-Nov
 2019,Northwestern State,58,Southern Methodist,69,8-Nov
 2019,Northwestern State,74,Rice,102,17-Nov
@@ -51459,6 +52084,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Northwestern State,64,Sam Houston State,78,23-Jan
 2019,Northwestern State,53,Southeastern Louisiana,69,26-Jan
 2019,Northwestern State,87,Stephen F. Austin,72,16-Feb
+2019,Northwestern State,55,Southeastern Louisiana,69,2-Mar
 2019,Northwestern,79,Utah,57,25-Nov
 2019,Northwestern,69,Oklahoma,76,21-Dec
 2019,Northwestern,65,Rutgers,57,18-Jan
@@ -51467,6 +52093,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Northwestern,56,Rutgers,59,13-Feb
 2019,Northwestern,49,Ohio State,63,20-Feb
 2019,Northwestern,64,Wisconsin,69,23-Feb
+2019,Northwestern,68,Ohio State,50,6-Mar
+2019,Northwestern,57,Purdue,70,9-Mar
 2019,Notre Dame,60,Radford,63,14-Nov
 2019,Notre Dame,73,William & Mary,64,17-Nov
 2019,Notre Dame,80,Oklahoma,85,4-Dec
@@ -51478,6 +52106,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Notre Dame,54,Virginia,60,16-Feb
 2019,Notre Dame,68,Wake Forest,75,19-Feb
 2019,Notre Dame,59,Virginia Tech,67,23-Feb
+2019,Notre Dame,53,Pittsburgh,56,9-Mar
 2019,Oakland,86,Toledo,87,9-Nov
 2019,Oakland,77,Western Michigan,85,13-Nov
 2019,Oakland,91,Defiance,47,19-Nov
@@ -51487,6 +52116,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Oakland,73,Wright State,89,5-Jan
 2019,Oakland,74,Youngstown State,75,31-Jan
 2019,Oakland,62,Wright State,76,7-Feb
+2019,Oakland,88,Youngstown State,84,6-Mar
 2019,Ohio State,89,South Carolina State,61,18-Nov
 2019,Ohio State,68,Samford,50,20-Nov
 2019,Ohio State,62,Syracuse,72,28-Nov
@@ -51496,6 +52126,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Ohio State,67,Purdue,79,23-Jan
 2019,Ohio State,76,Rutgers,62,2-Feb
 2019,Ohio State,74,Penn State,70,7-Feb
+2019,Ohio State,51,Purdue,86,2-Mar
+2019,Ohio State,67,Wisconsin,73,10-Mar
 2019,Ohio,97,Wilberforce,61,7-Nov
 2019,Ohio,46,South Florida,73,16-Nov
 2019,Ohio,61,Xavier,82,5-Dec
@@ -51517,6 +52149,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Oklahoma State,57,Texas,69,16-Feb
 2019,Oklahoma State,68,Texas Christian,61,18-Feb
 2019,Oklahoma State,80,Texas Tech,84,27-Feb
+2019,Oklahoma State,85,West Virginia,77,9-Mar
+2019,Oklahoma State,70,Texas Christian,73,13-Mar
 2019,Oklahoma,91,Texas-Rio Grande Valley,76,9-Nov
 2019,Oklahoma,87,Texas-San Antonio,67,12-Nov
 2019,Oklahoma,75,Wofford,64,18-Nov
@@ -51531,6 +52165,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Oklahoma,54,Texas Tech,66,9-Feb
 2019,Oklahoma,71,Texas Christian,62,16-Feb
 2019,Oklahoma,69,Texas,67,23-Feb
+2019,Oklahoma,92,West Virginia,80,2-Mar
+2019,Oklahoma,71,West Virginia,72,13-Mar
 2019,Old Dominion,64,Saint Joseph's,79,9-Nov
 2019,Old Dominion,56,Oregon State,61,16-Nov
 2019,Old Dominion,62,Virginia Commonwealth,52,28-Nov
@@ -51543,6 +52179,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Old Dominion,73,Texas-San Antonio,74,26-Jan
 2019,Old Dominion,80,Rice,76,2-Feb
 2019,Old Dominion,67,Western Kentucky,63,23-Feb
+2019,Old Dominion,65,Texas-San Antonio,64,28-Feb
+2019,Old Dominion,52,Southern Mississippi,59,6-Mar
+2019,Old Dominion,62,Western Kentucky,56,16-Mar
 2019,Oral Roberts,79,Southwestern,62,9-Nov
 2019,Oral Roberts,62,Texas Christian,79,11-Nov
 2019,Oral Roberts,109,Ecclesia,72,19-Nov
@@ -51571,6 +52210,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Oregon State,72,Oregon,57,16-Feb
 2019,Oregon State,67,UCLA,68,21-Feb
 2019,Oregon State,67,Southern California,62,23-Feb
+2019,Oregon State,76,Washington,81,6-Mar
+2019,Oregon State,85,Washington State,77,9-Mar
 2019,Oregon,84,Portland State,57,6-Nov
 2019,Oregon,80,Syracuse,65,16-Nov
 2019,Oregon,84,Texas Southern,89,26-Nov
@@ -51583,6 +52224,11 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Oregon,69,Stanford,46,10-Feb
 2019,Oregon,49,Southern California,66,21-Feb
 2019,Oregon,83,UCLA,90,23-Feb
+2019,Oregon,72,Washington State,61,6-Mar
+2019,Oregon,55,Washington,47,9-Mar
+2019,Oregon,84,Washington State,51,13-Mar
+2019,Oregon,66,Utah,54,14-Mar
+2019,Oregon,68,Washington,48,16-Mar
 2019,Pacific,74,Southern Illinois-Edwardsville,65,6-Nov
 2019,Pacific,91,Cal State Stanislaus,66,13-Nov
 2019,Pacific,74,Texas-Permian Basin,69,5-Dec
@@ -51595,12 +52241,16 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Pacific,66,Saint Mary's (CA),78,7-Feb
 2019,Pacific,59,Santa Clara,64,16-Feb
 2019,Pacific,32,Saint Mary's (CA),58,21-Feb
+2019,Pacific,73,Pepperdine,72,2-Mar
+2019,Pacific,53,Pepperdine,61,7-Mar
 2019,Penn State,77,Wright State,59,20-Nov
 2019,Penn State,63,Virginia Tech,62,27-Nov
 2019,Penn State,52,Wisconsin,71,6-Jan
 2019,Penn State,60,Rutgers,64,26-Jan
 2019,Penn State,90,Purdue,99,31-Jan
 2019,Penn State,64,Purdue,76,16-Feb
+2019,Penn State,57,Wisconsin,61,2-Mar
+2019,Penn State,66,Rutgers,65,6-Mar
 2019,Pennsylvania,92,Rice,76,9-Nov
 2019,Pennsylvania,112,Stockton,63,24-Nov
 2019,Pennsylvania,78,Villanova,75,11-Dec
@@ -51610,6 +52260,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Pennsylvania,77,Temple,70,19-Jan
 2019,Pennsylvania,78,Saint Joseph's,70,26-Jan
 2019,Pennsylvania,65,Yale,78,9-Feb
+2019,Pennsylvania,77,Yale,66,8-Mar
 2019,Pepperdine,100,Cal State Dominguez Hills,66,7-Nov
 2019,Pepperdine,74,Towson,65,16-Nov
 2019,Pepperdine,69,Southern Utah,78,15-Dec
@@ -51623,6 +52274,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Pepperdine,77,San Francisco,89,14-Feb
 2019,Pepperdine,65,Saint Mary's (CA),72,16-Feb
 2019,Pepperdine,86,Portland,80,23-Feb
+2019,Pepperdine,89,San Francisco,72,9-Mar
 2019,Pittsburgh,69,Youngstown State,53,6-Nov
 2019,Pittsburgh,94,Virginia Military Institute,55,9-Nov
 2019,Pittsburgh,84,Troy,75,12-Nov
@@ -51632,6 +52284,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Pittsburgh,56,Syracuse,65,2-Feb
 2019,Pittsburgh,76,Wake Forest,78,5-Feb
 2019,Pittsburgh,64,Virginia Tech,70,16-Feb
+2019,Pittsburgh,49,Virginia,73,2-Mar
+2019,Pittsburgh,59,Syracuse,73,13-Mar
 2019,Portland State,125,Willamette,61,17-Nov
 2019,Portland State,91,Northwest Nazarene,75,24-Nov
 2019,Portland State,67,Stanford,79,28-Nov
@@ -51643,6 +52297,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Portland State,67,Sacramento State,78,11-Feb
 2019,Portland State,78,Southern Utah,69,16-Feb
 2019,Portland State,65,Sacramento State,57,23-Feb
+2019,Portland State,71,Weber State,81,14-Mar
 2019,Portland,111,Multnomah,103,6-Nov
 2019,Portland,77,Lewis & Clark,57,19-Nov
 2019,Portland,73,South Carolina Upstate,56,21-Nov
@@ -51654,6 +52309,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Portland,63,Santa Clara,69,2-Feb
 2019,Portland,63,San Francisco,68,16-Feb
 2019,Portland,52,San Diego,63,21-Feb
+2019,Portland,48,Saint Mary's (CA),65,28-Feb
+2019,Portland,62,Santa Clara,78,2-Mar
+2019,Portland,47,San Diego,67,7-Mar
 2019,Prairie View,81,Santa Clara,64,9-Nov
 2019,Prairie View,57,Texas-Rio Grande Valley,70,14-Nov
 2019,Prairie View,64,Seattle,102,20-Dec
@@ -51662,6 +52320,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Prairie View,82,Southern,73,5-Jan
 2019,Prairie View,79,Texas Southern,73,12-Jan
 2019,Prairie View,90,Texas Southern,95,9-Feb
+2019,Prairie View,73,Southern,55,7-Mar
+2019,Prairie View,92,Texas Southern,86,16-Mar
 2019,Presbyterian,80,Tennessee Tech,65,10-Nov
 2019,Presbyterian,109,Welch,57,12-Nov
 2019,Presbyterian,102,Boyce,49,15-Nov
@@ -51675,11 +52335,14 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Presbyterian,68,South Carolina Upstate,59,21-Jan
 2019,Presbyterian,99,Winthrop,91,26-Jan
 2019,Presbyterian,85,Winthrop,93,13-Feb
+2019,Presbyterian,76,Radford,84,7-Mar
 2019,Princeton,85,DeSales,51,9-Nov
 2019,Princeton,82,Saint Joseph's,92,5-Dec
 2019,Princeton,74,St. John's (NY),89,9-Dec
 2019,Princeton,91,Wesley,62,27-Jan
 2019,Princeton,60,Yale,74,8-Feb
+2019,Princeton,59,Yale,81,9-Mar
+2019,Princeton,77,Yale,83,16-Mar
 2019,Providence,77,Siena,67,6-Nov
 2019,Providence,80,Wichita State,83,9-Nov
 2019,Providence,76,South Carolina,67,17-Nov
@@ -51693,6 +52356,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Providence,67,Villanova,85,13-Feb
 2019,Providence,61,Xavier,75,16-Feb
 2019,Providence,78,St. John's (NY),59,20-Feb
+2019,Providence,62,Villanova,73,14-Mar
 2019,Purdue,83,Virginia Tech,89,18-Nov
 2019,Purdue,84,Robert Morris,46,23-Nov
 2019,Purdue,68,Texas,72,9-Dec
@@ -51705,6 +52369,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Quinnipiac,77,Saint Peter's,58,27-Jan
 2019,Quinnipiac,98,Rider,88,12-Feb
 2019,Quinnipiac,107,Siena,100,17-Feb
+2019,Quinnipiac,77,Saint Peter's,60,1-Mar
 2019,Radford,91,Davis & Elkins,57,6-Nov
 2019,Radford,81,William & Mary,72,20-Nov
 2019,Radford,102,Glenville State,69,26-Nov
@@ -51721,6 +52386,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Rhode Island,71,Virginia Commonwealth,65,23-Jan
 2019,Rhode Island,65,Saint Louis,54,2-Feb
 2019,Rhode Island,42,Virginia Commonwealth,76,19-Feb
+2019,Rhode Island,86,Saint Joseph's,85,5-Mar
+2019,Rhode Island,75,Virginia Commonwealth,70,15-Mar
+2019,Rhode Island,51,St. Bonaventure,68,16-Mar
 2019,Rice,80,Saint Leo,64,6-Nov
 2019,Rice,61,Wichita State,90,25-Nov
 2019,Rice,60,Texas State,74,28-Nov
@@ -51739,6 +52407,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Richmond,57,St. Bonaventure,66,26-Jan
 2019,Richmond,84,Saint Louis,81,30-Jan
 2019,Richmond,60,Virginia Commonwealth,81,13-Feb
+2019,Richmond,66,Virginia Commonwealth,69,2-Mar
+2019,Richmond,68,Saint Louis,71,14-Mar
 2019,Rider,89,Wagner,65,24-Nov
 2019,Rider,78,West Virginia,92,28-Nov
 2019,Rider,69,Robert Morris,50,15-Dec
@@ -51747,6 +52417,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Rider,59,Saint Peter's,51,31-Jan
 2019,Rider,57,Siena,59,10-Feb
 2019,Rider,71,Saint Peter's,65,17-Feb
+2019,Rider,81,Siena,87,9-Mar
 2019,Robert Morris,62,Southern California,83,6-Nov
 2019,Robert Morris,104,Mt. Aloysius,57,14-Nov
 2019,Robert Morris,81,Stetson,72,19-Nov
@@ -51759,6 +52430,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Robert Morris,73,Saint Francis (PA),76,31-Jan
 2019,Robert Morris,69,Saint Francis (PA),72,16-Feb
 2019,Robert Morris,67,St. Francis (NY),62,23-Feb
+2019,Robert Morris,63,Sacred Heart,87,28-Feb
+2019,Robert Morris,69,Wagner,60,2-Mar
+2019,Robert Morris,69,St. Francis (NY),65,6-Mar
 2019,Rutgers,65,St. John's (NY),84,16-Nov
 2019,Rutgers,64,Wisconsin,69,3-Dec
 2019,Rutgers,66,Seton Hall,72,15-Dec
@@ -51778,6 +52452,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Sacred Heart,62,Wagner,38,21-Jan
 2019,Sacred Heart,78,Saint Francis (PA),79,26-Jan
 2019,Sacred Heart,71,St. Francis (NY),62,2-Feb
+2019,Sacred Heart,94,Saint Francis (PA),84,2-Mar
 2019,Saint Francis (PA),58,UCLA,95,16-Nov
 2019,Saint Francis (PA),37,Virginia Tech,75,24-Nov
 2019,Saint Francis (PA),113,Bloomsburg,59,27-Nov
@@ -51785,6 +52460,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Saint Francis (PA),68,St. Francis (NY),72,12-Jan
 2019,Saint Francis (PA),79,Wagner,83,24-Jan
 2019,Saint Francis (PA),81,St. Francis (NY),71,21-Feb
+2019,Saint Francis (PA),83,Wagner,72,28-Feb
 2019,Saint Joseph's,89,Wake Forest,69,15-Nov
 2019,Saint Joseph's,90,West Virginia,97,18-Nov
 2019,Saint Joseph's,85,William & Mary,87,24-Nov
@@ -51795,11 +52471,14 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Saint Joseph's,57,Saint Louis,68,18-Jan
 2019,Saint Joseph's,91,Saint Louis,61,8-Feb
 2019,Saint Joseph's,51,St. Bonaventure,76,12-Feb
+2019,Saint Joseph's,63,Virginia Commonwealth,75,8-Mar
 2019,Saint Louis,75,Southeast Missouri State,65,6-Nov
 2019,Saint Louis,62,Troy,58,10-Nov
 2019,Saint Louis,66,Seton Hall,64,17-Nov
 2019,Saint Louis,56,Southern Illinois,61,5-Dec
 2019,Saint Louis,65,Virginia Commonwealth,71,26-Feb
+2019,Saint Louis,57,St. Bonaventure,66,9-Mar
+2019,Saint Louis,55,St. Bonaventure,53,17-Mar
 2019,Saint Mary's (CA),92,Utah Valley,63,11-Nov
 2019,Saint Mary's (CA),63,Utah State,80,19-Nov
 2019,Saint Mary's (CA),68,Western Kentucky,71,22-Dec
@@ -51810,6 +52489,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Saint Mary's (CA),86,San Francisco,80,2-Feb
 2019,Saint Mary's (CA),66,Santa Clara,55,14-Feb
 2019,Saint Mary's (CA),66,San Diego,46,23-Feb
+2019,Saint Mary's (CA),69,San Diego,62,11-Mar
 2019,Saint Peter's,53,St. Francis (NY),56,15-Dec
 2019,Saint Peter's,65,Siena,60,3-Jan
 2019,Saint Peter's,62,Siena,72,19-Feb
@@ -51821,6 +52501,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Sam Houston State,62,Southeastern Louisiana,52,30-Jan
 2019,Sam Houston State,94,Stephen F. Austin,72,2-Feb
 2019,Sam Houston State,70,Texas A&M-Corpus Christi,69,13-Feb
+2019,Sam Houston State,68,Stephen F. Austin,57,9-Mar
 2019,Samford,66,Miles,57,14-Nov
 2019,Samford,77,South Carolina State,60,25-Nov
 2019,Samford,70,Tennessee,83,19-Dec
@@ -51829,6 +52510,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Samford,106,Wofford,107,24-Jan
 2019,Samford,92,Western Carolina,81,2-Feb
 2019,Samford,84,Virginia Military Institute,77,9-Feb
+2019,Samford,64,Wofford,85,2-Mar
 2019,San Diego State,103,Texas Southern,64,14-Nov
 2019,San Diego State,79,Xavier,74,20-Nov
 2019,San Diego State,61,San Diego,73,5-Dec
@@ -51837,12 +52519,16 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,San Diego State,67,San Jose State,56,2-Feb
 2019,San Diego State,68,Utah State,63,9-Feb
 2019,San Diego State,54,Utah State,70,26-Feb
+2019,San Diego State,84,San Jose State,56,2-Mar
+2019,San Diego State,57,Utah State,64,16-Mar
 2019,San Diego,83,Weber State,66,6-Nov
 2019,San Diego,63,Washington,66,12-Nov
 2019,San Diego,95,San Diego Christian,47,15-Nov
 2019,San Diego,82,Washington State,75,22-Dec
 2019,San Diego,56,Santa Clara,68,3-Jan
 2019,San Diego,67,San Francisco,63,26-Jan
+2019,San Diego,91,San Francisco,90,28-Feb
+2019,San Diego,62,Santa Clara,45,8-Mar
 2019,San Francisco,88,Sonoma State,54,12-Nov
 2019,San Francisco,76,Stephen F. Austin,58,30-Nov
 2019,San Francisco,74,Stanford,65,22-Dec
@@ -51856,6 +52542,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,San Jose State,63,Utah State,81,16-Jan
 2019,San Jose State,46,Wyoming,59,23-Jan
 2019,San Jose State,73,Utah State,103,30-Jan
+2019,San Jose State,71,Wyoming,81,6-Mar
 2019,Santa Clara,68,Washington,82,18-Nov
 2019,Santa Clara,82,Sonoma State,54,9-Dec
 2019,Santa Clara,102,Southern California,92,18-Dec
@@ -51868,6 +52555,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Savannah State,60,Wisconsin,101,13-Dec
 2019,Savannah State,80,Tennessee Tech,91,20-Dec
 2019,Savannah State,92,South Carolina State,88,26-Jan
+2019,Savannah State,90,South Carolina State,87,7-Mar
 2019,Seattle,74,Stanford,96,6-Nov
 2019,Seattle,95,Puget Sound,67,8-Nov
 2019,Seattle,78,Washington State,69,14-Nov
@@ -51884,6 +52572,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Seton Hall,52,Villanova,80,27-Jan
 2019,Seton Hall,69,Xavier,70,20-Feb
 2019,Seton Hall,70,St. John's (NY),78,23-Feb
+2019,Seton Hall,79,Villanova,75,9-Mar
+2019,Seton Hall,72,Villanova,74,16-Mar
 2019,Siena,40,St. Bonaventure,82,5-Dec
 2019,South Alabama,106,Huntingdon,76,11-Nov
 2019,South Alabama,79,Southeast Missouri State,58,19-Nov
@@ -51893,6 +52583,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,South Alabama,86,Mobile,47,20-Dec
 2019,South Alabama,81,Troy,75,2-Feb
 2019,South Alabama,68,Troy,52,23-Feb
+2019,South Alabama,57,Texas-Arlington,75,28-Feb
+2019,South Alabama,77,Texas State,63,2-Mar
+2019,South Alabama,67,Texas State,79,15-Mar
 2019,South Carolina State,99,Brevard,51,6-Nov
 2019,South Carolina State,52,Tulsa,74,10-Nov
 2019,South Carolina State,90,Voorhees,69,6-Dec
@@ -51915,6 +52608,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,South Carolina,70,Tennessee,92,29-Jan
 2019,South Carolina,73,Tennessee,85,13-Feb
 2019,South Carolina,84,Texas A&M,77,16-Feb
+2019,South Carolina,71,Texas A&M,54,5-Mar
 2019,South Dakota State,86,Bemidji State,63,10-Nov
 2019,South Dakota State,80,Tulane,84,19-Nov
 2019,South Dakota State,99,Texas-San Antonio,79,20-Nov
@@ -51922,6 +52616,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,South Dakota State,100,Western Illinois,58,28-Dec
 2019,South Dakota State,79,South Dakota,61,6-Jan
 2019,South Dakota State,94,South Dakota,89,23-Feb
+2019,South Dakota State,86,Western Illinois,66,2-Mar
+2019,South Dakota State,76,Western Illinois,79,9-Mar
 2019,South Dakota,83,York (NE),58,7-Nov
 2019,South Dakota,78,Bellevue,52,12-Dec
 2019,South Dakota,60,Southern Mississippi,66,21-Dec
@@ -51935,6 +52631,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,South Florida,67,Southern Methodist,66,7-Feb
 2019,South Florida,69,Temple,70,16-Feb
 2019,South Florida,95,Florida College,54,19-Feb
+2019,South Florida,75,Tulane,70,6-Mar
+2019,South Florida,71,Southern Methodist,77,10-Mar
 2019,Southeast Missouri State,102,Quincy,66,12-Nov
 2019,Southeast Missouri State,72,Missouri S&T,69,27-Nov
 2019,Southeast Missouri State,63,Western Illinois,70,1-Dec
@@ -51945,6 +52643,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Southeast Missouri State,50,Tennessee State,79,2-Feb
 2019,Southeast Missouri State,71,Tennessee Tech,66,7-Feb
 2019,Southeast Missouri State,72,Tennessee-Martin,81,14-Feb
+2019,Southeast Missouri State,89,Tennessee State,74,28-Feb
 2019,Southeastern Louisiana,78,William Carey,57,9-Nov
 2019,Southeastern Louisiana,40,Texas Tech,59,13-Nov
 2019,Southeastern Louisiana,69,Stetson,57,17-Nov
@@ -51963,6 +52662,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Southern California,93,Washington State,84,2-Feb
 2019,Southern California,70,Utah,77,6-Feb
 2019,Southern California,76,Stanford,79,13-Feb
+2019,Southern California,88,UCLA,93,28-Feb
+2019,Southern California,74,Utah,83,7-Mar
+2019,Southern California,75,Washington,78,14-Mar
 2019,Southern Illinois-Edwardsville,82,Winthrop,94,10-Nov
 2019,Southern Illinois-Edwardsville,70,Valparaiso,75,21-Nov
 2019,Southern Illinois-Edwardsville,58,Western Illinois,83,28-Nov
@@ -51974,6 +52676,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Southern Illinois-Edwardsville,69,Tennessee-Martin,85,26-Jan
 2019,Southern Illinois-Edwardsville,69,Tennessee-Martin,73,16-Feb
 2019,Southern Illinois-Edwardsville,85,Tennessee State,84,21-Feb
+2019,Southern Illinois-Edwardsville,76,Tennessee Tech,68,28-Feb
 2019,Southern Illinois,79,Tulsa,69,23-Nov
 2019,Southern Illinois,71,Winthrop,79,22-Dec
 2019,Southern Illinois,61,Valparaiso,65,12-Jan
@@ -51987,6 +52690,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Southern Methodist,85,Tulane,75,26-Jan
 2019,Southern Methodist,83,Wichita State,85,30-Jan
 2019,Southern Methodist,74,Temple,82,13-Feb
+2019,Southern Methodist,55,Wichita State,67,3-Mar
+2019,Southern Methodist,74,Tulsa,65,14-Mar
 2019,Southern Mississippi,111,Southeastern Baptist College,66,6-Nov
 2019,Southern Mississippi,81,Troy,66,15-Nov
 2019,Southern Mississippi,68,Western Carolina,63,21-Nov
@@ -51997,6 +52702,9 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Southern Mississippi,63,Western Kentucky,66,24-Jan
 2019,Southern Mississippi,78,Texas-San Antonio,71,14-Feb
 2019,Southern Mississippi,77,Texas-El Paso,47,16-Feb
+2019,Southern Mississippi,71,Western Kentucky,76,3-Mar
+2019,Southern Mississippi,81,Texas-San Antonio,48,9-Mar
+2019,Southern Mississippi,59,Western Kentucky,70,15-Mar
 2019,Southern Utah,109,West Coast Baptist,63,6-Nov
 2019,Southern Utah,111,San Diego Christian,64,29-Nov
 2019,Southern Utah,90,Weber State,82,5-Jan
@@ -52004,6 +52712,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Southern,70,Western Michigan,85,23-Nov
 2019,Southern,74,Wiley,65,27-Nov
 2019,Southern,67,Texas Southern,77,7-Jan
+2019,Southern,87,Texas Southern,77,9-Mar
+2019,Southern,70,Texas Southern,80,12-Mar
 2019,St. Bonaventure,76,Vermont,83,18-Dec
 2019,St. Bonaventure,48,Syracuse,81,29-Dec
 2019,St. Bonaventure,55,Virginia Commonwealth,85,9-Feb
@@ -52016,12 +52726,17 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,St. John's (NY),73,Wagner,58,16-Dec
 2019,St. John's (NY),71,Villanova,76,8-Jan
 2019,St. John's (NY),71,Villanova,65,17-Feb
+2019,St. John's (NY),73,Xavier,84,28-Feb
+2019,St. John's (NY),68,Xavier,81,9-Mar
 2019,Stanford,46,Wisconsin,62,21-Nov
 2019,Stanford,70,UCLA,92,3-Jan
 2019,Stanford,64,Washington,80,17-Jan
 2019,Stanford,78,Washington State,66,19-Jan
 2019,Stanford,66,Utah,70,24-Jan
 2019,Stanford,104,UCLA,80,16-Feb
+2019,Stanford,98,Washington State,50,28-Feb
+2019,Stanford,61,Washington,62,3-Mar
+2019,Stanford,72,UCLA,79,13-Mar
 2019,Stephen F. Austin,83,Texas Wesleyan,71,6-Nov
 2019,Stephen F. Austin,68,Southwest Assemblies of God,67,8-Nov
 2019,Stephen F. Austin,73,St. Edward's,60,25-Nov
@@ -52033,13 +52748,18 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Stetson,72,Edward Waters,65,3-Jan
 2019,Stony Brook,97,Molloy,61,21-Nov
 2019,Stony Brook,52,Vermont,73,26-Jan
+2019,Stony Brook,50,Vermont,56,2-Mar
 2019,Syracuse,56,Virginia Tech,78,26-Jan
+2019,Syracuse,79,Wake Forest,54,2-Mar
+2019,Syracuse,53,Virginia,79,4-Mar
 2019,Temple,51,Virginia Commonwealth,57,19-Nov
 2019,Temple,59,Villanova,69,5-Dec
 2019,Temple,85,Wichita State,81,6-Jan
 2019,Temple,75,Tulane,67,2-Feb
 2019,Temple,58,Tulsa,76,9-Feb
 2019,Temple,84,Tulsa,73,23-Feb
+2019,Temple,80,Tulane,69,3-Mar
+2019,Temple,74,Wichita State,80,15-Mar
 2019,Tennessee-Martin,91,Cumberland,58,6-Nov
 2019,Tennessee-Martin,71,Western Kentucky,86,10-Nov
 2019,Tennessee-Martin,92,Western Illinois,90,21-Nov
@@ -52047,6 +52767,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Tennessee-Martin,108,Brescia,79,15-Dec
 2019,Tennessee-Martin,67,Tennessee State,68,31-Jan
 2019,Tennessee-Martin,77,Tennessee Tech,58,9-Feb
+2019,Tennessee-Martin,91,Tennessee State,86,2-Mar
 2019,Tennessee State,92,Carver Bible,57,15-Nov
 2019,Tennessee State,113,Fisk,61,17-Nov
 2019,Tennessee State,74,Western Kentucky,88,1-Dec
@@ -52076,15 +52797,21 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Texas A&M,67,Washington,71,20-Nov
 2019,Texas A&M,71,Valparaiso,49,19-Dec
 2019,Texas A&M,73,Texas Southern,88,29-Dec
+2019,Texas A&M,64,Vanderbilt,57,2-Mar
+2019,Texas A&M,69,Vanderbilt,52,13-Mar
 2019,Texas-Arlington,90,Texas-Tyler,66,6-Nov
 2019,Texas-Arlington,58,Tulsa,72,27-Nov
 2019,Texas-Arlington,65,Texas-Rio Grande Valley,76,1-Dec
 2019,Texas-Arlington,56,Texas,76,28-Dec
 2019,Texas-Arlington,84,Texas State,77,2-Feb
+2019,Texas-Arlington,79,Troy,66,2-Mar
+2019,Texas-Arlington,81,Texas State,73,9-Mar
 2019,Texas Christian,98,West Virginia,67,15-Jan
 2019,Texas Christian,65,Texas,61,23-Jan
 2019,Texas Christian,65,Texas Tech,84,28-Jan
 2019,Texas Christian,96,West Virginia,104,26-Feb
+2019,Texas Christian,66,Texas Tech,81,2-Mar
+2019,Texas Christian,69,Texas,56,9-Mar
 2019,Texas-El Paso,90,Texas-Permian Basin,63,6-Nov
 2019,Texas-El Paso,66,Eastern New Mexico,59,19-Nov
 2019,Texas-El Paso,76,Wyoming,65,22-Dec
@@ -52103,36 +52830,45 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Texas-San Antonio,101,Bethany College (KS),77,17-Dec
 2019,Texas-San Antonio,70,Southeastern Oklahoma State,67,29-Dec
 2019,Texas-San Antonio,88,Western Kentucky,96,31-Jan
+2019,Texas-San Antonio,81,Western Kentucky,76,6-Mar
 2019,Texas Southern,81,Huston-Tillotson,76,29-Nov
 2019,Texas Southern,107,Concordia (TX),70,8-Dec
 2019,Texas Southern,70,Tulane,77,17-Dec
 2019,Texas State,97,Hardin-Simmons,52,13-Nov
 2019,Texas State,105,Howard Payne,29,29-Dec
+2019,Texas State,58,Troy,44,28-Feb
 2019,Texas Tech,62,West Virginia,59,2-Jan
 2019,Texas Tech,68,Texas,62,12-Jan
 2019,Texas Tech,81,West Virginia,50,4-Feb
+2019,Texas Tech,70,Texas,51,4-Mar
+2019,Texas Tech,74,West Virginia,79,14-Mar
 2019,Texas,53,Virginia Commonwealth,54,5-Dec
 2019,Texas,61,West Virginia,54,5-Jan
 2019,Texas,75,West Virginia,53,9-Feb
 2019,Toledo,99,Wilberforce,58,10-Nov
 2019,Toledo,74,Wright State,84,14-Nov
 2019,Toledo,85,Western Michigan,77,12-Jan
+2019,Toledo,76,Western Michigan,57,5-Mar
 2019,Towson,42,Virginia,73,6-Nov
 2019,Towson,93,Wesley,66,11-Nov
 2019,Towson,64,Vermont,70,30-Nov
 2019,Towson,73,Tulane,55,21-Dec
 2019,Towson,61,William & Mary,71,30-Dec
+2019,Towson,65,William & Mary,67,28-Feb
 2019,Troy,95,Fort Valley State,60,6-Nov
 2019,Troy,88,Carver Bible,43,12-Dec
 2019,Troy,87,Western Kentucky,81,16-Dec
 2019,Tulane,62,Wichita State,77,9-Feb
 2019,Tulane,57,Tulsa,80,14-Feb
+2019,Tulane,64,Tulsa,72,28-Feb
+2019,Tulane,79,Wichita State,82,9-Mar
 2019,Tulsa,64,Utah,69,1-Dec
 2019,Tulsa,68,Wichita State,79,2-Feb
 2019,Tulsa,60,Wichita State,81,20-Feb
 2019,UCLA,87,Washington State,67,30-Jan
 2019,UCLA,55,Washington,69,2-Feb
 2019,UCLA,92,Utah,93,9-Feb
+2019,UCLA,81,Utah,92,9-Mar
 2019,Utah State,65,Utah Valley,46,16-Nov
 2019,Utah State,76,Weber State,67,8-Dec
 2019,Utah State,84,Eastern Oregon,57,28-Dec
@@ -52155,6 +52891,7 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Vermont,79,Yale,70,21-Nov
 2019,Villanova,85,Xavier,75,18-Jan
 2019,Villanova,54,Xavier,66,24-Feb
+2019,Villanova,71,Xavier,67,15-Mar
 2019,Virginia Commonwealth,49,Virginia,57,9-Dec
 2019,Virginia Commonwealth,70,Wichita State,54,22-Dec
 2019,Virginia Military Institute,89,Washington College,56,6-Nov
@@ -52165,6 +52902,8 @@ year_string,team_1_name,team_1_score,team_2_name,team_2_score,date_string
 2019,Virginia Military Institute,91,Western Carolina,83,19-Jan
 2019,Virginia Military Institute,84,Wofford,95,14-Feb
 2019,Virginia Military Institute,83,Western Carolina,78,23-Feb
+2019,Virginia Military Institute,96,Western Carolina,83,8-Mar
+2019,Virginia Military Institute,72,Wofford,99,9-Mar
 2019,Virginia Tech,73,Washington,61,15-Dec
 2019,Virginia Tech,59,Virginia,81,15-Jan
 2019,Virginia Tech,87,Wake Forest,71,19-Jan
