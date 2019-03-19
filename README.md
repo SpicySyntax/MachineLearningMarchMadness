@@ -141,6 +141,7 @@ Description:
     - Add some artificial features:
       - Use last 5 game before tournament win/loss ratio as additional feature
       - Take in game locations and team locations to calculate travel distance as a feature for both teams (Consider adding home, away, and neutral to model)
+      - One-hot encode the team seed
     - Remove outliers, or incorrect values (- when supposed to be +)
     - Use Pytorch to train a Neural network (done)
     - Normalize feature vectors (done)

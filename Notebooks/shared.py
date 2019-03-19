@@ -1,6 +1,7 @@
 '''
     Shared Helper Functions to be reused in notebooks
 '''
+import pandas as pd #dataframes
 def resolve_team_name(team_name):
     #Apply hard-coded corrections to team names
     team_name_dict = {'Colorado-Colorado Springs':'Colorado',
@@ -23,12 +24,15 @@ def resolve_team_name(team_name):
                      'USC':'South Carolina',
                      'LSU':'Louisiana State',
                      'UMass':'Massachusetts',
-                     'ETSU':'East Tennessee State'}
+                     'ETSU':'East Tennessee State',
+                     'Ole Miss': 'Mississippi',
+                     "Saint Mary's": "Saint Mary's (CA)",
+                     "UCF": "Central Florida"}
     # TODO: for V2 add more corrections to the team_name_dict
     if(team_name in team_name_dict):
         return team_name_dict[team_name]
     return team_name
-def get_school_stats(year, team_name):
+def get_school_stats(df_school, year, team_name):
     return df_school[(df_school['year'] == year) & (df_school['team_name'] == team_name)]
 def get_vals(t_stats_list, key):
     ret = []
@@ -93,7 +97,7 @@ def create_team_stats_df_ps(indeces_w_stats, t1_stats_list, t2_stats_list, t1_se
     # Only uses post season stats => inclu
     # Assumes all lists are of the same length
     return pd.DataFrame(get_team_stats_dict_ps(t1_stats_list, t2_stats_list, t1_seeds, t2_seeds), index = indeces_w_stats)
-def get_team_stats_df(game_df, should_print=False):
+def get_team_stats_df(df_school, game_df, should_print=False):
     indeces_w_stats = []
     t1_stats_list = []
     t2_stats_list = []
@@ -104,8 +108,8 @@ def get_team_stats_df(game_df, should_print=False):
         team_2 = row['team_2_name']
         team_1_score = row['team_1_score']
         team_2_score = row['team_2_score']
-        t1_stats = get_school_stats(year, resolve_team_name(team_1))
-        t2_stats = get_school_stats(year, resolve_team_name(team_2))
+        t1_stats = get_school_stats(df_school, year, resolve_team_name(team_1))
+        t2_stats = get_school_stats(df_school, year, resolve_team_name(team_2))
 
         if(len(t1_stats) > 0 and len(t2_stats) > 0):  
             indeces_w_stats.append(index)
@@ -123,7 +127,7 @@ def get_team_stats_df(game_df, should_print=False):
     print(len(indeces_w_stats))
     team_stats_df = create_team_stats_df_w_t1_win(indeces_w_stats, t1_stats_list, t2_stats_list, t1_wins_list)
     return team_stats_df
-def get_matchups_stats(schools, post_season):    
+def get_matchups_stats(df_school, schools, post_season, year=2019):    
     
     i = 0 
     t1_stats = []
@@ -139,8 +143,8 @@ def get_matchups_stats(schools, post_season):
         t1_seeds.append(t1_seed)
         t2_seeds.append(t2_seed)
         #print(t1_name, t2_name
-        t1_stats.append(get_school_stats(2018, t1_name))
-        t2_stats.append(get_school_stats(2018, t2_name))
+        t1_stats.append(get_school_stats(df_school, year, resolve_team_name(t1_name)))
+        t2_stats.append(get_school_stats(df_school, year, resolve_team_name(t2_name)))
         i = i + 2
     if(post_season):
         matchup_stats = create_team_stats_df_ps(range(0,int(len(schools)/2)), t1_stats, t2_stats, t1_seeds, t2_seeds)
