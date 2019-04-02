@@ -29,8 +29,95 @@ Description:
       - If you upload through the interface, Copy files out of container using `docker cp <containerId>:/file/path/within/container       /host/path/target`. If you mount a volume into the container then you are okay.
       -manipulate which model you want to use to generate bracker by changing the model used in "evaluate_winner" function to one of the previous models used in the notebook.
       - If your python kernels keep dying increase the Memory allowed for docker containers in Docker > Settings
-  
-  ## Results (Version 1 calculated using Logistic Regression in March 2018)
+  ## Results (Version 1 with new data and Logistic Regression in March 2019)
+  - --- East  round  1 ---
+  - Duke 1  vs.  North Carolina Central 16 (team 1 won= 1 )
+  - VCU 8  vs.  UCF 9 (team 1 won= 1 )
+  - Mississippi State 5  vs.  Liberty 12 (team 1 won= 1 )
+  - Virginia Tech 4  vs.  Saint Louis 13 (team 1 won= 1 )
+  - Maryland 6  vs.  Temple 11 (team 1 won= 1 )
+  - LSU 3  vs.  Yale 14 (team 1 won= 1 )
+  - Louisville 7  vs.  Minnesota 10 (team 1 won= 1 )
+  - Michigan State 2  vs.  Bradley 15 (team 1 won= 1 )
+  - --- East  round  2 ---
+  - Duke 1  vs.  VCU 8 (team 1 won= 1 )
+  - Mississippi State 5  vs.  Virginia Tech 4 (team 1 won= 0 )
+  - Maryland 6  vs.  LSU 3 (team 1 won= 0 )
+  - Louisville 7  vs.  Michigan State 2 (team 1 won= 0 )
+  - --- East  round  3 ---
+  - Duke 1  vs.  Virginia Tech 4 (team 1 won= 1 )
+  - LSU 3  vs.  Michigan State 2 (team 1 won= 0 )
+  - --- East  round  4 ---
+  - Duke 1  vs.  Michigan State 2 (team 1 won= 1 )
+  - Winner of  East : ('Duke', 1)
+  - --- West  round  1 ---
+  - Gonzaga 1  vs.  Prairie View 16 (team 1 won= 1 )
+  - Syracuse 8  vs.  Baylor 9 (team 1 won= 1 )
+  - Marquette 5  vs.  Murray State 12 (team 1 won= 1 )
+  - Florida State 4  vs.  Vermont 13 (team 1 won= 1 )
+  - Buffalo 6  vs.  Arizona State 11 (team 1 won= 1 )
+  - Texas Tech 3  vs.  Northern Kentucky 14 (team 1 won= 1 )
+  - Nevada 7  vs.  Florida 10 (team 1 won= 0 )
+  - Michigan 2  vs.  Montana 15 (team 1 won= 1 )
+  - --- West  round  2 ---
+  - Gonzaga 1  vs.  Syracuse 8 (team 1 won= 1 )
+  - Marquette 5  vs.  Florida State 4 (team 1 won= 0 )
+  - Buffalo 6  vs.  Texas Tech 3 (team 1 won= 0 )
+  - Florida 10  vs.  Michigan 2 (team 1 won= 0 )
+  - --- West  round  3 ---
+  - Gonzaga 1  vs.  Florida State 4 (team 1 won= 1 )
+  - Texas Tech 3  vs.  Michigan 2 (team 1 won= 1 )
+  - --- West  round  4 ---
+  - Gonzaga 1  vs.  Texas Tech 3 (team 1 won= 1 )
+  - Winner of  West : ('Gonzaga', 1)
+  - --- South  round  1 ---
+  - Virginia 1  vs.  Gardner-Webb 16 (team 1 won= 1 )
+  - Ole Miss 8  vs.  Oklahoma 9 (team 1 won= 0 )
+  - Wisconsin 5  vs.  Oregon 12 (team 1 won= 1 )
+  - Kansas State 4  vs.  UC-Irvine 13 (team 1 won= 1 )
+  - Villanova 6  vs.  Saint Mary's 11 (team 1 won= 0 )
+  - Purdue 3  vs.  Old Dominion 14 (team 1 won= 1 )
+  - Cincinnati 7  vs.  Iowa 10 (team 1 won= 1 )
+  - Tennessee 2  vs.  Colgate 15 (team 1 won= 1 )
+  - --- South  round  2 ---
+  - Virginia 1  vs.  Oklahoma 9 (team 1 won= 1 )
+  - Wisconsin 5  vs.  Kansas State 4 (team 1 won= 1 )
+  - Saint Mary's 11  vs.  Purdue 3 (team 1 won= 0 )
+  - Cincinnati 7  vs.  Tennessee 2 (team 1 won= 0 )
+  - --- South  round  3 ---
+  - Virginia 1  vs.  Wisconsin 5 (team 1 won= 1 )
+  - Purdue 3  vs.  Tennessee 2 (team 1 won= 1 )
+  - --- South  round  4 ---
+  - Virginia 1  vs.  Purdue 3 (team 1 won= 1 )
+  - Winner of  South : ('Virginia', 1)
+  - --- MidWest  round  1 ---
+  - UNC 1  vs.  Iona 16 (team 1 won= 1 )
+  - Utah State 8  vs.  Washington 9 (team 1 won= 0 )
+  - Auburn 5  vs.  New Mexico State 12 (team 1 won= 1 )
+  - Kansas 4  vs.  Northeastern 13 (team 1 won= 1 )
+  - Iowa State 6  vs.  Ohio State 11 (team 1 won= 1 )
+  - Houston 3  vs.  Georgia State 14 (team 1 won= 1 )
+  - Wofford 7  vs.  Seton Hall 10 (team 1 won= 1 )
+  - Kentucky 2  vs.  Abilene Christian 15 (team 1 won= 1 )
+  - --- MidWest  round  2 ---
+  - UNC 1  vs.  Washington 9 (team 1 won= 0 )
+  - Auburn 5  vs.  Kansas 4 (team 1 won= 1 )
+  - Iowa State 6  vs.  Houston 3 (team 1 won= 1 )
+  - Wofford 7  vs.  Kentucky 2 (team 1 won= 1 )
+  - --- MidWest  round  3 ---
+  - Washington 9  vs.  Auburn 5 (team 1 won= 0 )
+  - Iowa State 6  vs.  Wofford 7 (team 1 won= 1 )
+  - --- MidWest  round  4 ---
+  - Auburn 5  vs.  Iowa State 6 (team 1 won= 1 )
+
+  - --- FinalFour  round  1 ---
+  - Duke 1  vs.  Gonzaga 1 (team 1 won= 1 )
+  - Virginia 1  vs.  Auburn 5 (team 1 won= 0 )
+  - --- FinalFour  round  2 ---
+  - Duke 1  vs.  Auburn 5 (team 1 won= 0 )
+  - Winner of  FinalFour : ('Auburn', 5)
+  - Winner of  MidWest : ('Auburn', 5)
+## Results (Version 1 calculated using Logistic Regression in March 2018 ~90th percentil)
   (Using regular season team statistics, matchup data from 2011-2017 post season games and Logistic Regression):
   - --- South  round  1 ---
   - Virginia 1  vs.  Maryland-Baltimore County 16 (team 1 won= True )
