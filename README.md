@@ -29,7 +29,7 @@ Description:
       - If you upload through the interface, Copy files out of container using `docker cp <containerId>:/file/path/within/container       /host/path/target`. If you mount a volume into the container then you are okay.
       -manipulate which model you want to use to generate bracker by changing the model used in "evaluate_winner" function to one of the previous models used in the notebook.
       - If your python kernels keep dying increase the Memory allowed for docker containers in Docker > Settings
-  ## Results (Version 1 with new data and Logistic Regression in March 2019)
+  ## Results (Version 1 with new data and Logistic Regression in March 2019 82.8 percentile)
   - --- East  round  1 ---
   - Duke 1  vs.  North Carolina Central 16 (team 1 won= 1 )
   - VCU 8  vs.  UCF 9 (team 1 won= 1 )
