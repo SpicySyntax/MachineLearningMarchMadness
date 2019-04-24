@@ -232,7 +232,7 @@ Description:
       - Add tournament appearances in last 2 years
     - Remove outliers, or incorrect values (- when supposed to be +)
     - Augment the data set with regular season games + stats (create artificial rank using team statistics => train a model for this)
-    - Try out XGBoost instead of logistic regression
+    - Look into LSTM implementation if time permits
 
   - Improve method for prediction
     - Use Evolutionary method to optimize hyper-parameters (learning rate batch size)
