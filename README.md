@@ -137,7 +137,7 @@ jupyter notebook .
 
 ## Results (Version 1 calculated using Logistic Regression in March 2018 ~90th percentile (If I remember correctly))
 
-### Got 2n in both work brackets and personal brackets
+### Got 2nd in both work brackets and personal brackets
 
   (Using regular season team statistics, matchup data from 2011-2017 post season games and Logistic Regression):
 
