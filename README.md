@@ -7,7 +7,7 @@ Description:
 
 ## Prerequisites
 
-- Conda Python 3.7 version installation <https://www.anaconda.com/>
+- Conda Python 3.7 [installation](https://www.anaconda.com/)
 
 ### Install Dependencies
 
@@ -21,7 +21,7 @@ activate MachineLearningMarchMadness
 ## Components
 
 - `Web Scraper`:
-  - to gather the data from https://www.sports-reference.com/cbb
+  - Gathers [NCAA basketball data](https://www.sports-reference.com/cbb)
   - run with `python scraper.py`
     - The scraper gathers regular season and post season game data and aggregate team statistics for the year range provided in scrape.py
     - Team Stats gathered (Team and Opponent)
@@ -45,7 +45,7 @@ jupyter notebook .
 
 ## Results (Version 1 with new data and Logistic Regression in March 2019 82.8 percentile)
 
-### Did great with the Auburn Prediction though! Got Second in work bracket and 1st in personal bracket
+### Did great with the Auburn Prediction though! Got 2nd in work bracket and 1st in personal bracket
 
 - --- East  round  1 ---
   - Duke 1  vs.  North Carolina Central 16 (team 1 won= 1 )
@@ -137,7 +137,7 @@ jupyter notebook .
 
 ## Results (Version 1 calculated using Logistic Regression in March 2018 ~90th percentile (If I remember correctly))
 
-### Got Second in both work brackets and personal brackets
+### Got 2n in both work brackets and personal brackets
 
   (Using regular season team statistics, matchup data from 2011-2017 post season games and Logistic Regression):
 
