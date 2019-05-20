@@ -247,6 +247,8 @@ jupyter notebook .
 
 ## V3 Goals
 
+- Enter Kaggle Competition in 2020 (Invesigate new data): https://www.kaggle.com/c/mens-machine-learning-competition-2019
+
 - Improve the data
   - Further clean the data, remove correlated variables (see https://developers.google.com/machine-learning/crash-course/representation/cleaning-data)
   - Add some artificial features:
