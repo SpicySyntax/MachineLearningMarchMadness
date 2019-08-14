@@ -3,7 +3,7 @@
 Predictive solution for March Madness bracket
 Description:
 
-- Predict the NCAA tournament bracket using data scraped from the Web and Machine Learning algorithms.
+- Predict the NCAA tournament bracket using data scraped from the Web and a variety Machine Learning algorithms.
 
 ## Prerequisites
 
@@ -39,6 +39,7 @@ activate MachineLearningMarchMadness
 ### To start the notebooks
 
 ```bash
+# in activated conda environment
 cd Notebooks
 jupyter notebook .
 ```
