@@ -24,7 +24,10 @@ activate MachineLearningMarchMadness
 ## Components
 
 - `Web Scraper`:
-  - Gathers [NCAA basketball data](https://www.sports-reference.com/cbb)
+  - Gathers [NCAA basketball data](https://www.sports-reference.com/cbb),
+  - Prerequisite: Install [Chrome Driver](https://chromedriver.chromium.org/getting-started), noting the executable path
+  - place `chromedriver.exe` in the `Scraper` Directory
+  - set the `chrome_exe` path to your chrome executable in `scraper.py`
   - run with `python scraper.py`
     - The scraper gathers regular season and post season game data and aggregate team statistics for the year range provided in scrape.py
     - Team Stats gathered (Team and Opponent)
