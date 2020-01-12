@@ -265,15 +265,4 @@ jupyter notebook .
 
 - Improve method for prediction
   - Investigate performance of XG Boost to Logistic Regression (May be better for this type of tabular data)
-  - Use Evolutionary method to optimize hyper-parameters (learning rate batch size)
-  - Predict both team scores instead of outcome?
-  - Boost low seed stats if they beat a high seed, reduce high seed stats if they have close game with lower seed
 
-## V2 Changes
-
-- overtraining so I couldnt use it :(
-  - Use Pytorch to train a Neural network (done)
-  - Normalize feature vectors (done)
-  - Start with basic MLP with dropout and normalized inputsn (done)
-  - Introduce Dropout (done)
-  - Add validation splits and only save model when validation fails (done)
