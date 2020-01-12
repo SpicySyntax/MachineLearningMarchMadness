@@ -1,6 +1,3 @@
-'''
-    IMPORTS
-'''
 import csv
 import os
 from selenium import webdriver
@@ -9,10 +6,14 @@ from selenium.webdriver.chrome.options import Options
 import re
 import random
 from selenium.webdriver.support.ui import WebDriverWait
-'''
-    Data Record Classes
-'''
+
+# TODO: Cleanup up this whole 
+
+# Data Record Classes
 class TeamYearRecord:
+    """
+    Team Statistics for the Year
+    """
     def __init__(self):
         # record info
         self.year = 0
@@ -41,7 +42,11 @@ class TeamYearRecord:
         # conferece/schedule
         self.srs = 0
         self.sos = 0
+
 class GameRecord:
+    """
+    Data Record for Single Game Outcome
+    """
     def __init__(self, year_str):
         self.year_string = year_str
         self.team_1_name = ''
@@ -78,9 +83,7 @@ class GameRecord:
         self.team_1_score = float(school_1_score.strip())
         self.team_2_name = school_2.strip()
         self.team_2_score = float(school_2_score.strip())
-'''
-    Helper functions
-'''
+
 def is_number(s):
     try:
         float(s)
@@ -95,18 +98,18 @@ def is_number(s):
     except (TypeError, ValueError):
         pass
     return False
-'''
-    Scraper Class : A class to scrape team and game data from sports-reference.com and write it to csv
-    TODO: Add more team statistics, add more player statistics, add post-season game location into training data
-'''
+
 class Scraper:
+    """
+    Scrapes team and game data from sports-reference.com and write it to csv
+    """
     def __init__(self):
         # Do nothing for now
         pass
     def get_browser(self):
         # get chrome browser selenium driver
         chrome_options = Options()  
-        chrome_options.binary_location = 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
+        chrome_options.binary_location = 'C:\Program s (x86)\Google\Chrome\Application\chrome.exe'
         chrome_driver_exe_path = os.path.dirname(os.path.realpath(__file__)) + '\chromedriver.exe'
         browser = webdriver.Chrome(executable_path=chrome_driver_exe_path,   chrome_options=chrome_options)
         return browser
@@ -114,11 +117,10 @@ class Scraper:
         '''
             Scrapes a years worth of regular season data from sports-reference.com
         '''
-        # TODO: clean up this code
         url = 'https://www.sports-reference.com/cbb/seasons/' + year + '-school-stats.html'
         browser = self.get_browser()
         browser.maximize_window() # Make sure all data is displayed for dynamic web page by maximizing
-        browser.get(url) #navigate to page 
+        browser.get(url) # navigate to page 
         # gather the data rows from regular season school stats page
         headers = browser.find_elements_by_xpath("//thead//tr//th[contains(@class, 'poptip')]")
         table = browser.find_element_by_xpath("//table[contains(@class, 'stats_table')]")
@@ -403,9 +405,9 @@ class Scraper:
         self.write_school_records_csv(total_school_records)
         self.write_game_records_csv(total_game_records)
         self.write_post_season_game_records_csv(total_post_season_game_records)
+
+# By Default Scrape data from 2011-2019
 if __name__ == "__main__":
     scrape = Scraper()
     scrape.run(2011, 2019)
         
-
-
