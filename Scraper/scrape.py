@@ -409,5 +409,5 @@ class Scraper:
 # By Default Scrape data from 2011-2019
 if __name__ == "__main__":
     scrape = Scraper()
-    scrape.run(2011, 2019)
+    scrape.run(2011, 2020)
         
