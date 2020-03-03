@@ -7,6 +7,12 @@ verify_ssl = true
 
 [packages]
 selenium = "*"
+jupyter = "*"
+pandas = "*"
+numpy = "*"
+matplotlib = "*"
+sklearn = "*"
+xgboost = "*"
 
 [requires]
 python_version = "3.7"

@@ -10,44 +10,47 @@ Use this [link](https://nbviewer.jupyter.org/github/SpicySyntax/MachineLearningM
 
 ## Prerequisites
 
-- Conda Python 3.7 [installation](https://www.anaconda.com/)
+- [Python 3.7](https://www.python.org/downloads/release/python-376/)
+- [CMake](https://cmake.org/install/) (For XGBoost)
+- [Chrome Driver](https://chromedriver.chromium.org/downloads) (noting the executable path)
 
 ### Install Dependencies
 
-(In Anaconda Command prompt)
-
 ```bash
-conda env create -f MachineLearningMarchMadness.yml
-activate MachineLearningMarchMadness
+pip install pipenv
+pipenv shell
+pipenv install
 ```
 
 ## Components
 
-- `Web Scraper`:
+### Web Scraper:
   - Gathers [NCAA basketball data](https://www.sports-reference.com/cbb),
-  - Prerequisite: Install [Chrome Driver](https://chromedriver.chromium.org/getting-started), noting the executable path
-  - place `chromedriver.exe` in the `Scraper` Directory
-  - set the `chrome_exe` path to your chrome executable in `scraper.py`
-  - run with `python scraper.py`
-    - The scraper gathers regular season and post season game data and aggregate team statistics for the year range provided in scrape.py
-    - Team Stats gathered (Team and Opponent)
-      - `Per Game`: FG (Field Goal), 2P (Two Point), 3P (Three Point), ORB (Offensive Rebounds), DRB (Defensive Rebounds), AST (Assists),
-          STL (Steals), BLK (Blocks), TOV (Turn Overs), PF (Personal Fouls), PTS (Points)
-      - `Percentages`: FG (Field Goal), 2P (Two Point), 3P (Three Point), FT (Free-Throw), W/L (Win/Loss)
-      - `Yearly`: SRS (Simple Rating System), SOS (Strength of Schedule)
-      -Plan, gather team stats above for each team. Each of these will be used as the data points to decide wins for each round. The training will occur based off of game outcomes.
+  - The scraper gathers regular season and post season game data and aggregate team statistics for the year range provided in scrape.py
+      - Team Stats gathered (Team and Opponent)
+        - `Per Game`: FG (Field Goal), 2P (Two Point), 3P (Three Point), ORB (Offensive Rebounds), DRB (Defensive Rebounds), AST (Assists),
+            STL (Steals), BLK (Blocks), TOV (Turn Overs), PF (Personal Fouls), PTS (Points)
+        - `Percentages`: FG (Field Goal), 2P (Two Point), 3P (Three Point), FT (Free-Throw), W/L (Win/Loss)
+        - `Yearly`: SRS (Simple Rating System), SOS (Strength of Schedule)
+        - Gather team stats above for each team. Each of these will be used as the data points to decide wins for each round. The training will occur based off of game outcomes.
     - (The scraped data is provided in the source `./Scraper`)
     - Note: Currently both solutions only train using post season game records
 
-- `Notebooks (Python 3)`:
-  Jupyter Notebooks used to prepare the data and train the models
+#### To Run Scraper
+- set the `chrome_exe` path to your chrome executable in `scraper.py`
+- Run:
+```bash
+python scraper.py
+```
 
-### To start the notebooks
+
+### Notebooks:
+Jupyter Notebooks used to prepare the data and train the models
+
+#### To start the notebooks
 
 ```bash
-# in activated conda environment
-cd Notebooks
-jupyter notebook .
+pipenv run jupyter notebook
 ```
 
 ## Results (Version 1 with new data and Logistic Regression in March 2019 82.8 percentile)
