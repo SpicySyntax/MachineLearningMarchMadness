@@ -9,10 +9,10 @@ verify_ssl = true
 selenium = "*"
 jupyter = "*"
 pandas = "*"
-numpy = "*"
+numpy = "==1.19.3"
 matplotlib = "*"
 sklearn = "*"
 xgboost = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"

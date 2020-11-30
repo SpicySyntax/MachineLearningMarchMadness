@@ -10,7 +10,8 @@ Use this [link](https://nbviewer.jupyter.org/github/SpicySyntax/MachineLearningM
 
 ## Prerequisites
 
-- [Python 3.7](https://www.python.org/downloads/release/python-376/)
+- [Python 3.8](https://www.python.org/downloads/release/python-386/)
+  - Or use Homebrew or Chocalatey
 - [CMake](https://cmake.org/install/) (For XGBoost)
 - [Chrome Driver](https://chromedriver.chromium.org/downloads) (noting the executable path)
 
@@ -40,7 +41,7 @@ pipenv install
 - set the `chrome_exe` path to your chrome executable in `scraper.py`
 - Run:
 ```bash
-python scraper.py
+python scrape.py
 ```
 
 
