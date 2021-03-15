@@ -192,7 +192,7 @@ def get_team_stats_dict_ps(t1_stats, t2_stats, t1_seeds, t2_seeds):
 def create_team_stats_df_w_t1_win(
     indeces_w_stats, t1_stats_list, t2_stats_list, t1_wins
 ):
-    # Adds column for wether team 1 wins or not
+    # Adds column for whether team 1 wins or not
     # Assumes all lists are of the same length
     return pd.DataFrame(
         get_team_stats_dict_with_t1_win(t1_stats_list, t2_stats_list, t1_wins),
@@ -267,7 +267,6 @@ def get_matchups_stats(df_school, schools, post_season, year=2019):
         t2_name, t2_seed = schools[i + 1]
         t1_seeds.append(t1_seed)
         t2_seeds.append(t2_seed)
-        # print(t1_name, t2_name
         t1_stats.append(get_school_stats(df_school, year, resolve_team_name(t1_name)))
         t2_stats.append(get_school_stats(df_school, year, resolve_team_name(t2_name)))
         i = i + 2

@@ -12,6 +12,7 @@ from chromedriver_py import binary_path # this will get you the path variable
 # TODO: Cleanup up this whole file
 
 # Data Record Classes
+
 class TeamYearRecord:
     """
     Team Statistics for the Year
