@@ -3,94 +3,13 @@ import os
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
-import re
+
 import random
 from selenium.webdriver.support.ui import WebDriverWait
 from chromedriver_py import binary_path # this will get you the path variable
+from scraper.data import TeamYearStats, Game 
 
-
-# TODO: Cleanup up this whole file
-
-# Data Record Classes
-
-class TeamYearRecord:
-    """
-    Team Statistics for the Year
-    """
-
-    def __init__(self):
-        # record info
-        self.year = 0
-        self.team_link = ""
-        # team info
-        self.team_name = ""
-        # per game
-        self.fg_pg = 0
-        self.ft_pg = 0
-        self.three_pt_pg = 0
-        self.orb_pg = 0
-        self.drb_pg = 0
-        self.ast_pg = 0
-        self.stl_pg = 0
-        self.blk_pg = 0
-        self.tov_pg = 0
-        self.pf_pg = 0
-        self.pt_pg = 0
-        self.opnt_pt_pg = 0
-        # percent
-        self.fg_pct = 0
-        self.three_p_pct = 0
-        self.ft_pct = 0
-        self.wl_pct = 0
-        self.conf_wl_pct = 0
-        # conferece/schedule
-        self.srs = 0
-        self.sos = 0
-
-
-class GameRecord:
-    """
-    Data Record for Single Game Outcome
-    """
-
-    def __init__(self, year_str):
-        self.year_string = year_str
-        self.team_1_name = ""
-        self.team_1_score = 0
-        self.team_2_name = ""
-        self.team_2_score = 0
-        self.date_string = ""
-        self.team_1_seed = 0
-        self.team_2_seed = 0
-
-    def populate_with_game_result_string(self, game_result_str):
-        # Takes the game result string provided from team page regular season game
-        # display and parse the game record from it
-        num_date_and_venue, schools_and_outcome, score = game_result_str.split(",")
-        pd_index = num_date_and_venue.find(".")
-        date_and_venue = num_date_and_venue[pd_index:]
-        date = ""
-        if "@" in date_and_venue:
-            date, venue = date_and_venue.split("@")
-        elif "(Neutral)" in date_and_venue:
-            date, neut = date_and_venue.split("(")
-        else:
-            date = date_and_venue
-        date = date.replace(" ", "")
-        school_1_and_outcome, school_2 = schools_and_outcome.split("vs.")
-        record_pattern = r"\([0-9]+-[0-9]+\)"
-        matches = re.findall(record_pattern, school_1_and_outcome)
-        splitter = " "
-        if len(matches) > 0:
-            splitter = matches[0]
-        school_1, rest = school_1_and_outcome.split(splitter)
-        school_1_score, school_2_score = score.split("-")
-        self.date_string = date.strip().strip(".")
-        self.team_1_name = school_1.lstrip().rstrip()
-        self.team_1_score = float(school_1_score.strip())
-        self.team_2_name = school_2.strip()
-        self.team_2_score = float(school_2_score.strip())
-
+# TODO: clean up this whole file
 
 def is_number(s):
     try:
@@ -151,10 +70,10 @@ class Scraper:
             _ for _ in data_rows if "thead" not in _.get_attribute("class") or "t"
         ]
         # now we will fetch all relevant data from the table and then cache the link to each team page for game data retreival later
-        school_records = []
-        game_records_t1 = {}
-        game_records_t2 = {}
-        game_records = []
+        team_yearly_stats = []
+        games_t1 = {}
+        games_t2 = {}
+        games = []
         print("---Data Rows for " + year + "---")
         for row in data_rows:
             th_item = row.find_element_by_tag_name("th")
@@ -165,8 +84,8 @@ class Scraper:
                 row_num = row.get_attribute("data-row")
             # If Here then it is a true data row
             td_items = row.find_elements_by_tag_name("td")
-            school_record = TeamYearRecord()
-            school_record.year = self.getNum(year)
+            team_yearly_stat_record = TeamYearStats()
+            team_yearly_stat_record.year = self.getNum(year)
             num_games = 1
             conf_wins = 0
             conf_losses = 1
@@ -175,78 +94,78 @@ class Scraper:
                 data_stat = td_item.get_attribute("data-stat")
                 # Assumes we receive column data in the following order
                 if data_stat == "school_name":
-                    school_record.team_name = txt.replace("NCAA", "").strip()
+                    team_yearly_stat_record.team_name = txt.replace("NCAA", "").strip()
                     link = td_item.find_element_by_tag_name("a").get_attribute("href")
-                    school_record.team_link = link
+                    team_yearly_stat_record.team_link = link
                 elif data_stat == "win_loss_pct":
-                    school_record.wl_pct = self.getNum(txt)
+                    team_yearly_stat_record.wl_pct = self.getNum(txt)
                 elif data_stat == "g":
                     num_games = self.getNum(txt)
                 elif data_stat == "srs":
-                    school_record.srs = self.getNum(txt)
+                    team_yearly_stat_record.srs = self.getNum(txt)
                 elif data_stat == "sos":
-                    school_record.sos = self.getNum(txt)
+                    team_yearly_stat_record.sos = self.getNum(txt)
                 elif data_stat == "wins_conf":
                     conf_wins = self.getNum(txt)
                 elif data_stat == "losses_conf":
                     conf_losses = self.getNum(txt)
                 elif data_stat == "pts":
-                    school_record.pt_pg = self.getNum(txt) / num_games
+                    team_yearly_stat_record.pt_pg = self.getNum(txt) / num_games
                 elif data_stat == "opp_pts":
-                    school_record.opnt_pt_pg = self.getNum(txt) / num_games
+                    team_yearly_stat_record.opnt_pt_pg = self.getNum(txt) / num_games
                 elif data_stat == "fg":
-                    school_record.fg_pg = self.getNum(txt) / num_games
+                    team_yearly_stat_record.fg_pg = self.getNum(txt) / num_games
                 elif data_stat == "fg_pct":
-                    school_record.fg_pct = self.getNum(txt)
+                    team_yearly_stat_record.fg_pct = self.getNum(txt)
                 elif data_stat == "fg3":
-                    school_record.three_pt_pg = self.getNum(txt) / num_games
+                    team_yearly_stat_record.three_pt_pg = self.getNum(txt) / num_games
                 elif data_stat == "fg3_pct":
-                    school_record.three_p_pct = self.getNum(txt)
+                    team_yearly_stat_record.three_p_pct = self.getNum(txt)
                 elif data_stat == "ft":
-                    school_record.ft_pg = self.getNum(txt) / num_games
+                    team_yearly_stat_record.ft_pg = self.getNum(txt) / num_games
                 elif data_stat == "ft_pct":
-                    school_record.ft_pct = self.getNum(txt)
+                    team_yearly_stat_record.ft_pct = self.getNum(txt)
                 elif data_stat == "orb":
-                    school_record.orb_pg = self.getNum(txt) / num_games
+                    team_yearly_stat_record.orb_pg = self.getNum(txt) / num_games
                 elif data_stat == "trb":
-                    school_record.drb_pg = (
-                        self.getNum(txt) - school_record.orb_pg
+                    team_yearly_stat_record.drb_pg = (
+                        self.getNum(txt) - team_yearly_stat_record.orb_pg
                     ) / num_games
                 elif data_stat == "ast":
-                    school_record.ast_pg = self.getNum(txt) / num_games
+                    team_yearly_stat_record.ast_pg = self.getNum(txt) / num_games
                 elif data_stat == "stl":
-                    school_record.stl_pg = self.getNum(txt) / num_games
+                    team_yearly_stat_record.stl_pg = self.getNum(txt) / num_games
                 elif data_stat == "blk":
-                    school_record.blk_pg = self.getNum(txt) / num_games
+                    team_yearly_stat_record.blk_pg = self.getNum(txt) / num_games
                 elif data_stat == "tov":
-                    school_record.tov_pg = self.getNum(txt) / num_games
+                    team_yearly_stat_record.tov_pg = self.getNum(txt) / num_games
                 elif data_stat == "pf":
-                    school_record.pf_pg = self.getNum(txt) / num_games
+                    team_yearly_stat_record.pf_pg = self.getNum(txt) / num_games
                 else:
                     continue
-            school_record.conf_wl_pct = (
+            team_yearly_stat_record.conf_wl_pct = (
                 conf_wins / (conf_losses + conf_wins) if conf_losses != 0 else 1
             )
-            school_records.append(school_record)
+            team_yearly_stats.append(team_yearly_stat_record)
 
-        for school_record in school_records:
+        for team_yearly_stat_record in team_yearly_stats:
             # TODO: add additional team record and player data here
-            browser.get(school_record.team_link)
+            browser.get(team_yearly_stat_record.team_link)
             timeline_results = browser.find_element_by_xpath(
                 "//div[@id='timeline_results']"
             ).find_elements_by_xpath(".//li[@class='result']")
             for result in timeline_results:
-                gr = GameRecord(year)
+                gr = Game(year)
                 gr.populate_with_game_result_string(result.text)
                 date = gr.date_string
-                if date + gr.team_1_name in game_records_t2:
+                if date + gr.team_1_name in games_t2:
                     continue
                 else:
-                    game_records_t2[date + gr.team_2_name] = True
-                    game_records.append(gr)
+                    games_t2[date + gr.team_2_name] = True
+                    games.append(gr)
         # Close browser and return school and game records for the given year
         browser.close()
-        return school_records, game_records
+        return team_yearly_stats, games
 
     def get_games_from_region(self, browser, region_div, region_rounds, year):
         # Manually override class so that the proper data for the given region is shown
@@ -256,6 +175,8 @@ class Scraper:
         return self.parse_games_from_rounds(region_rounds, year)
 
     def scrape_year_of_ps_data(self, year):
+        if year == 2020: # fuck covid19
+            return
         # Go to post season page for the given year
         url = "https://www.sports-reference.com/cbb/postseason/" + year + "-ncaa.html"
         browser = self.get_browser()
@@ -362,7 +283,7 @@ class Scraper:
                 if t1_seed < 0 or t2_seed < 0:
                     print(" Negative seed...")
                     continue
-                gr = GameRecord(str(year))
+                gr = Game(str(year))
                 gr.team_1_name = t1_name
                 gr.team_1_score = t1_score
                 gr.team_1_seed = t1_seed
@@ -387,11 +308,12 @@ class Scraper:
         seed = self.getNum(seed_str)
         return seed, team_name, team_score
 
-    def write_post_season_game_records_csv(self, game_records):
+    def write_post_season_games_csv(self, games):
+        # TODO: replace with to_csv https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html
         # Writes all of the given game records to csv (post season include seeds)
-        if len(game_records) == 0:
+        if len(games) == 0:
             return
-        outfile = open("./post_season_game_records.csv", "w", newline="")
+        outfile = open("./post_season_games.csv", "w", newline="")
         writer = csv.writer(outfile)
         writer.writerow(
             [
@@ -404,24 +326,25 @@ class Scraper:
                 "team_2_seed",
             ]
         )
-        for game_record in game_records:
+        for game in games:
             writer.writerow(
                 [
-                    game_record.year_string,
-                    game_record.team_1_name,
-                    str(game_record.team_1_score),
-                    str(game_record.team_1_seed),
-                    game_record.team_2_name,
-                    str(game_record.team_2_score),
-                    str(game_record.team_2_seed),
+                    game.year_string,
+                    game.team_1_name,
+                    str(game.team_1_score),
+                    str(game.team_1_seed),
+                    game.team_2_name,
+                    str(game.team_2_score),
+                    str(game.team_2_seed),
                 ]
             )
 
-    def write_school_records_csv(self, school_records):
+    def write_team_yearly_stats_csv(self, team_yearly_stats):
+        # TODO: replace with to_csv https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html
         # Writes all school records to csv
-        if len(school_records) == 0:
+        if len(team_yearly_stats) == 0:
             return
-        outfile = open("./school_records.csv", "w", newline="")
+        outfile = open("./team_yearly_stats.csv", "w", newline="")
         writer = csv.writer(outfile)
         writer.writerow(
             [
@@ -448,38 +371,39 @@ class Scraper:
                 "sos",
             ]
         )
-        for school_record in school_records:
+        for team_yearly_stat_record in team_yearly_stats:
             writer.writerow(
                 [
-                    str(school_record.year),
-                    school_record.team_name,
-                    str(school_record.fg_pg),
-                    str(school_record.ft_pg),
-                    str(school_record.three_pt_pg),
-                    str(school_record.orb_pg),
-                    str(school_record.drb_pg),
-                    str(school_record.ast_pg),
-                    str(school_record.stl_pg),
-                    str(school_record.blk_pg),
-                    str(school_record.tov_pg),
-                    str(school_record.pf_pg),
-                    str(school_record.pt_pg),
-                    str(school_record.opnt_pt_pg),
-                    str(school_record.fg_pct),
-                    str(school_record.three_p_pct),
-                    str(school_record.ft_pct),
-                    str(school_record.wl_pct),
-                    str(school_record.conf_wl_pct),
-                    str(school_record.srs),
-                    str(school_record.sos),
+                    str(team_yearly_stat_record.year),
+                    team_yearly_stat_record.team_name,
+                    str(team_yearly_stat_record.fg_pg),
+                    str(team_yearly_stat_record.ft_pg),
+                    str(team_yearly_stat_record.three_pt_pg),
+                    str(team_yearly_stat_record.orb_pg),
+                    str(team_yearly_stat_record.drb_pg),
+                    str(team_yearly_stat_record.ast_pg),
+                    str(team_yearly_stat_record.stl_pg),
+                    str(team_yearly_stat_record.blk_pg),
+                    str(team_yearly_stat_record.tov_pg),
+                    str(team_yearly_stat_record.pf_pg),
+                    str(team_yearly_stat_record.pt_pg),
+                    str(team_yearly_stat_record.opnt_pt_pg),
+                    str(team_yearly_stat_record.fg_pct),
+                    str(team_yearly_stat_record.three_p_pct),
+                    str(team_yearly_stat_record.ft_pct),
+                    str(team_yearly_stat_record.wl_pct),
+                    str(team_yearly_stat_record.conf_wl_pct),
+                    str(team_yearly_stat_record.srs),
+                    str(team_yearly_stat_record.sos),
                 ]
             )
 
-    def write_game_records_csv(self, game_records):
+    def write_games_csv(self, games):
+        # TODO: replace with to_csv https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html
         # Writes all regular season game records to csv
-        if len(game_records) == 0:
+        if len(games) == 0:
             return
-        outfile = open("./game_records.csv", "w", newline="")
+        outfile = open("./games.csv", "w", newline="")
         writer = csv.writer(outfile)
         writer.writerow(
             [
@@ -491,15 +415,15 @@ class Scraper:
                 "date_string",
             ]
         )
-        for game_record in game_records:
+        for game in games:
             writer.writerow(
                 [
-                    game_record.year_string,
-                    game_record.team_1_name,
-                    str(game_record.team_1_score),
-                    game_record.team_2_name,
-                    str(game_record.team_2_score),
-                    game_record.date_string,
+                    game.year_string,
+                    game.team_1_name,
+                    str(game.team_1_score),
+                    game.team_2_name,
+                    str(game.team_2_score),
+                    game.date_string,
                 ]
             )
 
@@ -509,28 +433,28 @@ class Scraper:
         except:
             return -1
 
-    def run(self, start_year, end_year):
+    def scrape(self, start_year, end_year):
         # top level method for fetching all desired team and game data from 'start_year' to 'end_year'
         year = start_year
-        total_school_records = []
-        total_game_records = []
-        total_post_season_game_records = []
+        total_team_yearly_stats = []
+        total_games = []
+        total_post_season_games = []
         while year <= end_year:
-            school_records, game_records = self.scrape_year_of_rs_data(str(year))
-            total_school_records = total_school_records + school_records
-            total_game_records = total_game_records + game_records
+            team_yearly_stats, games = self.scrape_year_of_rs_data(str(year))
+            total_team_yearly_stats = total_team_yearly_stats + team_yearly_stats
+            total_games = total_games + games
             if year < end_year:
                 post_season_gr = self.scrape_year_of_ps_data(str(year))
-                total_post_season_game_records = (
-                    total_post_season_game_records + post_season_gr
+                total_post_season_games = (
+                    total_post_season_games + post_season_gr
                 )
             year = year + 1
-        self.write_school_records_csv(total_school_records)
-        self.write_game_records_csv(total_game_records)
-        self.write_post_season_game_records_csv(total_post_season_game_records)
+        self.write_team_yearly_stats_csv(total_team_yearly_stats)
+        self.write_games_csv(total_games)
+        self.write_post_season_games_csv(total_post_season_games)
 
 
-# By Default Scrape data from 2011-2019
+# By Default Scrape data from 2011-2021
 if __name__ == "__main__":
     scrape = Scraper()
-    scrape.run(2011, 2021)
+    scrape.scrape(2011, 2021)

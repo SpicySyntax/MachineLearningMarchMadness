@@ -43,7 +43,7 @@ poetry shell
 - set the `chrome_exe` path to your chrome executable in `scraper.py`
 - Run:
 ```bash
-python scrape.py
+poetry run python scraper/scraper.py
 ```
 
 
@@ -53,7 +53,7 @@ Jupyter Notebooks used to prepare the data and train the models
 #### To start the notebooks
 
 ```bash
-pipenv run jupyter notebook
+poetry run jupyter notebook
 ```
 
 ## Results (Version 1 with new data and Logistic Regression in March 2019 82.8 percentile)
@@ -275,3 +275,4 @@ pipenv run jupyter notebook
 - Improve method for prediction
   - Investigate performance of XG Boost to Logistic Regression (May be better for this type of tabular data)
 
+- Tournament results visualization
