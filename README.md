@@ -13,14 +13,16 @@ Use this [link](https://nbviewer.jupyter.org/github/SpicySyntax/MachineLearningM
 - [Python 3.8](https://www.python.org/downloads/release/python-386/)
   - Or use Homebrew or Chocalatey
 - [CMake](https://cmake.org/install/) (For XGBoost)
+- [Poetry](https://python-poetry.org/)
 - [Chrome Driver](https://chromedriver.chromium.org/downloads) (noting the executable path)
 
 ### Install Dependencies
 
 ```bash
-pip install pipenv
-pipenv shell
-pipenv install
+pip install poetry
+poetry install
+# Activate shell
+poetry shell
 ```
 
 ## Components
