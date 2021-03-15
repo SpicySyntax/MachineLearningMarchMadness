@@ -6,9 +6,11 @@ from selenium.webdriver.chrome.options import Options
 import re
 import random
 from selenium.webdriver.support.ui import WebDriverWait
+from chromedriver_py import binary_path # this will get you the path variable
+
 
 # TODO: Cleanup up this whole file
-chrome_exe = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+
 # Data Record Classes
 class TeamYearRecord:
     """
@@ -118,12 +120,9 @@ class Scraper:
     def get_browser(self):
         # get chrome browser selenium driver
         chrome_options = Options()
-        chrome_options.binary_location = chrome_exe
-        chrome_driver_exe_path = (
-            os.path.dirname(os.path.realpath(__file__)) + "\chromedriver.exe"
-        )
+
         browser = webdriver.Chrome(
-            executable_path=chrome_driver_exe_path, chrome_options=chrome_options
+            executable_path=binary_path, chrome_options=chrome_options
         )
         return browser
 
@@ -533,4 +532,4 @@ class Scraper:
 # By Default Scrape data from 2011-2019
 if __name__ == "__main__":
     scrape = Scraper()
-    scrape.run(2011, 2020)
+    scrape.run(2011, 2021)
