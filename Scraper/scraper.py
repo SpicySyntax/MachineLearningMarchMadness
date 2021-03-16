@@ -443,8 +443,8 @@ class Scraper:
         total_team_yearly_stats = []
         total_games = []
         total_post_season_games = []
-        #years = [*range(start_year, end_year + 1)]
-        years = [2021]
+        years = [*range(start_year, end_year + 1)]
+
         for year in years: # TODO: parallelize this https://stackoverflow.com/questions/42732958/python-parallel-execution-with-selenium
             team_yearly_stats, games = self.scrape_year_of_rs_data(str(year))
             total_team_yearly_stats = total_team_yearly_stats + team_yearly_stats
