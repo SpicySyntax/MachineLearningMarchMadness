@@ -178,7 +178,7 @@ class Scraper:
         )
         return self.parse_games_from_rounds(region_rounds, year)
 
-    def scrape_year_of_ps_data(self, year):
+    def scrape_year_of_ps_data(self, year: str):
         if year == "2020": # fuck covid19
             return None
         # Go to post season page for the given year

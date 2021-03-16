@@ -252,7 +252,7 @@ def get_team_stats_df(df_school, game_df, should_print=False):
     return team_stats_df
 
 
-def get_matchups_stats(df_school, schools, post_season, year=2019):
+def get_matchups_stats(df_school, schools, post_season, year):
 
     i = 0
     t1_stats = []
