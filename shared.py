@@ -31,6 +31,8 @@ def resolve_team_name(team_name):
         "Ole Miss": "Mississippi",
         "Saint Mary's": "Saint Mary's (CA)",
         "UCF": "Central Florida",
+        "UCSBS": "UC-Santa Barbara",
+        "UNC Greensboro": "North Carolina-Greensboro"
     }
     # TODO: for V2 add more corrections to the team_name_dict
     if team_name in team_name_dict:
@@ -38,9 +40,10 @@ def resolve_team_name(team_name):
     return team_name
 
 
-def get_school_stats(df_school, year, team_name):
-    return df_school[
-        (df_school["year"] == year) & (df_school["team_name"] == team_name)
+def get_team_stats(df_team, year, team_name):
+    print(f"getting team stats for {team_name} {year}")
+    return df_team[
+        (df_team["year"] == year) & (df_team["team_name"] == team_name)
     ]
 
 
@@ -218,7 +221,7 @@ def create_team_stats_df_ps(
     )
 
 
-def get_team_stats_df(df_school, game_df, should_print=False):
+def get_team_stats_df(df_team, game_df, should_print=False):
     indeces_w_stats = []
     t1_stats_list = []
     t2_stats_list = []
@@ -229,8 +232,8 @@ def get_team_stats_df(df_school, game_df, should_print=False):
         team_2 = row["team_2_name"]
         team_1_score = row["team_1_score"]
         team_2_score = row["team_2_score"]
-        t1_stats = get_school_stats(df_school, year, resolve_team_name(team_1))
-        t2_stats = get_school_stats(df_school, year, resolve_team_name(team_2))
+        t1_stats = get_team_stats(df_team, year, resolve_team_name(team_1))
+        t2_stats = get_team_stats(df_team, year, resolve_team_name(team_2))
 
         if len(t1_stats) > 0 and len(t2_stats) > 0:
             indeces_w_stats.append(index)
@@ -252,37 +255,37 @@ def get_team_stats_df(df_school, game_df, should_print=False):
     return team_stats_df
 
 
-def get_matchups_stats(df_school, schools, post_season, year):
-
+def get_matchups_stats(df_team, teams, post_season, year):
+    print("Getting matchup stats")
     i = 0
     t1_stats = []
     t2_stats = []
     t1_seeds = []
     t2_seeds = []
-    if not is_power_of_two(len(schools)):
-        print("ERROR: invalid number of school names")
+    if not is_power_of_two(len(teams)):
+        print("ERROR: invalid number of team names")
         return False
-    while i < len(schools):
-        t1_name, t1_seed = schools[i]
-        t2_name, t2_seed = schools[i + 1]
+    while i < len(teams):
+        t1_name, t1_seed = teams[i]
+        t2_name, t2_seed = teams[i + 1]
         t1_seeds.append(t1_seed)
         t2_seeds.append(t2_seed)
-        t1_stats.append(get_school_stats(df_school, year, resolve_team_name(t1_name)))
-        t2_stats.append(get_school_stats(df_school, year, resolve_team_name(t2_name)))
+        t1_stats.append(get_team_stats(df_team, year, resolve_team_name(t1_name)))
+        t2_stats.append(get_team_stats(df_team, year, resolve_team_name(t2_name)))
         i = i + 2
     if post_season:
         matchup_stats = create_team_stats_df_ps(
-            range(0, int(len(schools) / 2)), t1_stats, t2_stats, t1_seeds, t2_seeds
+            range(0, int(len(teams) / 2)), t1_stats, t2_stats, t1_seeds, t2_seeds
         )
     else:
         matchup_stats = create_team_stats_df(
-            range(0, int(len(schools) / 2)), t1_stats, t2_stats
+            range(0, int(len(teams) / 2)), t1_stats, t2_stats
         )
     return matchup_stats
 
 
 def is_power_of_two(num):
-    return ((num & (num - 1)) == 0) and num != 0
+    return (((num & (num - 1)) == 0) and num != 0) or num == 2
 
 
 ps_feature_col_names = [
