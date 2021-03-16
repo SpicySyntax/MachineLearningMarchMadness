@@ -13,14 +13,17 @@ Use this [link](https://nbviewer.jupyter.org/github/SpicySyntax/MachineLearningM
 - [Python 3.8](https://www.python.org/downloads/release/python-386/)
   - Or use Homebrew or Chocalatey
 - [CMake](https://cmake.org/install/) (For XGBoost)
-- [Chrome Driver](https://chromedriver.chromium.org/downloads) (noting the executable path)
+- [XGBoost](https://xgboost.readthedocs.io/en/latest/) use[brew](https://formulae.brew.sh/formula/xgboost) for Mac
+- [Poetry](https://python-poetry.org/)
+
 
 ### Install Dependencies
 
 ```bash
-pip install pipenv
-pipenv shell
-pipenv install
+pip install poetry
+poetry install
+# Activate shell
+poetry shell
 ```
 
 ## Components
@@ -38,10 +41,9 @@ pipenv install
     - Note: Currently both solutions only train using post season game records
 
 #### To Run Scraper
-- set the `chrome_exe` path to your chrome executable in `scraper.py`
 - Run:
 ```bash
-python scrape.py
+poetry run python scraper/scraper.py
 ```
 
 
@@ -51,7 +53,7 @@ Jupyter Notebooks used to prepare the data and train the models
 #### To start the notebooks
 
 ```bash
-pipenv run jupyter notebook
+poetry run jupyter notebook
 ```
 
 ## Results (Version 1 with new data and Logistic Regression in March 2019 82.8 percentile)
@@ -273,3 +275,4 @@ pipenv run jupyter notebook
 - Improve method for prediction
   - Investigate performance of XG Boost to Logistic Regression (May be better for this type of tabular data)
 
+- Tournament results visualization
