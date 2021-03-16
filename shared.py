@@ -41,7 +41,6 @@ def resolve_team_name(team_name):
 
 
 def get_team_stats(df_team, year, team_name):
-    print(f"getting team stats for {team_name} {year}")
     return df_team[
         (df_team["year"] == year) & (df_team["team_name"] == team_name)
     ]
@@ -248,7 +247,6 @@ def get_team_stats_df(df_team, game_df, should_print=False):
                 if len(t2_stats) < 1:
                     print(team_2)
 
-    print(len(indeces_w_stats))
     team_stats_df = create_team_stats_df_w_t1_win(
         indeces_w_stats, t1_stats_list, t2_stats_list, t1_wins_list
     )
@@ -256,7 +254,6 @@ def get_team_stats_df(df_team, game_df, should_print=False):
 
 
 def get_matchups_stats(df_team, teams, post_season, year):
-    print("Getting matchup stats")
     i = 0
     t1_stats = []
     t2_stats = []
