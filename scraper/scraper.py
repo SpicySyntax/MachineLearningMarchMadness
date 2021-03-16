@@ -317,7 +317,7 @@ class Scraper:
         # Writes all of the given game records to csv (post season include seeds)
         if len(games) == 0:
             return
-        outfile = open("./post_season_games.csv", "w", newline="")
+        outfile = open("data/post_season_games.csv", "w", newline="")
         writer = csv.writer(outfile)
         writer.writerow(
             [
@@ -348,7 +348,7 @@ class Scraper:
         # Writes all school records to csv
         if len(team_yearly_stats) == 0:
             return
-        outfile = open("./team_yearly_stats.csv", "w", newline="")
+        outfile = open("data/team_yearly_stats.csv", "w", newline="")
         writer = csv.writer(outfile)
         writer.writerow(
             [
@@ -407,7 +407,7 @@ class Scraper:
         # Writes all regular season game records to csv
         if len(games) == 0:
             return
-        outfile = open("./games.csv", "w", newline="")
+        outfile = open("data/games.csv", "w", newline="")
         writer = csv.writer(outfile)
         writer.writerow(
             [
