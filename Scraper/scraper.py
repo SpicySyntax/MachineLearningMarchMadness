@@ -7,9 +7,10 @@ from selenium.webdriver.chrome.options import Options
 import random
 from selenium.webdriver.support.ui import WebDriverWait
 from chromedriver_py import binary_path # this will get you the path variable
-from scraper.data import TeamYearStats, Game 
+from scraper.data import TeamYearStats, Game
+from joblib import Parallel, delayed
 
-# TODO: clean up this whole file
+# TODO: clean up this whole file, sorry to whomever is reading this
 
 def is_number(s):
     try:
@@ -100,7 +101,10 @@ class Scraper:
                 elif data_stat == "win_loss_pct":
                     team_yearly_stat_record.wl_pct = self.getNum(txt)
                 elif data_stat == "g":
-                    num_games = self.getNum(txt)
+                    if self.getNum(txt) == 0:
+                        continue
+                    else:
+                        num_games = self.getNum(txt)
                 elif data_stat == "srs":
                     team_yearly_stat_record.srs = self.getNum(txt)
                 elif data_stat == "sos":
@@ -175,8 +179,8 @@ class Scraper:
         return self.parse_games_from_rounds(region_rounds, year)
 
     def scrape_year_of_ps_data(self, year):
-        if year == 2020: # fuck covid19
-            return
+        if year == "2020": # fuck covid19
+            return None
         # Go to post season page for the given year
         url = "https://www.sports-reference.com/cbb/postseason/" + year + "-ncaa.html"
         browser = self.get_browser()
@@ -435,20 +439,23 @@ class Scraper:
 
     def scrape(self, start_year, end_year):
         # top level method for fetching all desired team and game data from 'start_year' to 'end_year'
-        year = start_year
+
         total_team_yearly_stats = []
         total_games = []
         total_post_season_games = []
-        while year <= end_year:
+        #years = [*range(start_year, end_year + 1)]
+        years = [2021]
+        for year in years: # TODO: parallelize this https://stackoverflow.com/questions/42732958/python-parallel-execution-with-selenium
             team_yearly_stats, games = self.scrape_year_of_rs_data(str(year))
             total_team_yearly_stats = total_team_yearly_stats + team_yearly_stats
             total_games = total_games + games
             if year < end_year:
                 post_season_gr = self.scrape_year_of_ps_data(str(year))
-                total_post_season_games = (
-                    total_post_season_games + post_season_gr
-                )
-            year = year + 1
+                if post_season_gr:
+                    total_post_season_games = (
+                        total_post_season_games + post_season_gr
+                    )
+
         self.write_team_yearly_stats_csv(total_team_yearly_stats)
         self.write_games_csv(total_games)
         self.write_post_season_games_csv(total_post_season_games)

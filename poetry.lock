@@ -1035,7 +1035,7 @@ scikit-learn = ["scikit-learn"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "de608af6bfa75186697653fcc32e4a13845aebb0d406805526823408f20bf993"
+content-hash = "aa84e545b21ada562ced26da90a8120c46645ac76f28895f3fb2c98526e83903"
 
 [metadata.files]
 appdirs = [

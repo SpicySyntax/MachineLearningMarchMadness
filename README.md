@@ -14,7 +14,7 @@ Use this [link](https://nbviewer.jupyter.org/github/SpicySyntax/MachineLearningM
   - Or use Homebrew or Chocalatey
 - [CMake](https://cmake.org/install/) (For XGBoost)
 - [Poetry](https://python-poetry.org/)
-- [Chrome Driver](https://chromedriver.chromium.org/downloads) (noting the executable path)
+
 
 ### Install Dependencies
 
@@ -40,7 +40,6 @@ poetry shell
     - Note: Currently both solutions only train using post season game records
 
 #### To Run Scraper
-- set the `chrome_exe` path to your chrome executable in `scraper.py`
 - Run:
 ```bash
 poetry run python scraper/scraper.py
