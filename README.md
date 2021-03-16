@@ -6,7 +6,7 @@ Description:
 - Goal: Predict the NCAA Mens Basketball tournament bracket using data scraped from the Web and a variety Machine Learning algorithms.
 
 ## If Notebook not loading in github
-Use this [link](https://nbviewer.jupyter.org/github/SpicySyntax/MachineLearningMarchMadness/blob/master/Notebooks/MachineLearningMarchMadnessV1.ipynb)
+Use this [link](https://nbviewer.jupyter.org/github/SpicySyntax/MachineLearningMarchMadness/blob/master/\MachineLearningMarchMadnessV1.ipynb)
 
 ## Prerequisites
 
