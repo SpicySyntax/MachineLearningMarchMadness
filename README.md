@@ -57,7 +57,7 @@ poetry run jupyter notebook
 ```
 
 ## 2021 results Logistic Regression Model
---- East  round  1 ---
+- --- East  round  1 ---
 Michigan 1  vs.  Texas Southern 16 (team 1 won= 1 )
 LSU 8  vs.  St. Bonaventure 9 (team 1 won= 1 )
 Colorado 5  vs.  Georgetown 12 (team 1 won= 1 )
@@ -66,18 +66,18 @@ BYU 6  vs.  Michigan State 11 (team 1 won= 1 )
 Texas 3  vs.  Abilene Christian 14 (team 1 won= 1 )
 UConn 7  vs.  Maryland 10 (team 1 won= 1 )
 Alabama 2  vs.  Iona 15 (team 1 won= 1 )
---- East  round  2 ---
+- --- East  round  2 ---
 Michigan 1  vs.  LSU 8 (team 1 won= 1 )
 Colorado 5  vs.  Florida State 4 (team 1 won= 0 )
 BYU 6  vs.  Texas 3 (team 1 won= 0 )
 UConn 7  vs.  Alabama 2 (team 1 won= 1 )
---- East  round  3 ---
+- --- East  round  3 ---
 Michigan 1  vs.  Florida State 4 (team 1 won= 1 )
 Texas 3  vs.  UConn 7 (team 1 won= 0 )
---- East  round  4 ---
+- --- East  round  4 ---
 Michigan 1  vs.  UConn 7 (team 1 won= 1 )
 Winner of  East : ('Michigan', 1)
---- West  round  1 ---
+- --- West  round  1 ---
 Gonzaga 1  vs.  Appalachian State 16 (team 1 won= 1 )
 Oklahoma 8  vs.  Missouri 9 (team 1 won= 1 )
 Creighton 5  vs.  UCSBS 12 (team 1 won= 1 )
@@ -86,7 +86,7 @@ USC 6  vs.  Wichita State 11 (team 1 won= 0 )
 Kansas 3  vs.  Eastern Washington 14 (team 1 won= 1 )
 Oregon 7  vs.  VCU 10 (team 1 won= 0 )
 Iowa 2  vs.  Grand Canyon 15 (team 1 won= 1 )
---- West  round  2 ---
+- --- West  round  2 ---
 Gonzaga 1  vs.  Oklahoma 8 (team 1 won= 1 )
 Creighton 5  vs.  Virginia 4 (team 1 won= 0 )
 Wichita State 11  vs.  Kansas 3 (team 1 won= 0 )
@@ -94,10 +94,10 @@ VCU 10  vs.  Iowa 2 (team 1 won= 0 )
 --- West  round  3 ---
 Gonzaga 1  vs.  Virginia 4 (team 1 won= 1 )
 Kansas 3  vs.  Iowa 2 (team 1 won= 0 )
---- West  round  4 ---
+- --- West  round  4 ---
 Gonzaga 1  vs.  Iowa 2 (team 1 won= 1 )
 Winner of  West : ('Gonzaga', 1)
---- South  round  1 ---
+- --- South  round  1 ---
 Baylor 1  vs.  Hartford 16 (team 1 won= 1 )
 UNC 8  vs.  Wisconsin 9 (team 1 won= 1 )
 Villanova 5  vs.  Winthrop 12 (team 1 won= 1 )
@@ -106,18 +106,18 @@ Texas Tech 6  vs.  Utah State 11 (team 1 won= 1 )
 Arkansas 3  vs.  Colgate 14 (team 1 won= 0 )
 Florida 7  vs.  Virginia Tech 10 (team 1 won= 1 )
 Ohio State 2  vs.  Oral Roberts 15 (team 1 won= 1 )
---- South  round  2 ---
+- --- South  round  2 ---
 Baylor 1  vs.  UNC 8 (team 1 won= 1 )
 Villanova 5  vs.  Purdue 4 (team 1 won= 0 )
 Texas Tech 6  vs.  Colgate 14 (team 1 won= 0 )
 Florida 7  vs.  Ohio State 2 (team 1 won= 1 )
---- South  round  3 ---
+- --- South  round  3 ---
 Baylor 1  vs.  Purdue 4 (team 1 won= 1 )
 Colgate 14  vs.  Florida 7 (team 1 won= 1 )
---- South  round  4 ---
+- --- South  round  4 ---
 Baylor 1  vs.  Colgate 14 (team 1 won= 1 )
 Winner of  South : ('Baylor', 1)
---- MidWest  round  1 ---
+- --- MidWest  round  1 ---
 Illinois 1  vs.  Drexel 16 (team 1 won= 1 )
 Loyola (IL) 8  vs.  Georgia Tech 9 (team 1 won= 0 )
 Tennessee 5  vs.  Oregon State 12 (team 1 won= 1 )
@@ -126,29 +126,29 @@ San Diego State 6  vs.  Syracuse 11 (team 1 won= 0 )
 West Virginia 3  vs.  Morehead State 14 (team 1 won= 1 )
 Clemson 7  vs.  Rutgers 10 (team 1 won= 0 )
 Houston 2  vs.  Cleveland State 15 (team 1 won= 1 )
---- MidWest  round  2 ---
+- --- MidWest  round  2 ---
 Illinois 1  vs.  Georgia Tech 9 (team 1 won= 0 )
 Tennessee 5  vs.  Oklahoma State 4 (team 1 won= 0 )
 Syracuse 11  vs.  West Virginia 3 (team 1 won= 1 )
 Rutgers 10  vs.  Houston 2 (team 1 won= 1 )
---- MidWest  round  3 ---
+- --- MidWest  round  3 ---
 Georgia Tech 9  vs.  Oklahoma State 4 (team 1 won= 0 )
 Syracuse 11  vs.  Rutgers 10 (team 1 won= 0 )
---- MidWest  round  4 ---
+- --- MidWest  round  4 ---
 Oklahoma State 4  vs.  Rutgers 10 (team 1 won= 0 )
 Winner of  MidWest : ('Rutgers', 10)
 
---- FinalFour  round  1 ---
+- --- FinalFour  round  1 ---
 Michigan 1  vs.  Gonzaga 1 (team 1 won= 0 )
 Baylor 1  vs.  Rutgers 10 (team 1 won= 1 )
---- FinalFour  round  2 ---
+- --- FinalFour  round  2 ---
 Gonzaga 1  vs.  Baylor 1 (team 1 won= 1 )
 Winner of  FinalFour : ('Gonzaga', 1)
 
 Ganzaga takes it all
 
 ## 2021 results XGBoost Model
---- East  round  1 ---
+- --- East  round  1 ---
 Michigan 1  vs.  Texas Southern 16 (team 1 won= 1 )
 LSU 8  vs.  St. Bonaventure 9 (team 1 won= 1 )
 Colorado 5  vs.  Georgetown 12 (team 1 won= 1 )
@@ -157,18 +157,18 @@ BYU 6  vs.  Michigan State 11 (team 1 won= 1 )
 Texas 3  vs.  Abilene Christian 14 (team 1 won= 1 )
 UConn 7  vs.  Maryland 10 (team 1 won= 1 )
 Alabama 2  vs.  Iona 15 (team 1 won= 1 )
---- East  round  2 ---
+- --- East  round  2 ---
 Michigan 1  vs.  LSU 8 (team 1 won= 1 )
 Colorado 5  vs.  Florida State 4 (team 1 won= 0 )
 BYU 6  vs.  Texas 3 (team 1 won= 0 )
 UConn 7  vs.  Alabama 2 (team 1 won= 0 )
---- East  round  3 ---
+- --- East  round  3 ---
 Michigan 1  vs.  Florida State 4 (team 1 won= 0 )
 Texas 3  vs.  Alabama 2 (team 1 won= 0 )
---- East  round  4 ---
+- --- East  round  4 ---
 Florida State 4  vs.  Alabama 2 (team 1 won= 0 )
 Winner of  East : ('Alabama', 2)
---- West  round  1 ---
+- --- West  round  1 ---
 Gonzaga 1  vs.  Appalachian State 16 (team 1 won= 1 )
 Oklahoma 8  vs.  Missouri 9 (team 1 won= 0 )
 Creighton 5  vs.  UCSBS 12 (team 1 won= 1 )
@@ -177,18 +177,18 @@ USC 6  vs.  Wichita State 11 (team 1 won= 1 )
 Kansas 3  vs.  Eastern Washington 14 (team 1 won= 1 )
 Oregon 7  vs.  VCU 10 (team 1 won= 1 )
 Iowa 2  vs.  Grand Canyon 15 (team 1 won= 1 )
---- West  round  2 ---
+- --- West  round  2 ---
 Gonzaga 1  vs.  Missouri 9 (team 1 won= 1 )
 Creighton 5  vs.  Virginia 4 (team 1 won= 0 )
 USC 6  vs.  Kansas 3 (team 1 won= 0 )
 Oregon 7  vs.  Iowa 2 (team 1 won= 0 )
---- West  round  3 ---
+- --- West  round  3 ---
 Gonzaga 1  vs.  Virginia 4 (team 1 won= 0 )
 Kansas 3  vs.  Iowa 2 (team 1 won= 0 )
---- West  round  4 ---
+- --- West  round  4 ---
 Virginia 4  vs.  Iowa 2 (team 1 won= 0 )
 Winner of  West : ('Iowa', 2)
---- South  round  1 ---
+- --- South  round  1 ---
 Baylor 1  vs.  Hartford 16 (team 1 won= 1 )
 UNC 8  vs.  Wisconsin 9 (team 1 won= 1 )
 Villanova 5  vs.  Winthrop 12 (team 1 won= 1 )
@@ -197,18 +197,18 @@ Texas Tech 6  vs.  Utah State 11 (team 1 won= 1 )
 Arkansas 3  vs.  Colgate 14 (team 1 won= 1 )
 Florida 7  vs.  Virginia Tech 10 (team 1 won= 1 )
 Ohio State 2  vs.  Oral Roberts 15 (team 1 won= 1 )
---- South  round  2 ---
+- --- South  round  2 ---
 Baylor 1  vs.  UNC 8 (team 1 won= 1 )
 Villanova 5  vs.  Purdue 4 (team 1 won= 0 )
 Texas Tech 6  vs.  Arkansas 3 (team 1 won= 1 )
 Florida 7  vs.  Ohio State 2 (team 1 won= 0 )
---- South  round  3 ---
+- --- South  round  3 ---
 Baylor 1  vs.  Purdue 4 (team 1 won= 1 )
 Texas Tech 6  vs.  Ohio State 2 (team 1 won= 0 )
---- South  round  4 ---
+- --- South  round  4 ---
 Baylor 1  vs.  Ohio State 2 (team 1 won= 0 )
 Winner of  South : ('Ohio State', 2)
---- MidWest  round  1 ---
+- --- MidWest  round  1 ---
 Illinois 1  vs.  Drexel 16 (team 1 won= 1 )
 Loyola (IL) 8  vs.  Georgia Tech 9 (team 1 won= 0 )
 Tennessee 5  vs.  Oregon State 12 (team 1 won= 1 )
@@ -217,22 +217,22 @@ San Diego State 6  vs.  Syracuse 11 (team 1 won= 1 )
 West Virginia 3  vs.  Morehead State 14 (team 1 won= 1 )
 Clemson 7  vs.  Rutgers 10 (team 1 won= 0 )
 Houston 2  vs.  Cleveland State 15 (team 1 won= 1 )
---- MidWest  round  2 ---
+- --- MidWest  round  2 ---
 Illinois 1  vs.  Georgia Tech 9 (team 1 won= 1 )
 Tennessee 5  vs.  Oklahoma State 4 (team 1 won= 1 )
 San Diego State 6  vs.  West Virginia 3 (team 1 won= 0 )
 Rutgers 10  vs.  Houston 2 (team 1 won= 0 )
---- MidWest  round  3 ---
+- --- MidWest  round  3 ---
 Illinois 1  vs.  Tennessee 5 (team 1 won= 1 )
 West Virginia 3  vs.  Houston 2 (team 1 won= 0 )
---- MidWest  round  4 ---
+- --- MidWest  round  4 ---
 Illinois 1  vs.  Houston 2 (team 1 won= 1 )
 Winner of  MidWest : ('Illinois', 1)
 
---- FinalFour  round  1 ---
+- --- FinalFour  round  1 ---
 Alabama 2  vs.  Iowa 2 (team 1 won= 0 )
 Ohio State 2  vs.  Illinois 1 (team 1 won= 0 )
---- FinalFour  round  2 ---
+- --- FinalFour  round  2 ---
 Iowa 2  vs.  Illinois 1 (team 1 won= 0 )
 Winner of  FinalFour : ('Illinois', 1)
 
