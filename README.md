@@ -56,7 +56,7 @@ Jupyter Notebooks used to prepare the data and train the models
 poetry run jupyter notebook
 ```
 
-## 2021 results Logistic Regression Model
+## 2021 results Logistic Regression Model (77.3 percentile)
 - --- East  round  1 ---
 Michigan 1  vs.  Texas Southern 16 (team 1 won= 1 )
 LSU 8  vs.  St. Bonaventure 9 (team 1 won= 1 )
@@ -147,7 +147,7 @@ Winner of  FinalFour : ('Gonzaga', 1)
 
 Ganzaga takes it all
 
-## 2021 results XGBoost Model
+## 2021 results XGBoost Model (~12th percentile :()
 - --- East  round  1 ---
 Michigan 1  vs.  Texas Southern 16 (team 1 won= 1 )
 LSU 8  vs.  St. Bonaventure 9 (team 1 won= 1 )
