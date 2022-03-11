@@ -179,7 +179,7 @@ class Scraper:
         return self.parse_games_from_rounds(region_rounds, year)
 
     def scrape_year_of_ps_data(self, year: str):
-        if year == "2020": # fuck covid19
+        if year == "2020": # screw covid19
             return None
         # Go to post season page for the given year
         url = "https://www.sports-reference.com/cbb/postseason/" + year + "-ncaa.html"
@@ -464,4 +464,4 @@ class Scraper:
 # By Default Scrape data from 2011-2021
 if __name__ == "__main__":
     scrape = Scraper()
-    scrape.scrape(2011, 2021)
+    scrape.scrape(2011, 2022)

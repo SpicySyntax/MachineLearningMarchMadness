@@ -43,7 +43,7 @@ poetry shell
 #### To Run Scraper
 - Run:
 ```bash
-poetry run python scraper/scraper.py
+poetry run python main.py
 ```
 
 
