@@ -262,42 +262,41 @@ class Scraper:
 
         for rd in rounds:
             # all children divs will be picked up
-            winners = rd.find_elements_by_xpath(".//div//div[@class='winner']")
-            losers = rd.find_elements_by_xpath(".//div//div[not(@class)]")
-            print(len(winners), len(losers))
-            if len(winners) != len(losers):
-                print("Error num losers != num winners for a round")
-                return []
-            i = 0
-            for winner in winners:
-                if bool(random.getrandbits(1)):
-                    t1_seed, t1_name, t1_score = self.parse_team_data_from_team_div(
-                        winner
-                    )
-                    t2_seed, t2_name, t2_score = self.parse_team_data_from_team_div(
-                        losers[i]
-                    )
-                else:
-                    t1_seed, t1_name, t1_score = self.parse_team_data_from_team_div(
-                        losers[i]
-                    )
-                    t2_seed, t2_name, t2_score = self.parse_team_data_from_team_div(
-                        winner
-                    )
-                if t1_seed < 0 or t2_seed < 0:
-                    print(" Negative seed...")
-                    continue
-                gr = Game(str(year))
-                gr.team_1_name = t1_name
-                gr.team_1_score = t1_score
-                gr.team_1_seed = t1_seed
-                gr.team_2_name = t2_name
-                gr.team_2_score = t2_score
-                gr.team_2_seed = t2_seed
+            round_games = rd.find_elements_by_xpath(".//div")
+            for game in round_games:
+                winner = game.find_elements_by_xpath(".//div[@class='winner']")
+                loser = game.find_elements_by_xpath(".//div[not(@class)]")
+                if (len(winner) == 1 and len(loser) == 1):
+                    if bool(random.getrandbits(1)):
+                        t1_seed, t1_name, t1_score = self.parse_team_data_from_team_div(
+                            winner[0]
+                        )
+                        t2_seed, t2_name, t2_score = self.parse_team_data_from_team_div(
+                            loser[0]
+                        )
+                    else:
+                        t1_seed, t1_name, t1_score = self.parse_team_data_from_team_div(
+                            loser[0]
+                        )
+                        t2_seed, t2_name, t2_score = self.parse_team_data_from_team_div(
+                            winner[0]
+                        )
+                    if t1_seed < 0 or t2_seed < 0:
+                        print(" Negative seed...")
+                        continue
+                    gr = Game(str(year))
+                    gr.team_1_name = t1_name
+                    gr.team_1_score = t1_score
+                    gr.team_1_seed = t1_seed
+                    gr.team_2_name = t2_name
+                    gr.team_2_score = t2_score
+                    gr.team_2_seed = t2_seed
 
-                games.append(gr)
-                i = i + 1
+                    games.append(gr)
+                else:
+                    continue # Cancelled Game (covid probably)
                 # TODO : add location fetching for v2 here
+
         return games
 
     def parse_team_data_from_team_div(self, team_div):
@@ -446,9 +445,9 @@ class Scraper:
         years = [*range(start_year, end_year + 1)]
 
         for year in years: # TODO: parallelize this https://stackoverflow.com/questions/42732958/python-parallel-execution-with-selenium
-            team_yearly_stats, games = self.scrape_year_of_rs_data(str(year))
-            total_team_yearly_stats = total_team_yearly_stats + team_yearly_stats
-            total_games = total_games + games
+            # team_yearly_stats, games = self.scrape_year_of_rs_data(str(year))
+            # total_team_yearly_stats = total_team_yearly_stats + team_yearly_stats
+            # total_games = total_games + games
             if year < end_year:
                 post_season_gr = self.scrape_year_of_ps_data(str(year))
                 if post_season_gr:
@@ -456,8 +455,9 @@ class Scraper:
                         total_post_season_games + post_season_gr
                     )
 
-        self.write_team_yearly_stats_csv(total_team_yearly_stats)
-        self.write_games_csv(total_games)
+
+        # self.write_team_yearly_stats_csv(total_team_yearly_stats)
+        # self.write_games_csv(total_games)
         self.write_post_season_games_csv(total_post_season_games)
 
 
