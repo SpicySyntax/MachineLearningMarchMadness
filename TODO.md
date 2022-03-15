@@ -12,8 +12,15 @@
   - Augment the data set with regular season games + stats (create artificial rank using team statistics => train a model for this)
 
 - reduce manual work needed to be completed each year
+ - auto populate tournament data after selection sunday
 
 - Improve method for prediction
   - Investigate performance of XG Boost to Logistic Regression (May be better for this type of tabular data)
 
 - Tournament results visualization
+
+- Refactoring
+  - cleanup messy code
+  - add tests
+  - move model training into python from jupyter notebook?
+  
