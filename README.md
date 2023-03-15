@@ -10,10 +10,8 @@ Use this [link](https://nbviewer.jupyter.org/github/SpicySyntax/MachineLearningM
 
 ## Prerequisites
 
-- [Python 3.8](https://www.python.org/downloads/release/python-386/)
+- [Python 3.8^](https://www.python.org/downloads/release/python-386/)
   - Or use Homebrew or Chocalatey
-- [CMake](https://cmake.org/install/) (For XGBoost)
-- [XGBoost](https://xgboost.readthedocs.io/en/latest/) use[brew](https://formulae.brew.sh/formula/xgboost) for Mac
 - [Poetry](https://python-poetry.org/)
 
 
