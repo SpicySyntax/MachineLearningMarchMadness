@@ -316,7 +316,7 @@ class Scraper:
         # Writes all of the given game records to csv (post season include seeds)
         if len(games) == 0:
             return
-        outfile = open("data/post_season_games.csv", "w", newline="")
+        outfile = open("data/post_season_games_new.csv", "w", newline="")
         writer = csv.writer(outfile)
         writer.writerow(
             [
@@ -347,7 +347,7 @@ class Scraper:
         # Writes all school records to csv
         if len(team_yearly_stats) == 0:
             return
-        outfile = open("data/team_yearly_stats.csv", "w", newline="")
+        outfile = open("data/team_yearly_stats_new.csv", "w", newline="")
         writer = csv.writer(outfile)
         writer.writerow(
             [
@@ -406,7 +406,7 @@ class Scraper:
         # Writes all regular season game records to csv
         if len(games) == 0:
             return
-        outfile = open("data/games.csv", "w", newline="")
+        outfile = open("data/games_new.csv", "w", newline="")
         writer = csv.writer(outfile)
         writer.writerow(
             [
@@ -445,9 +445,9 @@ class Scraper:
         years = [*range(start_year, end_year + 1)]
 
         for year in years: # TODO: parallelize this https://stackoverflow.com/questions/42732958/python-parallel-execution-with-selenium
-            # team_yearly_stats, games = self.scrape_year_of_rs_data(str(year))
-            # total_team_yearly_stats = total_team_yearly_stats + team_yearly_stats
-            # total_games = total_games + games
+            team_yearly_stats, games = self.scrape_year_of_rs_data(str(year))
+            total_team_yearly_stats = total_team_yearly_stats + team_yearly_stats
+            total_games = total_games + games
             if year < end_year:
                 post_season_gr = self.scrape_year_of_ps_data(str(year))
                 if post_season_gr:
@@ -456,8 +456,8 @@ class Scraper:
                     )
 
 
-        # self.write_team_yearly_stats_csv(total_team_yearly_stats)
-        # self.write_games_csv(total_games)
+        self.write_team_yearly_stats_csv(total_team_yearly_stats)
+        self.write_games_csv(total_games)
         self.write_post_season_games_csv(total_post_season_games)
 
 

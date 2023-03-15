@@ -11,7 +11,7 @@ jupyter = "*"
 pandas = "^1.2.3"
 numpy = "^1.20.1"
 matplotlib = "^3.3.4"
-sklearn = "^0.0"
+scikit-learn =  "^1.2.2"
 joblib = "^1.0.1"
 chromedriver-py = "111.0.5563.64"
 

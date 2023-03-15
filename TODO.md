@@ -13,6 +13,7 @@
 
 - reduce manual work needed to be completed each year
  - auto populate tournament data after selection sunday
+ - incremental data load
 
 - Improve method for prediction
   - Investigate performance of XG Boost to Logistic Regression (May be better for this type of tabular data)
@@ -28,4 +29,5 @@
   - march-ml
 
 - master -> main
+
   

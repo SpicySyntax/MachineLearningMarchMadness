@@ -1,5 +1,7 @@
 import re
 
+# TODO: this should probably be data classes
+
 class TeamYearStats:
     """
     Team Statistics for the Year
