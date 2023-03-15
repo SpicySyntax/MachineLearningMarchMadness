@@ -23,4 +23,9 @@
   - cleanup messy code
   - add tests
   - move model training into python from jupyter notebook?
+
+- Rename?
+  - march-ml
+
+- master -> main
   
