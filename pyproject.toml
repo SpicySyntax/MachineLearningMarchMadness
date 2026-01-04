@@ -8,6 +8,7 @@ dependencies = [
     "chromedriver-py>=143.0.7499.169",
     "joblib>=1.0.1",
     "jupyter>=1.1.1",
+    "lxml>=6.0.2",
     "matplotlib>=3.3.4",
     "numpy>=1.20.1",
     "pandas>=1.2.3",
