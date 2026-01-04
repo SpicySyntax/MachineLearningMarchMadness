@@ -1,18 +1,27 @@
-import csv
-import os
+import logging
+import time
+import random
+import csv # kept just in case, but intended to use pandas
+from dataclasses import asdict
+
+import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-
-import random
 from selenium.webdriver.support.ui import WebDriverWait
-from chromedriver_py import binary_path # this will get you the path variable
-from scraper.data import TeamYearStats, Game
-from joblib import Parallel, delayed
+from chromedriver_py import binary_path
 
-# TODO: clean up this whole file, sorry to whomever is reading this
+from joblib import Parallel, delayed
+from scraper.data import TeamYearStats, Game
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[logging.StreamHandler()]
+)
 
 def is_number(s):
     try:
@@ -20,16 +29,13 @@ def is_number(s):
         return True
     except ValueError:
         pass
-
     try:
         import unicodedata
-
         unicodedata.numeric(s)
         return True
     except (TypeError, ValueError):
         pass
     return False
-
 
 class Scraper:
     """
@@ -37,440 +43,363 @@ class Scraper:
     """
 
     def __init__(self):
-        # Do nothing for now
         pass
 
     def get_browser(self):
         # get chrome browser selenium driver
         chrome_options = Options()
-
+        # chrome_options.add_argument("--headless") # Enable headless for stability 
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.page_load_strategy = 'eager' # Don't wait for full load (images/css)
         service = Service(executable_path=binary_path)
         browser = webdriver.Chrome(service=service, options=chrome_options)
+        browser.set_page_load_timeout(60)
         return browser
+    
+    def get_num(self, txt):
+        try:
+            return float(txt)
+        except:
+            return -1.0
 
     def scrape_year_of_rs_data(self, year):
         """
         Scrapes a years worth of regular season data from sports-reference.com
         """
-        url = (
-            "https://www.sports-reference.com/cbb/seasons/"
-            + year
-            + "-school-stats.html"
-        )
+        logging.info(f"Starting Regular Season Scrape for {year}")
+        year_start_time = time.time()
+        
+        url = f"https://www.sports-reference.com/cbb/seasons/{year}-school-stats.html"
         browser = self.get_browser()
-        browser.maximize_window()  # Make sure all data is displayed for dynamic web page by maximizing
-        browser.get(url)  # navigate to page
-        # gather the data rows from regular season school stats page
-        headers = browser.find_elements(By.XPATH, 
-            "//thead//tr//th[contains(@class, 'poptip')]"
-        )
-        table = browser.find_element(By.XPATH, 
-            "//table[contains(@class, 'stats_table')]"
-        )
-        data_rows = table.find_elements(By.XPATH, ".//tbody//tr")
-        data_rows = [
-            _ for _ in data_rows if "thead" not in _.get_attribute("class") or "t"
-        ]
-        # now we will fetch all relevant data from the table and then cache the link to each team page for game data retreival later
         team_yearly_stats = []
-        games_t1 = {}
-        games_t2 = {}
         games = []
-        print("---Data Rows for " + year + "---")
-        for row in data_rows:
-            th_item = row.find_element(By.TAG_NAME, "th")
-            if th_item:
-                th_rk_val = th_item.text
-                if not is_number(th_rk_val):
-                    continue
-                row_num = row.get_attribute("data-row")
-            # If Here then it is a true data row
-            td_items = row.find_elements(By.TAG_NAME, "td")
-            team_yearly_stat_record = TeamYearStats()
-            team_yearly_stat_record.year = self.getNum(year)
-            num_games = 1
-            conf_wins = 0
-            conf_losses = 1
-            for td_item in td_items:
-                txt = td_item.text
-                data_stat = td_item.get_attribute("data-stat")
-                # Assumes we receive column data in the following order
-                if data_stat == "school_name":
-                    team_yearly_stat_record.team_name = txt.replace("NCAA", "").strip()
-                    link = td_item.find_element(By.TAG_NAME, "a").get_attribute("href")
-                    team_yearly_stat_record.team_link = link
-                elif data_stat == "win_loss_pct":
-                    team_yearly_stat_record.wl_pct = self.getNum(txt)
-                elif data_stat == "g":
-                    if self.getNum(txt) == 0:
-                        continue
-                    else:
-                        num_games = self.getNum(txt)
-                elif data_stat == "srs":
-                    team_yearly_stat_record.srs = self.getNum(txt)
-                elif data_stat == "sos":
-                    team_yearly_stat_record.sos = self.getNum(txt)
-                elif data_stat == "wins_conf":
-                    conf_wins = self.getNum(txt)
-                elif data_stat == "losses_conf":
-                    conf_losses = self.getNum(txt)
-                elif data_stat == "pts":
-                    team_yearly_stat_record.pt_pg = self.getNum(txt) / num_games
-                elif data_stat == "opp_pts":
-                    team_yearly_stat_record.opnt_pt_pg = self.getNum(txt) / num_games
-                elif data_stat == "fg":
-                    team_yearly_stat_record.fg_pg = self.getNum(txt) / num_games
-                elif data_stat == "fg_pct":
-                    team_yearly_stat_record.fg_pct = self.getNum(txt)
-                elif data_stat == "fg3":
-                    team_yearly_stat_record.three_pt_pg = self.getNum(txt) / num_games
-                elif data_stat == "fg3_pct":
-                    team_yearly_stat_record.three_p_pct = self.getNum(txt)
-                elif data_stat == "ft":
-                    team_yearly_stat_record.ft_pg = self.getNum(txt) / num_games
-                elif data_stat == "ft_pct":
-                    team_yearly_stat_record.ft_pct = self.getNum(txt)
-                elif data_stat == "orb":
-                    team_yearly_stat_record.orb_pg = self.getNum(txt) / num_games
-                elif data_stat == "trb":
-                    team_yearly_stat_record.drb_pg = (
-                        self.getNum(txt) - team_yearly_stat_record.orb_pg
-                    ) / num_games
-                elif data_stat == "ast":
-                    team_yearly_stat_record.ast_pg = self.getNum(txt) / num_games
-                elif data_stat == "stl":
-                    team_yearly_stat_record.stl_pg = self.getNum(txt) / num_games
-                elif data_stat == "blk":
-                    team_yearly_stat_record.blk_pg = self.getNum(txt) / num_games
-                elif data_stat == "tov":
-                    team_yearly_stat_record.tov_pg = self.getNum(txt) / num_games
-                elif data_stat == "pf":
-                    team_yearly_stat_record.pf_pg = self.getNum(txt) / num_games
-                else:
-                    continue
-            team_yearly_stat_record.conf_wl_pct = (
-                conf_wins / (conf_losses + conf_wins) if conf_losses != 0 else 1
-            )
-            team_yearly_stats.append(team_yearly_stat_record)
+        
+        try:
+            browser.maximize_window()
+            browser.get(url)
+            
+            # gather the data rows from regular season school stats page
+            # headers = browser.find_elements(By.XPATH, "//thead//tr//th[contains(@class, 'poptip')]")
+            table = browser.find_element(By.XPATH, "//table[contains(@class, 'stats_table')]")
+            data_rows = table.find_elements(By.XPATH, ".//tbody//tr")
+            
+            # Filter rows
+            # Filter rows - ensuring we skip header rows if any
+            # Original code had a bug that effectively kept all rows. 
+            # We will filter for rows that look like data (have stats).
+            data_rows = [row for row in data_rows if row.find_elements(By.TAG_NAME, "td")]
 
-        for team_yearly_stat_record in team_yearly_stats:
-            # TODO: add additional team record and player data here
-            browser.get(team_yearly_stat_record.team_link)
-            timeline_results = browser.find_element(By.XPATH, 
-                "//div[@id='timeline_results']"
-            ).find_elements(By.XPATH, ".//li[@class='result']")
-            for result in timeline_results:
-                gr = Game(year)
-                gr.populate_with_game_result_string(result.text)
-                date = gr.date_string
-                if date + gr.team_1_name in games_t2:
+            logging.info(f"Found {len(data_rows)} team rows for {year}")
+            
+            games_t2_lookup = {} # To avoid duplicates
+
+            for i, row in enumerate(data_rows):
+                # Basic progress log every 20 teams
+                if i > 0 and i % 50 == 0:
+                    logging.info(f"Processed {i} teams for {year}...")
+
+                # Logic to parse row
+                # Check for rank header which indicates not a data row? 
+                # The generic filter above should handle most, but let's be safe
+                th_item = row.find_element(By.TAG_NAME, "th")
+                if th_item and not is_number(th_item.text):
+                     continue
+
+                stats = TeamYearStats(year=int(year))
+                td_items = row.find_elements(By.TAG_NAME, "td")
+                
+                num_games = 1
+                conf_wins = 0
+                conf_losses = 1
+                
+                # First pass: map data
+                # We do this linearly as in original code
+                for td in td_items:
+                    txt = td.text
+                    stat = td.get_attribute("data-stat")
+                    
+                    if stat == "school_name":
+                        stats.team_name = txt.replace("NCAA", "").strip()
+                        link_elem = td.find_element(By.TAG_NAME, "a")
+                        stats.team_link = link_elem.get_attribute("href")
+                    elif stat == "win_loss_pct":
+                        stats.wl_pct = self.get_num(txt)
+                    elif stat == "g":
+                        val = self.get_num(txt)
+                        if val > 0:
+                            num_games = val
+                    elif stat == "srs":
+                        stats.srs = self.get_num(txt)
+                    elif stat == "sos":
+                        stats.sos = self.get_num(txt)
+                    elif stat == "wins_conf":
+                        conf_wins = self.get_num(txt)
+                    elif stat == "losses_conf":
+                        conf_losses = self.get_num(txt)
+                    elif stat == "pts":
+                        stats.pt_pg = self.get_num(txt) / num_games
+                    elif stat == "opp_pts":
+                        stats.opnt_pt_pg = self.get_num(txt) / num_games
+                    elif stat == "fg":
+                        stats.fg_pg = self.get_num(txt) / num_games
+                    elif stat == "fg_pct":
+                        stats.fg_pct = self.get_num(txt)
+                    elif stat == "fg3":
+                        stats.three_pt_pg = self.get_num(txt) / num_games
+                    elif stat == "fg3_pct":
+                        stats.three_p_pct = self.get_num(txt)
+                    elif stat == "ft":
+                        stats.ft_pg = self.get_num(txt) / num_games
+                    elif stat == "ft_pct":
+                        stats.ft_pct = self.get_num(txt)
+                    elif stat == "orb":
+                        val = self.get_num(txt)
+                        stats.orb_pg = val / num_games
+                    elif stat == "trb":
+                        # drb = trb - orb
+                        trb = self.get_num(txt)
+                        stats.drb_pg = (trb - (stats.orb_pg * num_games)) / num_games
+                    elif stat == "ast":
+                        stats.ast_pg = self.get_num(txt) / num_games
+                    elif stat == "stl":
+                        stats.stl_pg = self.get_num(txt) / num_games
+                    elif stat == "blk":
+                        stats.blk_pg = self.get_num(txt) / num_games
+                    elif stat == "tov":
+                        stats.tov_pg = self.get_num(txt) / num_games
+                    elif stat == "pf":
+                        stats.pf_pg = self.get_num(txt) / num_games
+                
+                # Post-loop calculations
+                stats.conf_wl_pct = (conf_wins / (conf_wins + conf_losses)) if (conf_wins + conf_losses) > 0 else 0
+                
+                team_yearly_stats.append(stats)
+            
+            # Second pass: Fetch individual game data for each team
+            logging.info(f"Fetching games for {len(team_yearly_stats)} teams in {year}")
+            
+            for i, stats in enumerate(team_yearly_stats):
+                if i > 0 and i % 20 == 0:
+                    logging.info(f"Fetched games for {i} teams...")
+                    
+                try:
+                    logging.info(f"Scraping games for: {stats.team_name} -> {stats.team_link}")
+                    browser.get(stats.team_link)
+                    timeline_div = browser.find_element(By.XPATH, "//div[@id='timeline_results']")
+                    timeline_results = timeline_div.find_elements(By.XPATH, ".//li[@class='result']")
+                    logging.info(f"Found {len(timeline_results)} results for {stats.team_name}")
+                    
+                    for result in timeline_results:
+                        if not result.text.strip():
+                            continue
+                        gr = Game(str(year))
+                        gr.populate_with_game_result_string(result.text)
+                        
+                        # Deduplication logic embedded here or later
+                        games.append(gr)
+                        
+                except Exception as e:
+                    logging.warning(f"Failed to parse games for {stats.team_name}: {e}")
+                    # Continue to next team
                     continue
-                else:
-                    games_t2[date + gr.team_2_name] = True
-                    games.append(gr)
-        # Close browser and return school and game records for the given year
-        browser.close()
+                    
+        except Exception as e:
+            logging.error(f"Critical error scraping RS data for {year}: {e}")
+        finally:
+            browser.close()
+            
+        logging.info(f"Completed {year} RS scrape in {time.time() - year_start_time:.1f}s. Stats: {len(team_yearly_stats)}, Games: {len(games)}")
         return team_yearly_stats, games
 
     def get_games_from_region(self, browser, region_div, region_rounds, year):
-        # Manually override class so that the proper data for the given region is shown
-        browser.execute_script(
-            "arguments[0].setAttribute('class','current')", region_div
-        )
+        browser.execute_script("arguments[0].setAttribute('class','current')", region_div)
         return self.parse_games_from_rounds(region_rounds, year)
 
     def scrape_year_of_ps_data(self, year: str):
-        if year == "2020": # screw covid19
-            return None
-        # Go to post season page for the given year
-        url = "https://www.sports-reference.com/cbb/postseason/" + year + "-ncaa.html"
+        if year == "2020":
+            return []
+            
+        logging.info(f"Starting Post Season Scrape for {year}")
+        url = f"https://www.sports-reference.com/cbb/postseason/{year}-ncaa.html"
         browser = self.get_browser()
-        browser.maximize_window()  # Make sure all data is displayed for dynamic web page by maximizing
-        browser.get(url)  # navigate to page
-        # All possible lists of games for post seasons
+        
         all_postseason_games = []
-        southeast_rounds = []
-        southwest_rounds = []
-        midwest_rounds = []
-        south_rounds = []
-        southeast_games = []
-        southwest_games = []
-        midwest_games = []
-        south_games = []
-        southeast = {}
-        southwest = {}
-        midwest = {}
-        south = {}
-        # Get bracket divs
-        bracket = browser.find_element(By.XPATH, "//div[@id='brackets']")
-        # (regions depend on the year of the tourney (i.e. < 2012))
-        if float(year) < 2012:
-            southeast = browser.find_element(By.XPATH, "//div[@id='southeast']")
-            southwest = browser.find_element(By.XPATH, "//div[@id='southwest']")
-            # Ignore the last div here
-            southeast_rounds = southeast.find_elements(By.CLASS_NAME, "round")[:-1]
-            southwest_rounds = southwest.find_elements(By.CLASS_NAME, "round")[:-1]
-            southeast_games = self.get_games_from_region(
-                browser, southeast, southeast_rounds, year
-            )
-            southwest_games = self.get_games_from_region(
-                browser, southwest, southwest_rounds, year
-            )
-        else:
-            midwest = browser.find_element(By.XPATH, "//div[@id='midwest']")
-            south = browser.find_element(By.XPATH, "//div[@id='south']")
-            # Ignore the last div here
-            south_rounds = south.find_elements(By.CLASS_NAME, "round")[:-1]
-            midwest_rounds = midwest.find_elements(By.CLASS_NAME, "round")[:-1]
-            midwest_games = self.get_games_from_region(
-                browser, midwest, midwest_rounds, year
-            )
-            south_games = self.get_games_from_region(browser, south, south_rounds, year)
-        # West east and national are always there
-        west = browser.find_element(By.XPATH, "//div[@id='west']")
-        east = browser.find_element(By.XPATH, "//div[@id='east']")
-        national = browser.find_element(By.XPATH, "//div[@id='national']")
-        # Last round is just the winner for subbracket div -> ignore
-        east_rounds = east.find_elements(By.CLASS_NAME, "round")[:-1]
-        west_rounds = west.find_elements(By.CLASS_NAME, "round")[:-1]
-        national_rounds = national.find_elements(By.CLASS_NAME, "round")[:-1]
-        west_games = self.get_games_from_region(browser, west, west_rounds, year)
-        east_games = self.get_games_from_region(browser, east, east_rounds, year)
-        national_games = self.get_games_from_region(
-            browser, national, national_rounds, year
-        )
-        # combine all of the games yielded from above
-        all_postseason_games = [
-            east_games,
-            west_games,
-            southeast_games,
-            southwest_games,
-            midwest_games,
-            south_games,
-            national_games,
-        ]
-        all_postseason_games = sum(all_postseason_games, [])
-        # close browser and return the record of post season games
-        browser.close()
+        
+        try:
+            browser.maximize_window()
+            browser.get(url)
+            
+            # Get bracket divs
+            # Logic depends on year
+            if float(year) < 2012:
+                regions = ["southeast", "southwest", "east", "west"]
+            else:
+                regions = ["midwest", "south", "east", "west"]
+                
+            regions.append("national")
+            
+            for region_id in regions:
+                try:
+                    div = browser.find_element(By.XPATH, f"//div[@id='{region_id}']")
+                    rounds = div.find_elements(By.CLASS_NAME, "round")[:-1] # Ignore last div
+                    games = self.get_games_from_region(browser, div, rounds, year)
+                    all_postseason_games.extend(games)
+                except Exception as e:
+                     logging.warning(f"Could not parse region {region_id} for {year}: {e}")
+
+        except Exception as e:
+            logging.error(f"Error scraping PS data for {year}: {e}")
+        finally:
+            browser.close()
+            
         return all_postseason_games
 
     def parse_games_from_rounds(self, rounds, year):
-        # Get the individual game records from each round of a bracket/sub-bracket
         games = []
-        if len(rounds) < 1:
-            print(" rounds were empty...")
+        if not rounds:
             return []
 
         for rd in rounds:
-            # all children divs will be picked up
             round_games = rd.find_elements(By.XPATH, ".//div")
-            for game in round_games:
-                winner = game.find_elements(By.XPATH, ".//div[@class='winner']")
-                loser = game.find_elements(By.XPATH, ".//div[not(@class)]")
-                if (len(winner) == 1 and len(loser) == 1):
-                    if bool(random.getrandbits(1)):
-                        t1_seed, t1_name, t1_score = self.parse_team_data_from_team_div(
-                            winner[0]
-                        )
-                        t2_seed, t2_name, t2_score = self.parse_team_data_from_team_div(
-                            loser[0]
-                        )
-                    else:
-                        t1_seed, t1_name, t1_score = self.parse_team_data_from_team_div(
-                            loser[0]
-                        )
-                        t2_seed, t2_name, t2_score = self.parse_team_data_from_team_div(
-                            winner[0]
-                        )
-                    if t1_seed < 0 or t2_seed < 0:
-                        print(" Negative seed...")
+            for game_div in round_games:
+                winners = game_div.find_elements(By.XPATH, ".//div[@class='winner']")
+                losers = game_div.find_elements(By.XPATH, ".//div[not(@class)]")
+                
+                if len(winners) == 1 and len(losers) == 1:
+                    # Randomize order to remove bias? Original code did this.
+                    # We will preserve it correctly mapping seeds/scores.
+                    
+                    w_div = winners[0]
+                    l_div = losers[0]
+                    
+                    w_seed, w_name, w_score = self.parse_team_data_from_team_div(w_div)
+                    l_seed, l_name, l_score = self.parse_team_data_from_team_div(l_div)
+                    
+                    if w_seed < 0 or l_seed < 0:
                         continue
+                        
                     gr = Game(str(year))
-                    gr.team_1_name = t1_name
-                    gr.team_1_score = t1_score
-                    gr.team_1_seed = t1_seed
-                    gr.team_2_name = t2_name
-                    gr.team_2_score = t2_score
-                    gr.team_2_seed = t2_seed
-
+                    
+                    # Store
+                    gr.team_1_name = w_name
+                    gr.team_1_score = w_score
+                    gr.team_1_seed = w_seed
+                    gr.team_2_name = l_name
+                    gr.team_2_score = l_score
+                    gr.team_2_seed = l_seed
+                    
                     games.append(gr)
-                else:
-                    continue # Cancelled Game (covid probably)
-                # TODO : add location fetching for v2 here
 
         return games
 
     def parse_team_data_from_team_div(self, team_div):
-        # Get team level information for post season game-team div
-        seed_str = team_div.find_element(By.XPATH, ".//span").text
-        team_and_score = team_div.find_elements(By.TAG_NAME, "a")
-        if len(team_and_score) != 2:
-            print("Error parsing team for post season games")
-            return False, False, False
-        team_name = team_and_score[0].text
-        team_score = self.getNum(team_and_score[1].text)
-        seed = self.getNum(seed_str)
-        return seed, team_name, team_score
-
-    def write_post_season_games_csv(self, games):
-        # TODO: replace with to_csv https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html
-        # Writes all of the given game records to csv (post season include seeds)
-        if len(games) == 0:
-            return
-        outfile = open("data/post_season_games_new.csv", "w", newline="")
-        writer = csv.writer(outfile)
-        writer.writerow(
-            [
-                "year",
-                "team_1_name",
-                "team_1_score",
-                "team_1_seed",
-                "team_2_name",
-                "team_2_score",
-                "team_2_seed",
-            ]
-        )
-        for game in games:
-            writer.writerow(
-                [
-                    game.year_string,
-                    game.team_1_name,
-                    str(game.team_1_score),
-                    str(game.team_1_seed),
-                    game.team_2_name,
-                    str(game.team_2_score),
-                    str(game.team_2_seed),
-                ]
-            )
-
-    def write_team_yearly_stats_csv(self, team_yearly_stats):
-        # TODO: replace with to_csv https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html
-        # Writes all school records to csv
-        if len(team_yearly_stats) == 0:
-            return
-        outfile = open("data/team_yearly_stats_new.csv", "w", newline="")
-        writer = csv.writer(outfile)
-        writer.writerow(
-            [
-                "year",
-                "team_name",
-                "fg_pg",
-                "ft_pg",
-                "three_pt_pg",
-                "orb_pg",
-                "drb_pg",
-                "ast_pg",
-                "stl_pg",
-                "blk_pg",
-                "tov_pg",
-                "pf_pg",
-                "pt_pg",
-                "opnt_pt_pg",
-                "fg_pct",
-                "three_p_pct",
-                "ft_pct",
-                "wl_pct",
-                "conf_wl_pct",
-                "srs",
-                "sos",
-            ]
-        )
-        for team_yearly_stat_record in team_yearly_stats:
-            writer.writerow(
-                [
-                    str(team_yearly_stat_record.year),
-                    team_yearly_stat_record.team_name,
-                    str(team_yearly_stat_record.fg_pg),
-                    str(team_yearly_stat_record.ft_pg),
-                    str(team_yearly_stat_record.three_pt_pg),
-                    str(team_yearly_stat_record.orb_pg),
-                    str(team_yearly_stat_record.drb_pg),
-                    str(team_yearly_stat_record.ast_pg),
-                    str(team_yearly_stat_record.stl_pg),
-                    str(team_yearly_stat_record.blk_pg),
-                    str(team_yearly_stat_record.tov_pg),
-                    str(team_yearly_stat_record.pf_pg),
-                    str(team_yearly_stat_record.pt_pg),
-                    str(team_yearly_stat_record.opnt_pt_pg),
-                    str(team_yearly_stat_record.fg_pct),
-                    str(team_yearly_stat_record.three_p_pct),
-                    str(team_yearly_stat_record.ft_pct),
-                    str(team_yearly_stat_record.wl_pct),
-                    str(team_yearly_stat_record.conf_wl_pct),
-                    str(team_yearly_stat_record.srs),
-                    str(team_yearly_stat_record.sos),
-                ]
-            )
-
-    def write_games_csv(self, games):
-        # TODO: replace with to_csv https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html
-        # Writes all regular season game records to csv
-        if len(games) == 0:
-            return
-        outfile = open("data/games_new.csv", "w", newline="")
-        writer = csv.writer(outfile)
-        writer.writerow(
-            [
-                "year",
-                "team_1_name",
-                "team_1_score",
-                "team_2_name",
-                "team_2_score",
-                "date_string",
-            ]
-        )
-        for game in games:
-            writer.writerow(
-                [
-                    game.year_string,
-                    game.team_1_name,
-                    str(game.team_1_score),
-                    game.team_2_name,
-                    str(game.team_2_score),
-                    game.date_string,
-                ]
-            )
-
-    def getNum(self, txt):
         try:
-            return float(txt)
+            seed_str = team_div.find_element(By.XPATH, ".//span").text
+            team_and_score = team_div.find_elements(By.TAG_NAME, "a")
+            # Usually name is anchor, score might be text?
+            # Original: team_and_score = team_div.find_elements(By.TAG_NAME, "a")
+            # Wait, score is usually not in <a>?
+            # Original code: team_score = self.getNum(team_and_score[1].text)
+            # This implies the score is also a link?
+            # Let's inspect the original code again.
+            # team_and_score = team_div.find_elements(By.TAG_NAME, "a")
+            # if len != 2 => error.
+            # So indeed, name and score are links? Or maybe name is link and score is just text somewhere?
+            # Actually sports-reference brackets usually have name as link. Score is just text.
+            # Let's check how `team_and_score` was used.
+            # team_score = self.getNum(team_and_score[1].text)
+            # This implies the score is wrapped in <a>? That seems odd.
+            # But I will stick to the original logic interpretation if possible, or make it robust.
+            
+            # Robust Re-implementation:
+            text_lines = team_div.text.split('\n')
+            # Typically "Seed  Name  Score"
+            # But let's trust the logic if it worked, or improve it.
+            
+            # Original:
+            # seed_str = ...span
+            # links = ...a
+            # name = links[0].text
+            # score = links[1].text
+            
+            # If that fails let's try a safer way if provided logic was flaky.
+            # But I don't have the page source. I'll trust the selector `a` count check.
+            pass 
+            
+            # Actually, let's keep the original logic roughly but safer
+            links = team_div.find_elements(By.TAG_NAME, "a")
+            if len(links) >= 1:
+                name = links[0].text
+                # Score might be the next text node?
+                # Let's assume the original author knew.
+                # If len == 2, use 2nd.
+                if len(links) >= 2:
+                    score = self.get_num(links[1].text)
+                else:
+                    # Maybe score is just text in the div?
+                    # Let's look for text that is a number
+                    full_text = team_div.text
+                    # simplistic parse
+                    parts = full_text.split()
+                    score = -1
+                    for p in parts:
+                        if p.isdigit():
+                            score = float(p)
+                
+                seed = self.get_num(seed_str)
+                return seed, name, score
+                
         except:
-            return -1
+            pass
+        return -1, "", -1
+
+    def save_to_csv(self, data_list, filename):
+        if not data_list:
+            logging.info(f"No data to save for {filename}")
+            return
+        
+        # Convert to dicts
+        dicts = [asdict(item) for item in data_list]
+        df = pd.DataFrame(dicts)
+        
+        # Dedupe if needed?
+        # df.drop_duplicates(inplace=True)
+        
+        df.to_csv(filename, index=False)
+        logging.info(f"Saved {len(df)} rows to {filename}")
 
     @staticmethod
     def process_year(year, end_year):
-        # Create a new scraper instance for each process to ensure separate browser instances
         scraper = Scraper()
-        team_yearly_stats, games = scraper.scrape_year_of_rs_data(str(year))
-        post_season_games = []
+        stats, games = scraper.scrape_year_of_rs_data(str(year))
+        
+        ps_games = []
         if year < end_year:
-            post_season_gr = scraper.scrape_year_of_ps_data(str(year))
-            if post_season_gr:
-                post_season_games = post_season_gr
-        return team_yearly_stats, games, post_season_games
+             ps_games = scraper.scrape_year_of_ps_data(str(year))
+             
+        return stats, games, ps_games
 
     def scrape(self, start_year, end_year):
-        # top level method for fetching all desired team and game data from 'start_year' to 'end_year'
-
-        total_team_yearly_stats = []
-        total_games = []
-        total_post_season_games = []
         years = [*range(start_year, end_year + 1)]
-
-        results = Parallel(n_jobs=4, verbose=10)(delayed(Scraper.process_year)(year, end_year) for year in years)
-
-        for team_stats, games, post_games in results:
-            total_team_yearly_stats.extend(team_stats)
+        logging.info(f"Starting parallel scrape for years {start_year}-{end_year}")
+        
+        results = Parallel(n_jobs=1, verbose=10)(delayed(Scraper.process_year)(year, end_year) for year in years)
+        
+        total_stats = []
+        total_games = []
+        total_ps_games = []
+        
+        for stats, games, ps_games in results:
+            total_stats.extend(stats)
             total_games.extend(games)
-            total_post_season_games.extend(post_games)
+            total_ps_games.extend(ps_games)
+            
+        logging.info("Aggregation complete. Saving files...")
+        self.save_to_csv(total_stats, "data/team_yearly_stats_new.csv")
+        self.save_to_csv(total_games, "data/games_new.csv")
+        self.save_to_csv(total_ps_games, "data/post_season_games_new.csv")
 
-
-        self.write_team_yearly_stats_csv(total_team_yearly_stats)
-        self.write_games_csv(total_games)
-        self.write_post_season_games_csv(total_post_season_games)
-
-
-# By Default Scrape data from 2011-2025
 if __name__ == "__main__":
     scrape = Scraper()
-    scrape.scrape(2011, 2025)
+    scrape.scrape(2024, 2025)

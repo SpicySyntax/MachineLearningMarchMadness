@@ -13,6 +13,7 @@ dependencies = [
     "pandas>=1.2.3",
     "scikit-learn>=1.2.2",
     "selenium>=3.141.0",
+    "tqdm>=4.67.1",
 ]
 
 [dependency-groups]
