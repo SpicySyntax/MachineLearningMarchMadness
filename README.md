@@ -9,19 +9,13 @@ Description:
 Use this [link](https://nbviewer.jupyter.org/github/SpicySyntax/MachineLearningMarchMadness/blob/master/MachineLearningMarchMadnessV1.ipynb)
 
 ## Prerequisites
-
-- [Python 3.8^](https://www.python.org/downloads/release/python-386/)
-  - Or use Homebrew or Chocalatey
-- [Poetry](https://python-poetry.org/)
+- [uv](https://docs.astral.sh/uv/getting-started/installation)
 
 
 ### Install Dependencies
 
 ```bash
-pip install poetry
-poetry install
-# Activate shell
-poetry shell
+uv sync
 ```
 
 ## Components
@@ -41,7 +35,7 @@ poetry shell
 #### To Run Scraper
 - Run:
 ```bash
-poetry run python main.py
+uv run main.py
 ```
 
 
@@ -51,11 +45,11 @@ Jupyter Notebooks used to prepare the data and train the models
 #### To start the notebooks
 
 ```bash
-poetry run jupyter notebook
+uv run jupyter notebook
 ```
 
 ## Latest Results
 2022 TODO
 [2021](./results/2021.md)
 
-## TODO: switch to uv
+

@@ -3,6 +3,7 @@ import os
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 
 import random
 from selenium.webdriver.support.ui import WebDriverWait
@@ -42,9 +43,8 @@ class Scraper:
         # get chrome browser selenium driver
         chrome_options = Options()
 
-        browser = webdriver.Chrome(
-            executable_path=binary_path, chrome_options=chrome_options
-        )
+        service = Service(executable_path=binary_path)
+        browser = webdriver.Chrome(service=service, options=chrome_options)
         return browser
 
     def scrape_year_of_rs_data(self, year):
