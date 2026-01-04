@@ -4,6 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
 
 import random
 from selenium.webdriver.support.ui import WebDriverWait
@@ -60,13 +61,13 @@ class Scraper:
         browser.maximize_window()  # Make sure all data is displayed for dynamic web page by maximizing
         browser.get(url)  # navigate to page
         # gather the data rows from regular season school stats page
-        headers = browser.find_elements_by_xpath(
+        headers = browser.find_elements(By.XPATH, 
             "//thead//tr//th[contains(@class, 'poptip')]"
         )
-        table = browser.find_element_by_xpath(
+        table = browser.find_element(By.XPATH, 
             "//table[contains(@class, 'stats_table')]"
         )
-        data_rows = table.find_elements_by_xpath(".//tbody//tr")
+        data_rows = table.find_elements(By.XPATH, ".//tbody//tr")
         data_rows = [
             _ for _ in data_rows if "thead" not in _.get_attribute("class") or "t"
         ]
@@ -77,14 +78,14 @@ class Scraper:
         games = []
         print("---Data Rows for " + year + "---")
         for row in data_rows:
-            th_item = row.find_element_by_tag_name("th")
+            th_item = row.find_element(By.TAG_NAME, "th")
             if th_item:
                 th_rk_val = th_item.text
                 if not is_number(th_rk_val):
                     continue
                 row_num = row.get_attribute("data-row")
             # If Here then it is a true data row
-            td_items = row.find_elements_by_tag_name("td")
+            td_items = row.find_elements(By.TAG_NAME, "td")
             team_yearly_stat_record = TeamYearStats()
             team_yearly_stat_record.year = self.getNum(year)
             num_games = 1
@@ -96,7 +97,7 @@ class Scraper:
                 # Assumes we receive column data in the following order
                 if data_stat == "school_name":
                     team_yearly_stat_record.team_name = txt.replace("NCAA", "").strip()
-                    link = td_item.find_element_by_tag_name("a").get_attribute("href")
+                    link = td_item.find_element(By.TAG_NAME, "a").get_attribute("href")
                     team_yearly_stat_record.team_link = link
                 elif data_stat == "win_loss_pct":
                     team_yearly_stat_record.wl_pct = self.getNum(txt)
@@ -155,9 +156,9 @@ class Scraper:
         for team_yearly_stat_record in team_yearly_stats:
             # TODO: add additional team record and player data here
             browser.get(team_yearly_stat_record.team_link)
-            timeline_results = browser.find_element_by_xpath(
+            timeline_results = browser.find_element(By.XPATH, 
                 "//div[@id='timeline_results']"
-            ).find_elements_by_xpath(".//li[@class='result']")
+            ).find_elements(By.XPATH, ".//li[@class='result']")
             for result in timeline_results:
                 gr = Game(year)
                 gr.populate_with_game_result_string(result.text)
@@ -201,14 +202,14 @@ class Scraper:
         midwest = {}
         south = {}
         # Get bracket divs
-        bracket = browser.find_element_by_xpath("//div[@id='brackets']")
+        bracket = browser.find_element(By.XPATH, "//div[@id='brackets']")
         # (regions depend on the year of the tourney (i.e. < 2012))
         if float(year) < 2012:
-            southeast = browser.find_element_by_xpath("//div[@id='southeast']")
-            southwest = browser.find_element_by_xpath("//div[@id='southwest']")
+            southeast = browser.find_element(By.XPATH, "//div[@id='southeast']")
+            southwest = browser.find_element(By.XPATH, "//div[@id='southwest']")
             # Ignore the last div here
-            southeast_rounds = southeast.find_elements_by_class_name("round")[:-1]
-            southwest_rounds = southwest.find_elements_by_class_name("round")[:-1]
+            southeast_rounds = southeast.find_elements(By.CLASS_NAME, "round")[:-1]
+            southwest_rounds = southwest.find_elements(By.CLASS_NAME, "round")[:-1]
             southeast_games = self.get_games_from_region(
                 browser, southeast, southeast_rounds, year
             )
@@ -216,23 +217,23 @@ class Scraper:
                 browser, southwest, southwest_rounds, year
             )
         else:
-            midwest = browser.find_element_by_xpath("//div[@id='midwest']")
-            south = browser.find_element_by_xpath("//div[@id='south']")
+            midwest = browser.find_element(By.XPATH, "//div[@id='midwest']")
+            south = browser.find_element(By.XPATH, "//div[@id='south']")
             # Ignore the last div here
-            south_rounds = south.find_elements_by_class_name("round")[:-1]
-            midwest_rounds = midwest.find_elements_by_class_name("round")[:-1]
+            south_rounds = south.find_elements(By.CLASS_NAME, "round")[:-1]
+            midwest_rounds = midwest.find_elements(By.CLASS_NAME, "round")[:-1]
             midwest_games = self.get_games_from_region(
                 browser, midwest, midwest_rounds, year
             )
             south_games = self.get_games_from_region(browser, south, south_rounds, year)
         # West east and national are always there
-        west = browser.find_element_by_xpath("//div[@id='west']")
-        east = browser.find_element_by_xpath("//div[@id='east']")
-        national = browser.find_element_by_xpath("//div[@id='national']")
+        west = browser.find_element(By.XPATH, "//div[@id='west']")
+        east = browser.find_element(By.XPATH, "//div[@id='east']")
+        national = browser.find_element(By.XPATH, "//div[@id='national']")
         # Last round is just the winner for subbracket div -> ignore
-        east_rounds = east.find_elements_by_class_name("round")[:-1]
-        west_rounds = west.find_elements_by_class_name("round")[:-1]
-        national_rounds = national.find_elements_by_class_name("round")[:-1]
+        east_rounds = east.find_elements(By.CLASS_NAME, "round")[:-1]
+        west_rounds = west.find_elements(By.CLASS_NAME, "round")[:-1]
+        national_rounds = national.find_elements(By.CLASS_NAME, "round")[:-1]
         west_games = self.get_games_from_region(browser, west, west_rounds, year)
         east_games = self.get_games_from_region(browser, east, east_rounds, year)
         national_games = self.get_games_from_region(
@@ -262,10 +263,10 @@ class Scraper:
 
         for rd in rounds:
             # all children divs will be picked up
-            round_games = rd.find_elements_by_xpath(".//div")
+            round_games = rd.find_elements(By.XPATH, ".//div")
             for game in round_games:
-                winner = game.find_elements_by_xpath(".//div[@class='winner']")
-                loser = game.find_elements_by_xpath(".//div[not(@class)]")
+                winner = game.find_elements(By.XPATH, ".//div[@class='winner']")
+                loser = game.find_elements(By.XPATH, ".//div[not(@class)]")
                 if (len(winner) == 1 and len(loser) == 1):
                     if bool(random.getrandbits(1)):
                         t1_seed, t1_name, t1_score = self.parse_team_data_from_team_div(
@@ -301,8 +302,8 @@ class Scraper:
 
     def parse_team_data_from_team_div(self, team_div):
         # Get team level information for post season game-team div
-        seed_str = team_div.find_element_by_xpath(".//span").text
-        team_and_score = team_div.find_elements_by_tag_name("a")
+        seed_str = team_div.find_element(By.XPATH, ".//span").text
+        team_and_score = team_div.find_elements(By.TAG_NAME, "a")
         if len(team_and_score) != 2:
             print("Error parsing team for post season games")
             return False, False, False
@@ -436,6 +437,18 @@ class Scraper:
         except:
             return -1
 
+    @staticmethod
+    def process_year(year, end_year):
+        # Create a new scraper instance for each process to ensure separate browser instances
+        scraper = Scraper()
+        team_yearly_stats, games = scraper.scrape_year_of_rs_data(str(year))
+        post_season_games = []
+        if year < end_year:
+            post_season_gr = scraper.scrape_year_of_ps_data(str(year))
+            if post_season_gr:
+                post_season_games = post_season_gr
+        return team_yearly_stats, games, post_season_games
+
     def scrape(self, start_year, end_year):
         # top level method for fetching all desired team and game data from 'start_year' to 'end_year'
 
@@ -444,16 +457,12 @@ class Scraper:
         total_post_season_games = []
         years = [*range(start_year, end_year + 1)]
 
-        for year in years: # TODO: parallelize this https://stackoverflow.com/questions/42732958/python-parallel-execution-with-selenium
-            team_yearly_stats, games = self.scrape_year_of_rs_data(str(year))
-            total_team_yearly_stats = total_team_yearly_stats + team_yearly_stats
-            total_games = total_games + games
-            if year < end_year:
-                post_season_gr = self.scrape_year_of_ps_data(str(year))
-                if post_season_gr:
-                    total_post_season_games = (
-                        total_post_season_games + post_season_gr
-                    )
+        results = Parallel(n_jobs=4, verbose=10)(delayed(Scraper.process_year)(year, end_year) for year in years)
+
+        for team_stats, games, post_games in results:
+            total_team_yearly_stats.extend(team_stats)
+            total_games.extend(games)
+            total_post_season_games.extend(post_games)
 
 
         self.write_team_yearly_stats_csv(total_team_yearly_stats)
@@ -461,7 +470,7 @@ class Scraper:
         self.write_post_season_games_csv(total_post_season_games)
 
 
-# By Default Scrape data from 2011-2021
+# By Default Scrape data from 2011-2025
 if __name__ == "__main__":
     scrape = Scraper()
-    scrape.scrape(2011, 2022)
+    scrape.scrape(2011, 2025)
