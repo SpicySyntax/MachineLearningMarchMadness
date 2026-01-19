@@ -65,16 +65,14 @@ class Scraper:
         self.request_count = 0
 
     def _create_session(self) -> requests.Session:
-        """Create a requests session with retry logic and proper headers."""
+        """Create a requests session with NO automatic retries - we handle everything manually."""
         session = requests.Session()
         
-        # Configure retry strategy - do NOT retry on 429 (let us handle it manually)
+        # DISABLE all automatic retries - we handle rate limiting ourselves
+        # This prevents urllib3 from sleeping on Retry-After headers
         retry_strategy = Retry(
-            total=3,
-            backoff_factor=1.0,
-            status_forcelist=[500, 502, 503, 504],  # No 429 - we handle rate limiting
-            allowed_methods=["GET"],
-            raise_on_status=False
+            total=0,  # No automatic retries
+            respect_retry_after_header=False  # Don't auto-sleep on Retry-After
         )
         adapter = HTTPAdapter(max_retries=retry_strategy)
         session.mount("https://", adapter)
