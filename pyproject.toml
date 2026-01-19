@@ -5,14 +5,15 @@ description = "Predictive solution for NCAA basketball tournament"
 readme = "README.md"
 requires-python = ">=3.11,<3.13"
 dependencies = [
-    "chromedriver-py>=143.0.7499.169",
+    "beautifulsoup4>=4.12.0",
     "joblib>=1.0.1",
     "jupyter>=1.1.1",
+    "lxml>=5.0.0",
     "matplotlib>=3.3.4",
     "numpy>=1.20.1",
     "pandas>=1.2.3",
+    "requests>=2.31.0",
     "scikit-learn>=1.2.2",
-    "selenium>=3.141.0",
 ]
 
 [dependency-groups]
