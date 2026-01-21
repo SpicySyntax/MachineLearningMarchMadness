@@ -513,13 +513,14 @@ class Scraper:
         
         logger.info(f"Wrote {len(games)} games to {filepath}")
 
-    def scrape(self, start_year: int, end_year: int) -> None:
+    def scrape(self, start_year: int, end_year: int, skip_regular_season: bool = False) -> None:
         """
         Main entry point: scrape all data from start_year to end_year.
         
         Args:
             start_year: First year to scrape
             end_year: Last year to scrape (inclusive)
+            skip_regular_season: Whether to skip regular season data (stats and games)
         """
         start_time = time.time()
         
@@ -528,21 +529,27 @@ class Scraper:
         total_post_season_games = []
         
         years = list(range(start_year, end_year + 1))
-        logger.info(f"Starting scrape for years {start_year} to {end_year}")
+        logger.info(f"Starting scrape for years {start_year} to {end_year} (skip_rs={skip_regular_season})")
 
         for year in years:
-            team_yearly_stats, games = self.scrape_year_of_rs_data(str(year))
-            total_team_yearly_stats.extend(team_yearly_stats)
-            total_games.extend(games)
+            if not skip_regular_season:
+                team_yearly_stats, games = self.scrape_year_of_rs_data(str(year))
+                total_team_yearly_stats.extend(team_yearly_stats)
+                total_games.extend(games)
+            else:
+                logger.info(f"Skipping regular season data for {year}")
             
             if year < end_year:
                 post_season_games = self.scrape_year_of_ps_data(str(year))
                 if post_season_games:
                     total_post_season_games.extend(post_season_games)
 
-        self.write_team_yearly_stats_csv(total_team_yearly_stats)
-        self.write_games_csv(total_games)
-        self.write_post_season_games_csv(total_post_season_games)
+        if total_team_yearly_stats:
+            self.write_team_yearly_stats_csv(total_team_yearly_stats)
+        if total_games:
+            self.write_games_csv(total_games)
+        if total_post_season_games:
+            self.write_post_season_games_csv(total_post_season_games)
         
         elapsed = time.time() - start_time
         logger.info(f"Scraping completed in {elapsed:.1f} seconds")
