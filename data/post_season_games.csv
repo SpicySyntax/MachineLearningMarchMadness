@@ -691,6 +691,69 @@ year,team_1_name,team_1_score,team_1_seed,team_2_name,team_2_score,team_2_seed
 2022,Villanova,65.0,2.0,Kansas,81.0,1.0
 2022,UNC,81.0,8.0,Duke,77.0,2.0
 2022,UNC,69.0,8.0,Kansas,72.0,1.0
+2023,FDU,63.0,16,Purdue,58.0,1
+2023,Florida Atlantic,66.0,9,Memphis,65.0,8
+2023,Duke,74.0,5,Oral Roberts,51.0,12
+2023,Louisiana,55.0,13,Tennessee,58.0,4
+2023,Providence,53.0,11,Kentucky,61.0,6
+2023,Montana State,65.0,14,Kansas State,77.0,3
+2023,Michigan State,72.0,7,USC,62.0,10
+2023,Vermont,61.0,15,Marquette,78.0,2
+2023,FDU,70.0,16,Florida Atlantic,78.0,9
+2023,Tennessee,65.0,4,Duke,52.0,5
+2023,Kentucky,69.0,6,Kansas State,75.0,3
+2023,Marquette,60.0,2,Michigan State,69.0,7
+2023,Tennessee,55.0,4,Florida Atlantic,62.0,9
+2023,Michigan State,93.0,7,Kansas State,98.0,3
+2023,Florida Atlantic,79.0,9,Kansas State,76.0,3
+2023,Kansas,96.0,1,Howard,68.0,16
+2023,Arkansas,73.0,8,Illinois,63.0,9
+2023,VCU,51.0,12,Saint Mary's,63.0,5
+2023,UConn,87.0,4,Iona,63.0,13
+2023,Arizona State,70.0,11,TCU,72.0,6
+2023,Gonzaga,82.0,3,Grand Canyon,70.0,14
+2023,Boise State,67.0,10,Northwestern,75.0,7
+2023,UNC Asheville,53.0,15,UCLA,86.0,2
+2023,Arkansas,72.0,8,Kansas,71.0,1
+2023,UConn,70.0,4,Saint Mary's,55.0,5
+2023,Gonzaga,84.0,3,TCU,81.0,6
+2023,Northwestern,63.0,7,UCLA,68.0,2
+2023,UConn,88.0,4,Arkansas,65.0,8
+2023,Gonzaga,79.0,3,UCLA,76.0,2
+2023,UConn,82.0,4,Gonzaga,54.0,3
+2023,Houston,63.0,1,Northern Kentucky,52.0,16
+2023,Iowa,75.0,8,Auburn,83.0,9
+2023,Drake,56.0,12,Miami (FL),63.0,5
+2023,Indiana,71.0,4,Kent State,60.0,13
+2023,Iowa State,41.0,6,Pitt,59.0,11
+2023,Kennesaw State,67.0,14,Xavier,72.0,3
+2023,Texas A&M,59.0,7,Penn State,76.0,10
+2023,Colgate,61.0,15,Texas,81.0,2
+2023,Auburn,64.0,9,Houston,81.0,1
+2023,Indiana,69.0,4,Miami (FL),85.0,5
+2023,Pitt,73.0,11,Xavier,84.0,3
+2023,Texas,71.0,2,Penn State,66.0,10
+2023,Houston,75.0,1,Miami (FL),89.0,5
+2023,Xavier,71.0,3,Texas,83.0,2
+2023,Texas,81.0,2,Miami (FL),88.0,5
+2023,Texas A&M-Corpus Christi,75.0,16,Alabama,96.0,1
+2023,Maryland,67.0,8,West Virginia,65.0,9
+2023,College of Charleston,57.0,12,San Diego State,63.0,5
+2023,Furman,68.0,13,Virginia,67.0,4
+2023,Creighton,72.0,6,NC State,63.0,11
+2023,Baylor,74.0,3,UCSB,56.0,14
+2023,Utah State,65.0,10,Missouri,76.0,7
+2023,Arizona,55.0,2,Princeton,59.0,15
+2023,Maryland,51.0,8,Alabama,73.0,1
+2023,San Diego State,75.0,5,Furman,52.0,13
+2023,Creighton,85.0,6,Baylor,76.0,3
+2023,Princeton,78.0,15,Missouri,63.0,7
+2023,Alabama,64.0,1,San Diego State,71.0,5
+2023,Creighton,86.0,6,Princeton,75.0,15
+2023,Creighton,56.0,6,San Diego State,57.0,5
+2023,San Diego State,72.0,5,Florida Atlantic,71.0,9
+2023,Miami (FL),59.0,5,UConn,72.0,4
+2023,UConn,76.0,4,San Diego State,59.0,5
 2024,UConn,91.0,1,Stetson,52.0,16
 2024,Northwestern,77.0,9,Florida Atlantic,65.0,8
 2024,San Diego State,69.0,5,UAB,65.0,12
