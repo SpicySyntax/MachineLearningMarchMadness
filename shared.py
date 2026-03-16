@@ -30,9 +30,13 @@ def resolve_team_name(team_name):
         "ETSU": "East Tennessee State",
         "Ole Miss": "Mississippi",
         "Saint Mary's": "Saint Mary's (CA)",
-        "UCF": "Central Florida",
         "UCSBS": "UC-Santa Barbara",
-        "UNC Greensboro": "North Carolina-Greensboro"
+        "UNC Greensboro": "North Carolina-Greensboro",
+        "LEH": "Lehigh",
+        "St. John's": "St. John's (NY)",
+        "Penn":"Pennsylvania",
+        "Queens": "Queens (NC)",
+        "UMBC": "Maryland-Baltimore County",
     }
     # TODO: for V2 add more corrections to the team_name_dict
     if team_name in team_name_dict:
@@ -294,11 +298,22 @@ def get_matchups_stats(df_team, teams, post_season, year):
     while i < len(teams):
         t1_name, t1_seed = teams[i]
         t2_name, t2_seed = teams[i + 1]
+        print("Getting stats for ", t1_name, " vs. ", t2_name)
         t1_seeds.append(t1_seed)
         t2_seeds.append(t2_seed)
         t1_stats.append(get_team_stats(df_team, year, resolve_team_name(t1_name)))
         t2_stats.append(get_team_stats(df_team, year, resolve_team_name(t2_name)))
         i = i + 2
+    
+    # Check if all teams were found
+    for idx, (t1_stat, t2_stat) in enumerate(zip(t1_stats, t2_stats)):
+        if len(t1_stat) == 0:
+            t1_name, _ = teams[idx * 2]
+            raise ValueError(f"Team '{t1_name}' (resolved to '{resolve_team_name(t1_name)}') not found in database for year {year}")
+        if len(t2_stat) == 0:
+            t2_name, _ = teams[idx * 2 + 1]
+            raise ValueError(f"Team '{t2_name}' (resolved to '{resolve_team_name(t2_name)}') not found in database for year {year}")
+    
     if post_season:
         matchup_stats = create_team_stats_df_ps(
             range(0, int(len(teams) / 2)), t1_stats, t2_stats, t1_seeds, t2_seeds
@@ -395,7 +410,7 @@ team_names_west = [
     ("Mississippi", 11),
     ("Virginia", 3),
     ("Wright State", 14),
-    ("Miami (Fla.)", 7),
+    ("Miami (FL)", 7),
     ("Missouri", 10),
     ("Iowa State", 2),
     ("Tennessee State", 15),
@@ -403,13 +418,13 @@ team_names_west = [
 team_names_east = [
     # east region
     ("Florida", 1),
-    ("TBD", 16),
+    ("LEH", 16),
     ("Clemson", 8),
     ("Iowa", 9),
     ("St. John's", 5),
-    ("UNI", 12),
+    ("Northern Iowa", 12),
     ("Kansas", 4),
-    ("Cal Baptist", 13),
+    ("California Baptist", 13),
     ("North Carolina", 6),
     ("VCU", 11),
     ("Illinois", 3),
@@ -422,7 +437,7 @@ team_names_east = [
 team_names_midwest = [
     # mid-west region
     ("Michigan", 1),
-    ("TBD", 16),
+    ("UMBC", 16),
     ("Ohio State", 8),
     ("TCU", 9),
     ("Wisconsin", 5),
