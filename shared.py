@@ -491,14 +491,27 @@ def get_matchup_winners(matchup_stats, teams, model, post_season, features=None)
 
     x_tourney = matchup_stats[feature_cols]
 
-    y_tourney = model.predict(x_tourney)
+    # Use predict_proba to get probabilities instead of hard predictions
+    # This allows for more realistic upset predictions
+    import numpy as np
+    try:
+        y_proba = model.predict_proba(x_tourney)[:, 1]  # Probability team 1 wins
+    except AttributeError:
+        # Fallback to predict if predict_proba not available
+        y_proba = model.predict(x_tourney)
+
     i = 0
     winners = []
-    for y_val in y_tourney:
+    for prob in y_proba:
         t1_name, t1_seed = teams[i]
         t2_name, t2_seed = teams[i + 1]
-        print(t1_name, t1_seed, " vs. ", t2_name, t2_seed, "(team 1 won=", y_val, ")")
-        if y_val:
+        
+        # Sample based on probability for more realistic results
+        team_1_wins = np.random.random() < prob
+        team_1_wins_int = int(team_1_wins)
+        
+        print(t1_name, t1_seed, " vs. ", t2_name, t2_seed, f"(team 1 won= {team_1_wins_int}, prob={prob:.3f})")
+        if team_1_wins:
             winners.append((t1_name, t1_seed))
         else:
             winners.append((t2_name, t2_seed))
