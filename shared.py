@@ -298,7 +298,6 @@ def get_matchups_stats(df_team, teams, post_season, year):
     while i < len(teams):
         t1_name, t1_seed = teams[i]
         t2_name, t2_seed = teams[i + 1]
-        print("Getting stats for ", t1_name, " vs. ", t2_name)
         t1_seeds.append(t1_seed)
         t2_seeds.append(t2_seed)
         t1_stats.append(get_team_stats(df_team, year, resolve_team_name(t1_name)))
@@ -490,7 +489,7 @@ def get_matchup_winners(matchup_stats, teams, model, post_season, features=None)
         if col not in matchup_stats.columns:
             matchup_stats[col] = 0
 
-    x_tourney = matchup_stats[feature_cols].values
+    x_tourney = matchup_stats[feature_cols]
 
     y_tourney = model.predict(x_tourney)
     i = 0
