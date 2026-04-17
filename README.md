@@ -1,9 +1,9 @@
 # MachineLearningMarchMadness
 
-Predictive solution for March Madness bracket
+Predictive solution for March Madness bracket using Machine Learning
 Description:
 
-- Go2al: Predict the NCAA Mens Basketball tournament bracket using data scraped from the Web and a variety Machine Learning algorithms.
+- Goal: Predict the NCAA Mens Basketball tournament bracket using data scraped from the Web and a variety Machine Learning algorithms.
 
 ## If Notebook not loading in github
 
